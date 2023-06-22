@@ -1,0 +1,35 @@
+Beef, Breakfast, Chicken, Chorizo, Dessert, Lamb, Pasta, Peperoni, Potato, Sausage, Soup, Steak
+Bangers&MashWithOnionGravy, Sausage, 15 minutes, 65 minutes
+BeerCanChicken, Chicken, 20 minutes, 70 minutes
+BiscoffCake, Dessert, 5 minutes, 20 minutes
+BreakfastQuesadillas, Breakfast, 15 minutes, 25 minutes
+ButternutRisotto, Chicken, 20 minutes, 35 minutes
+Chicken&ChorizoPasta, Chicken, 15 minutes, 20 minutes
+ChickenBurgers, Chicken, 10 minutes, 15 minutes
+ChickenFajitas, Chicken, 15 minutes, 20 minutes
+ChickenFriedRice, Chicken, 15 minutes, 15 minutes
+ChickenGyros, Chicken, 20 minutes, 45 minutes
+ChillieLoadedWedges, Beef, 20 minutes, 45 minutes
+Chips&CurrySauce, Potato, 15 minutes, 40 minutes
+ChocolateFondue, Dessert, 15 minutes, 10 minutes
+ChorizoHash, Chorizo, 10 minutes, 25 minutes
+CowboyStew, Sausage, 15 minutes, 45 minutes
+FrenchOnionSoup, Soup, 10 minutes, 50 minutes
+JensonsFamousCurry, Chicken, 10 minutes, 25 minutes
+LambTikkaCurry, Lamb, 20 minutes, 40 minutes
+LoadedJacketPotatoes, Potato, 20 minutes, 1 hour 40 minutes
+Mac&CheeseWithChorizo&Bacon, Chorizo, 15 minutes, 1 hour
+Meatballs, Beef, 10 minutes, 25 minutes
+MincemeatShortbread, Dessert, 45 minutes, 35 minutes
+NaanBreadPizza, Peperoni, 10 minutes, 5 minutes
+PastaBake, Pasta, 5 minutes, 35 minutes
+PeanutButter&ChocolateOatBars, Dessert, 15 minutes, 2 hours
+PeriPeriChicken, Chicken, 30 minutes, 1hour 50 minutes
+Sausage&TomatoPasta, 
+SausageCasserole, Sausage, 10 minutes, 45 minutes
+SausagePastaWine, Sausage, 5 minutes, 40 minutes
+SesameSeedChicken, Chicken, 20 minutes, 30 minutes
+SlowCookerHoneyGarlicNoodles, Chicken, 15 minutes, 6 hours
+SteakSandwiches, Steak, 10 minutes, 20 minutes
+ToffeeSauce, Dessert, 10 minutes, 10 minutes
+TomsTrayBake, Chorizo, 30 minutes, 50 minutes
