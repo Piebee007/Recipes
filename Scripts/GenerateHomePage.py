@@ -1,5 +1,14 @@
 import glob
 
+def total_time(prep_time, cook_time):
+    total_time = 0
+    prep_time = prep_time.split(":")
+    total_time += int(prep_time[0]) *60 + int(prep_time[1])
+    cook_time = cook_time.split(":")
+    total_time += int(cook_time[0]) *60 + int(cook_time[1])
+    
+    return str(total_time)
+
 unique_categories = []
 
 file_text = ""
@@ -23,14 +32,20 @@ for file_name in file_array:
                     unique_categories.append("Error")
         if line[0:11] == "Prep Time: ":
             if line[11:len(line)] != "/n":
-                recipe_data += line[11:len(line)-1] + ", "
+                prep_time = line[11:len(line)-1]
+                recipe_data += prep_time + ", "
             else:
                 recipe_data += "ERROR" + ", "
         if line[0:11] == "Cook Time: ":
             if line[11:len(line)] != "/n":
-                recipe_data += line[11:len(line)-1]
+                cook_time = line[11:len(line)-1]
+                recipe_data += cook_time + ", "
             else:
-                recipe_data += "ERROR" 
+                recipe_data += "ERROR, " 
+
+            recipe_data += total_time(prep_time,cook_time)
+        
+        
     file_text += recipe_data + "\n"
     file.close()
 
@@ -48,3 +63,5 @@ file = open("HomePageData.txt", "w")
 file.write(unique_tags_text)
 file.write(file_text)
 file.close()
+
+

@@ -1,21 +1,29 @@
 Chicken Fajitas
 Category: Chicken
-Prep Time: 15 minutes
-Cook Time: 20 minutes
+Prep Time: 0:15
+Cook Time: 0:20
 Serves: 4
 Ingredients:
-500g boneless, skinless chicken breasts, sliced into thin strips
+500g chicken breasts, sliced into thin strips
 1 onion, thinly sliced
-Optional: 1 bell pepper, thinly sliced
 2 cloves of garlic, minced
+8 tortillas
+Optional: 
+1 bell pepper, thinly sliced
+Seasoning:
 2tsp chili powder
 1tsp ground cumin
 1tsp Paprika
-1/2 tsp dried oregano
-Juice of 1 lime
-Salt and pepper to unique_tags_text
-8 tortillas
-Optional toppings: lettuce, cucumber, tomato, sour cream, guacamole, salsa, grated Cheese
+0.5tsp dried oregano
+1 Lime, juiced
+Optional toppings: 
+Lettuce, shredded 
+Cucumber, sliced
+Tomato, sliced
+Sour cream
+Guacamole
+Salsa
+Grated Cheese
 Instructions:
 In a bowl, combine the chili powder, ground cumin, paprika, dried oregano, minced garlic, lime juice, salt, and pepper. Mix well to create a marinade.
 Place the sliced chicken in a separate bowl and pour the marinade over it. Toss the chicken until it is evenly coated. Let it marinate for at least 10 minutes, or refrigerate for up to 1 hour for more flavor.
@@ -26,5 +34,3 @@ Warm the flour tortillas either by wrapping them in foil and placing them in a p
 Serve the chicken and onion mixture in warm tortillas. Garnish with your preferred toppings such as sour cream, guacamole, salsa, shredded cheese, and chopped cilantro.
 Roll up the tortillas and enjoy the delicious chicken fajitas!
 Note: Feel free to customize your chicken fajitas by adding additional toppings or ingredients such as sliced avocado, diced tomatoes, or hot sauce. If you prefer, you can include a red bell pepper as an optional ingredient for added flavor and color.
-
-

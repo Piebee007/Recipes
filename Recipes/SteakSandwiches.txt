@@ -1,7 +1,7 @@
 Steak Sandwiches
 Category: Steak
-Prep Time: 10 minutes
-Cook Time: 20 minutes
+Prep Time: 0:10
+Cook Time: 0:20
 Servings: 2
 Ingredients:
 2 Steaks

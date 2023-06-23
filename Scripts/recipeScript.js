@@ -32,10 +32,10 @@ function recipe_text(file_txt){
     createP("<h2>"+"Category: "+category+"</h2>");
     //Prep Time
     let prep_time = new String(file_txt[2].substr(11))
-    createP("<h2>"+"Prep Time: "+prep_time+"</h2>");
+    createP("<h2>"+"Prep Time: "+convert_to_time(prep_time)+"</h2>");
     //Cook Time
-    let cook_time = new String(file_txt[2].substr(11))
-    createP("<h2>"+"Cook Time: "+cook_time+"</h2>");
+    let cook_time = new String(file_txt[3].substr(11))
+    createP("<h2>"+"Cook Time: "+convert_to_time(cook_time)+"</h2>");
     //Servings
     let serves = new String (file_txt[4].substr(7));
     createP("<h2>"+"Serves: "+serves+"</h2>");
@@ -93,6 +93,29 @@ function recipe_text(file_txt){
         }
         createP(credit_html)
     }
+}
+
+
+function convert_to_time(time){
+    console.log(time)
+    var text = ""
+    let time_split= time.split(":")
+    console.log(time_split)
+    if (time_split[0] =="1"){
+        text += time_split[0] + " hour "
+    }else if (time_split[0] != "0"){
+        text += time_split[0] + " hours "
+    }
+
+    if (time_split[1] != "00"){
+        if (time_split[1][0] == "0"){
+            text += time_split[1][1] + " minutes"
+        }else{
+            text += time_split[1] + " minutes"
+        }
+        
+    }
+    return text
 }
 
 // function add_recipe(){

@@ -1,7 +1,7 @@
 Biscoff Cake
 Category: Dessert
-Prep Time: 5 minutes
-Cook Time: 20 minutes
+Prep Time: 0:05
+Cook Time: 0:20
 Serves: 10
 Ingredients:
 400g Biscoff Paste
