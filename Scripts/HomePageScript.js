@@ -32,8 +32,9 @@ function setup(){
                 html_code += "<a class='recipe-box' onclick='select_recipe("
                 html_code += '"' + recipe[0] + '"'
                 html_code += ")'>"
-                html_code += "<h3>" + recipe_name + "</h3></a>"
-                
+                html_code += "<h3>" + recipe_name + "</h3>"
+                html_code += "<p>Prep Time: " + convert_to_time(recipe[2]) + "</p>"
+                html_code += "<p>Cook Time: " + convert_to_time(recipe[3]) + "</p></a>"
 
             }
         }
@@ -46,4 +47,27 @@ function setup(){
 
 function select_recipe(filename){
     location.href = "recipePage.html?"+filename
+}
+
+
+function convert_to_time(time){
+    console.log(time)
+    var text = ""
+    let time_split= time.split(":")
+    console.log(time_split)
+    if (time_split[0] =="1"){
+        text += time_split[0] + " hour "
+    }else if (time_split[0] != "0"){
+        text += time_split[0] + " hours "
+    }
+
+    if (time_split[1] != "00"){
+        if (time_split[1][0] == "0"){
+            text += time_split[1][1] + " minutes"
+        }else{
+            text += time_split[1] + " minutes"
+        }
+        
+    }
+    return text
 }
