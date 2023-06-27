@@ -22,7 +22,9 @@ function preload(){
 function setup(){
     noCanvas();
     recipe_text(file_txt);
+    base_value()
 }
+
 
 function recipe_text(file_txt){
     //Recipe Title
@@ -39,7 +41,8 @@ function recipe_text(file_txt){
     //Servings
     let serves = new String (file_txt[4].substr(7));
     createP("<h2 id ='serving' data-value = "+ serves+">"+"Serves: "+serves+"</h2>");
-
+    createP("<button onclick='decrement_serving()'> - </button>")
+    createP("<button onclick='increment_serving()'> + </button>")
     createP("<h2>Ingredients:</h2>")
 
 
@@ -56,7 +59,7 @@ function recipe_text(file_txt){
             ingredients += "<h3>" + file_txt[i] + "</h3>"
             ingredients += "<ul class='ingredients'>"
         }else{
-            ingredients += "<li id = 'ingredient' value = "+ null+">"+file_txt[i] + "</li>"
+            ingredients += "<li class = 'ingredient' data-value = "+ null+">"+file_txt[i] + "</li>"
         }
         
     }
@@ -118,20 +121,28 @@ function convert_to_time(time){
     }
     return text
 }
-const units = ["g", "kg", "oz", "l", "ml"]
+
+function base_value(){
+    var ingredient_lists = document.getElementsByClassName("ingredient")
+    for (let i = 0; i < ingredient_lists.length; i++){
+        var ingredient_text = ingredient_lists[i].innerHTML
+        ingredient_lists[i].dataset.value = calculate_base_value(ingredient_text,parseInt(document.getElementById("serving").dataset.value))
+    }
+    
+}
+
+const units = ["g", "kg", "oz", "l", "ml", "tsp", "tbsp"]
 
 function calculate_base_value(str, serving){
     var str_split = str.split(" ")
-    console.log(str_split[0])
     if (isdigit(str_split[0])){
-        console.log(str_split[0])
-        return parseFloat(str_split[0])
+        return formatNumber(parseFloat(str_split[0])/serving).toString() + ","
     }else{
         for (let i =0; i < units.length; i++){
             if (str_split[0].includes(units[i])){
                 let value = str_split[0].substr(0, (str_split[0].length - units[i].length))
                 if (isdigit(value)){
-                    return (value)
+                    return formatNumber(parseFloat(value)/serving).toString() + ","+units[i]
                 }
             }
         }
@@ -142,22 +153,65 @@ function isdigit(str) {
     return /^[0-9]+$/.test(str);
 }
 
+function formatNumber(num){
+    if (num != ""){
+        if (num % 1 == 0){
+            return Math.floor(num)
+        }else{
+            return num.toFixed(2)
+        }
+    }
+    
+    return "null"  
+}
+
+function update_ingredient_amounts(){
+    var ingredient_lists = document.getElementsByClassName("ingredient")
+    for (let i = 0; i < ingredient_lists.length; i++){
+        var ingredient_text = ingredient_lists[i].innerHTML
+        var ingredient_text_split = ingredient_text.split(" ")
+        var ingredient_value = ingredient_lists[i].dataset.value
+        var updated_text = ""
+        var ingredient_start = 1
+        if (ingredient_value == "null"){
+            ingredient_start = 0
+        }else{
+            ingredient_value = ingredient_value.split(",")
+            console.log(ingredient_value)
+            var serving = document.getElementById("serving").dataset.value
+            var updated_ingredient_value = formatNumber(parseFloat(ingredient_value[0]) * serving)
+            
+            updated_text = updated_ingredient_value + ingredient_value[1] + " "   
+        }
+        
+        
+        for (let j = ingredient_start; j < ingredient_text_split.length; j++){
+            updated_text += ingredient_text_split[j] + " "
+        }
+
+        ingredient_lists[i].innerHTML = updated_text
+    }
+}
+    
+
 function increment_serving(){
     var servingElement = document.getElementById("serving")
     var servingValue = parseInt(servingElement.dataset.value) + 1
     servingElement.innerHTML = "Serves: " + servingValue
     servingElement.dataset.value = servingValue
+    update_ingredient_amounts()
 }
 
 function decrement_serving(){
     
     var servingElement = document.getElementById("serving")
-    var servingValue = parseInt(servingElement.dataset.value) + 1
-    if (servingValue < 0){
-        servingValue = 0
+    var servingValue = parseInt(servingElement.dataset.value) - 1
+    if (servingValue < 1){
+        servingValue = 1
     }
     servingElement.innerHTML = "Serves: " + servingValue
     servingElement.dataset.value = servingValue
+    update_ingredient_amounts()
 }
 // function add_recipe(){
 //     var new_txt = sessionStorage.getItem('recipe_list') + ", " + filename

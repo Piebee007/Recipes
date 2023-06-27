@@ -53,10 +53,8 @@ function select_recipe(filename){
 
 
 function convert_to_time(time){
-    console.log(time)
     var text = ""
     let time_split= time.split(":")
-    console.log(time_split)
     if (time_split[0] =="1"){
         text += time_split[0] + " hour "
     }else if (time_split[0] != "0"){
