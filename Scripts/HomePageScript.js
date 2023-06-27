@@ -33,8 +33,10 @@ function setup(){
                 html_code += '"' + recipe[0] + '"'
                 html_code += ")'>"
                 html_code += "<h3>" + recipe_name + "</h3>"
-                html_code += "<p>Prep Time: " + convert_to_time(recipe[2]) + "</p>"
-                html_code += "<p>Cook Time: " + convert_to_time(recipe[3]) + "</p></a>"
+                html_code += "<p>Prep: " + convert_to_time(recipe[2]) + " | "   +   "Cook: " + convert_to_time(recipe[3]) + "</p></a>"
+
+                // html_code += "<p>Prep Time: " + convert_to_time(recipe[2]) + "</p>"
+                // html_code += "<p>Cook Time: " + convert_to_time(recipe[3]) + "</p></a>"
 
             }
         }

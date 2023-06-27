@@ -6,7 +6,7 @@ unique_categories = []
 file_array = glob.glob('Recipes/*.txt')
 ingredients = ""
 for file_name in file_array:
-    ingredients += file_name[8:len(file_name)-4] + "/n"
+    ingredients += file_name[8:len(file_name)-4] + "\n"
     file = open(file_name, "r")
     ingredient_section = False
     for line in file:

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add or Subtract Input Value</title>
+  <script>
+    function increment() {
+      var input = document.getElementById('myInput');
+      input.value = parseInt(input.value) + 1;
+    }
+    
+    function decrement() {
+      var input = document.getElementById('myInput');
+      input.value = parseInt(input.value) - 1;
+    }
+  </script>
+</head>
+<body>
+  <h2>Add or Subtract Input Value</h2>
+  <input type="number" id="myInput" value="0">
+  <br><br>
+  <button onclick="increment()">+</button>
+  <button onclick="decrement()">-</button>
+</body>
+</html>

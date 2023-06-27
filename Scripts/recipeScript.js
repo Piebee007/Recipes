@@ -38,7 +38,8 @@ function recipe_text(file_txt){
     createP("<h2>"+"Cook Time: "+convert_to_time(cook_time)+"</h2>");
     //Servings
     let serves = new String (file_txt[4].substr(7));
-    createP("<h2>"+"Serves: "+serves+"</h2>");
+    createP("<h2 id ='serving' data-value = "+ serves+">"+"Serves: "+serves+"</h2>");
+
     createP("<h2>Ingredients:</h2>")
 
 
@@ -55,7 +56,7 @@ function recipe_text(file_txt){
             ingredients += "<h3>" + file_txt[i] + "</h3>"
             ingredients += "<ul class='ingredients'>"
         }else{
-            ingredients += "<li>"+file_txt[i] + "</li>"
+            ingredients += "<li id = 'ingredient' value = "+ null+">"+file_txt[i] + "</li>"
         }
         
     }
@@ -117,7 +118,47 @@ function convert_to_time(time){
     }
     return text
 }
+const units = ["g", "kg", "oz", "l", "ml"]
 
+function calculate_base_value(str, serving){
+    var str_split = str.split(" ")
+    console.log(str_split[0])
+    if (isdigit(str_split[0])){
+        console.log(str_split[0])
+        return parseFloat(str_split[0])
+    }else{
+        for (let i =0; i < units.length; i++){
+            if (str_split[0].includes(units[i])){
+                let value = str_split[0].substr(0, (str_split[0].length - units[i].length))
+                if (isdigit(value)){
+                    return (value)
+                }
+            }
+        }
+    }
+    return null
+}
+function isdigit(str) {
+    return /^[0-9]+$/.test(str);
+}
+
+function increment_serving(){
+    var servingElement = document.getElementById("serving")
+    var servingValue = parseInt(servingElement.dataset.value) + 1
+    servingElement.innerHTML = "Serves: " + servingValue
+    servingElement.dataset.value = servingValue
+}
+
+function decrement_serving(){
+    
+    var servingElement = document.getElementById("serving")
+    var servingValue = parseInt(servingElement.dataset.value) + 1
+    if (servingValue < 0){
+        servingValue = 0
+    }
+    servingElement.innerHTML = "Serves: " + servingValue
+    servingElement.dataset.value = servingValue
+}
 // function add_recipe(){
 //     var new_txt = sessionStorage.getItem('recipe_list') + ", " + filename
 //     sessionStorage.setItem('recipe_list', new_txt)
