@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>List Manipulation</title>
+  <style>
+    .selected {
+      background-color: yellow;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .up-button,
+    .down-button {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      margin: 2px;
+    }
+    .button-container button {
+      display: block;
+      margin: 2px;
+    }
+  </style>
+</head>
+<body>
+  <h1>List Manipulation</h1>
+
+  <ul id="myList">
+    <li>
+      Item 1
+      <div class="button-container">
+        <button class="up-button" onclick="moveUp(this)">&#9650;</button>
+        <button class="down-button" onclick="moveDown(this)">&#9660;</button>
+      </div>
+    </li>
+    <li>
+      Item 2
+      <div class="button-container">
+        <button class="up-button" onclick="moveUp(this)">&#9650;</button>
+        <button class="down-button" onclick="moveDown(this)">&#9660;</button>
+      </div>
+    </li>
+    <li>
+      Item 3
+      <div class="button-container">
+        <button class="up-button" onclick="moveUp(this)">&#9650;</button>
+        <button class="down-button" onclick="moveDown(this)">&#9660;</button>
+      </div>
+    </li>
+    <li>
+      Item 4
+      <div class="button-container">
+        <button class="up-button" onclick="moveUp(this)">&#9650;</button>
+        <button class="down-button" onclick="moveDown(this)">&#9660;</button>
+      </div>
+    </li>
+    <li>
+      Item 5
+      <div class="button-container">
+        <button class="up-button" onclick="moveUp(this)">&#9650;</button>
+        <button class="down-button" onclick="moveDown(this)">&#9660;</button>
+      </div>
+    </li>
+  </ul>
+
+  <script>
+    function moveUp(button) {
+      var listItem = button.parentNode.parentNode;
+      var previousItem = listItem.previousElementSibling;
+      var list = listItem.parentNode;
+      
+      if (previousItem) {
+        list.insertBefore(listItem, previousItem);
+      }
+    }
+
+    function moveDown(button) {
+      var listItem = button.parentNode.parentNode;
+      var nextItem = listItem.nextElementSibling;
+      var list = listItem.parentNode;
+      
+      if (nextItem) {
+        list.insertBefore(nextItem, listItem);
+      }
+    }
+  </script>
+</body>
+</html>

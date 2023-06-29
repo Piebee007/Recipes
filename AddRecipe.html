@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="javascript" type="text/javascript"
+    src="Scripts/p5.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      form {
+        max-width: 600px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .text-input,
+      textarea {
+        /* width: 2fr; */
+        padding: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      .time-container {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .time-container label,
+    .time-container input {
+        display: inline;
+    }
+    .ingredient-container {
+      margin-bottom: 10px;
+    }
+
+    .ingredient-container input,
+    .ingredient-container select {
+      margin-right: 5px;
+    }
+    </style>
+  </head>
+  <body>
+      <label for="recipeTitle">Recipe Title:</label>
+      <input class = "text-input" type="text" id="recipeTitle" name="recipeTitle"><br>
+
+      <label for="recipeCategory">Category:</label>
+      <input class = "text-input" type="text" id="recipeCategory" name="recipeCategory"><br>
+
+      <div class="time-container">
+        <label for="prepHours">Prep Time:</label>
+        <input class = "text-input" type="number" id="prepHours" name="prepHours" style="width: 40px; text-align: center;"placeholder="HH"> 
+        <span  style="font-weight: bold;">:</span> 
+        <input class = "text-input"type="number" id="prepMinutes" name="prepMinutes" style="width: 40px; text-align: center;">
+      </div>
+      <div class="time-container">
+        <label for="cookHours">Cook Time:</label>
+        <input class = "text-input" type="number" id="cookHours" name="cookHours" style="width: 40px; text-align: center;"> 
+        <span style="font-weight: bold;">:</span> 
+        <input class = "text-input" type="number" id="cookMinutes" name="cookMinutes" style="width: 40px; text-align: center;">
+      </div>
+
+      <div>
+        <label for="ingredients">Ingredients:</label>
+        <div id="ingredient-list">
+          <div class="ingredient-container">
+            <div class = "ingredient-subcontainer">
+                <input type="number" class="ingredient-quantity" placeholder="Quantity">
+                <select class="ingredient-unit">
+                    <option value="Unit">Unit</option>
+                    <option value="N/A">N/A</option>
+                    <option value="g">g</option>
+                    <option value="kg">kg</option>
+                    <option value="ml">ml</option>
+                    <option value="L">L</option>
+                    <option value="tsp">tsp</option>
+                    <option value="tbsp">tbsp</option>
+                </select>
+                <input type="text" class="ingredient-name" placeholder="Ingredient">
+            </div>
+            
+          </div>
+        </div>
+        <button id="add-ingredient-btn" onclick = "add_ingredient()">Add Ingredient</button>
+        <button id="add-subheading-btn" onclick = "add_ingredient_heading()">Add Ingredient Subheading</button>
+      </div>
+
+      <label for="recipeInstructions">Instructions:</label>
+      <textarea  id="recipeInstructions" name="recipeInstructions" rows="4" cols="50"></textarea><br>
+
+      <label for="recipeCredit">Credit:</label>
+      <input class = "text-input" type="text" id="recipeCredit" name="recipeCredit"><br>
+
+      <input type="submit" value="Save" onclick = "save_data()">
+      <input type="submit" value="Preview" onclick="preview()">
+
+      <div id="previewContainer"></div>
+    <script>
+        function add_ingredient(){
+            //var ingredientList = document.getElementById("ingredient-list");
+            
+            var ingredientLists = document.getElementsByClassName("ingredient-container")
+            var ingredientList = ingredientLists[ingredientLists.length-1]
+
+            var ingredientContainer = document.createElement("div");
+            ingredientContainer.className = "ingredient-subcontainer";
+            
+            var quantityInput = document.createElement("input");
+            quantityInput.type = "text";
+            quantityInput.className = "ingredient-quantity";
+            quantityInput.placeholder = "Quantity";
+            
+            var unitSelect = document.createElement("select");
+            unitSelect.className = "ingredient-unit";
+            var unitOptions = ["Unit","N/a","g", "kg", "ml", "L", "tsp", "tbsp"];
+            for (var i = 0; i < unitOptions.length; i++) {
+                var option = document.createElement("option");
+                option.value = unitOptions[i];
+                option.text = unitOptions[i];
+                unitSelect.appendChild(option);
+            }
+            
+            var nameInput = document.createElement("input");
+            nameInput.type = "text";
+            nameInput.className = "ingredient-name";
+            nameInput.placeholder = "Ingredient";
+            
+            ingredientContainer.appendChild(quantityInput);
+            ingredientContainer.appendChild(unitSelect);
+            ingredientContainer.appendChild(nameInput);
+            
+            ingredientList.appendChild(ingredientContainer);
+        }
+
+        function add_ingredient_heading(){
+            var ingredientList = document.getElementById("ingredient-list");
+      
+            var ingredientContainer = document.createElement("div");
+            ingredientContainer.className = "ingredient-container";
+
+            var subheadingInput = document.createElement("input");
+            subheadingInput.type = "text";
+            subheadingInput.className = "ingredient-subheading";
+            subheadingInput.placeholder = "Subheading";
+
+            ingredientContainer.appendChild(subheadingInput);
+
+            ingredientList.appendChild(ingredientContainer);
+        }
+
+        function preview(){
+            
+            //console.log(take_form_data())
+            var previewText = take_form_data('html');
+            var previewContainer = document.getElementById("previewContainer");
+            var previewElement = document.createElement("div");
+            previewElement.innerHTML = previewText;
+            previewContainer.appendChild(previewElement);
+        }
+
+        function save_data(){
+            var text = take_form_data('text')
+            var blob = new Blob([text[0]], { type: "text/plain" });
+            console.log(text)
+            //Create a temporary <a> element and set its attributes
+            var downloadLink = document.createElement("a");
+            downloadLink.href = URL.createObjectURL(blob);
+            downloadLink.download = text[1];
+
+            // Programmatically trigger a click event on the download link
+            downloadLink.click();
+
+            // Clean up the URL object
+            URL.revokeObjectURL(downloadLink.href);
+        }
+        function take_form_data(format){
+            var string_data = ""
+            var text_file = ""
+            var recipe_title = document.getElementById("recipeTitle").value
+            string_data += "<h1>" + recipe_title + "</h1>"
+            text_file += recipe_title + "\n"
+
+            var recipeCategory = document.getElementById("recipeCategory").value
+            string_data += "<h2>Category: " + recipeCategory+ "</h2>"
+            text_file += "Category: "+recipeCategory + "\n"
+
+            var recipePrepTime = document.getElementById("prepHours").value + ":" +  document.getElementById("prepMinutes").value
+            string_data += "<h2>Prep Time: " +convert_to_time(recipePrepTime)+ "</h2>"
+            text_file += "Prep Time: " +convert_to_time(recipePrepTime) + "\n"
+            
+            var recipeCookTime = document.getElementById("cookHours").value  + ":" +  document.getElementById("cookMinutes").value 
+            string_data += "<h2>Cook Time: " +convert_to_time(recipeCookTime)+ "</h2>"
+            text_file += "Cook Time: " +convert_to_time(recipeCookTime) + "\n"
+            //Serving
+
+
+            //Ingredient Section
+            string_data += "<h2>Ingredients: </h2><ul>"
+            text_file += "Ingredients:\n"
+
+            
+            var ingredient_sections = document.getElementsByClassName("ingredient-container")
+            for (let j = 0; j < ingredient_sections.length; j++){
+                var ingredients = ingredient_sections[j].getElementsByClassName("ingredient-subcontainer")
+                var sub_heading = ingredient_sections[j].getElementsByClassName("ingredient-subheading")[0]
+                if (sub_heading != undefined){
+                    console.log("subheading:" +sub_heading.value)
+                    text_file += sub_heading.value
+                    string_data += "</ul>" + "<h3>" + sub_heading.value + "</h3>"+ "<ul>"
+                }
+                for (let i = 0; i < ingredients.length; i++){
+                    let ing_quantity = ingredients[i].getElementsByClassName("ingredient-quantity")[0].value
+                    let ing_unit_html = ingredients[i].getElementsByClassName("ingredient-unit")[0]
+                    let ing_unit = ing_unit_html.options[ing_unit_html.selectedIndex].value
+                    if (ing_unit == "Unit" || ing_unit == "N/A"){
+                        ing_unit = ""
+                    }
+                    let ing_name = ingredients[i].getElementsByClassName("ingredient-name")[0].value
+                    text_file += ing_quantity +  ing_unit + " " + ing_name + "\n"
+                    
+                    string_data += "<li data-value='null'>" + ing_quantity +  ing_unit + " " + ing_name + "</li>"
+            }
+            string_data += "</ul>"
+            }
+            
+        
+            //Instruction section
+            text_file += "Instructions:"+"\n"
+            string_data += "<h2>Instructions:</h2><ol>"
+            var instruction_text = document.getElementById("recipeInstructions").value
+            instruction_text = instruction_text.split("\n")
+            for (let i=0; i<instruction_text.length;i++){
+                if (instruction_text[i].charAt(instruction_text[i].length-1) == ":"){
+                    string_data += "<h3>" + instruction_text[i] + "</h3>"
+                }else{
+                    string_data += "<li>" + instruction_text[i] + "</li>"
+                }
+                text_file += instruction_text[i]+"\n"
+            }
+            string_data += "</ol>"
+
+            //Credit Section
+            var credit = document.getElementById("recipeCredit").value
+            if (credit != ""){
+                text_file += "Credit: " + credit
+                string_data += "<p> Credit: " + credit + "</p>"
+            }
+            
+
+            if (format == "html"){
+                return string_data
+            }else{
+                console.log(text_file)
+                return [text_file, recipe_title+".txt"]
+            }
+        }
+        function convert_to_time(time){
+            console.log(time)
+            var text = ""
+            let time_split= time.split(":")
+            console.log(time_split)
+            if (time_split[0] =="1"){
+                text += time_split[0] + " hour "
+            }else if (time_split[0] != "0"){
+                text += time_split[0] + " hours "
+            }
+
+            if (time_split[1] != "00"){
+                if (time_split[1][0] == "0"){
+                    text += time_split[1][1] + " minutes"
+                }else{
+                    text += time_split[1] + " minutes"
+                }
+                
+            }
+            return text
+        }
+    // </script>
+  </body>
+</html>
