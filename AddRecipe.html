@@ -90,6 +90,9 @@
         <input class = "text-input" type="number" id="cookMinutes" name="cookMinutes" style="width: 40px; text-align: center;">
       </div>
 
+      <label for="recipeServes">Serves:</label>
+      <input class = "text-input" type="number" id="recipeServes" name="recipeCategory" min="1"><br>
+
       <div>
         <label for="ingredients">Ingredients:</label>
         <div id="ingredient-list">
@@ -136,7 +139,7 @@
             ingredientContainer.className = "ingredient-subcontainer";
             
             var quantityInput = document.createElement("input");
-            quantityInput.type = "text";
+            quantityInput.type = "number";
             quantityInput.className = "ingredient-quantity";
             quantityInput.placeholder = "Quantity";
             
@@ -222,7 +225,9 @@
             string_data += "<h2>Cook Time: " +convert_to_time(recipeCookTime)+ "</h2>"
             text_file += "Cook Time: " +convert_to_time(recipeCookTime) + "\n"
             //Serving
-
+            var recipeServes =  document.getElementById("recipeServes").value 
+            string_data += "<h2>Serves: " +recipeServes+ "</h2>"
+            text_file += "Serves: " + recipeServes+ "\n"
 
             //Ingredient Section
             string_data += "<h2>Ingredients: </h2><ul>"
