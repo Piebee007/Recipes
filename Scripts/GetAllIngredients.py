@@ -22,7 +22,7 @@ for file_name in file_array:
             
         
 
-    ingredients += "\n\n"
+    ingredients += "\n"
     
     file.close()
 

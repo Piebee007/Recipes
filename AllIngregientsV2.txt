@@ -1,0 +1,370 @@
+Bangers&MashWithOnionGravy
+2%%Pork Sausages
+1%tbsp%butter
+0.5%%Onions, thinly sliced
+2%%baking potatoes, chopped into 2cm chunks
+0.25%tbsp%flour
+1.5%%thyme springs
+150%ml%beef stock 
+0.25%%Small bunch of fresh Parsley, finely chopped
+
+BeckysBbqPasta
+1%%Chicken Breast, cut into bite size pieces
+20%g%Bacon, cut into 1cm^2 
+75%g%Pasta (Rigatoni)
+35%g%BBQ Sauce
+0.5%%Medium Onion, diced
+0.5%%Garlic Clove, finely chopped
+0.5%%tsp BBQ seasoning
+0.5%%tsp Oregano
+0.5%%tsp Garlic Granuoes
+30%g%Soft Cheese
+15%g%Cheddar Cheese
+50%ml%Pasta Water
+
+BeerCanChicken
+0.2%%Large whole chicken
+0.4%%Cans of light beer
+0.4%%cloves of garlic
+0.2%%tbsp garlic powder
+0.2%%tbsp dried oregano
+0.2%%tbsp salt
+0.2%%tbsp ground black pepper
+0.2%%red onion
+1%%Potatoes
+0.8%%Carrots
+40%g%Frozen peas
+40%g%Green Beans
+
+BiscoffCake
+40%g%Biscoff Paste
+0.3%%Eggs
+0.2%tsp%baking powder
+10%g%white chocolate
+
+BreakfastQuesadillas
+2%%rashers of bacon
+1.5%%eggs
+1%%Plain Wraps
+37.5%g%Red Leicester or Cheddar cheese, Grated
+
+ButternutRisotto
+87.5%g%Risotto Rice
+2%%rashers of Bacon
+0.5%%garlic cloves
+5%g%Parsley
+150%g%Diced butternut squash
+375%ml%chicken stock
+0.5%%Onions
+12.5%g%Grated Italian Style Cheese
+50%g%Chicken Scraps
+
+Chicken&ChorizoPasta
+75%g%Pasta (Rigatoni)
+25%g%Diced Chorizo
+1%%Chicken Breasts, Cubed
+0.5%%Diced Onions
+1%%Garlic Cloves, Chopped
+0.5%tsp%Paprika
+1%tbsp%Tomato Puree
+50%ml%Single Cream
+2%%Handfulls of Spinach
+10%g%Grated Parmesan
+
+ChickenBurgers
+1%%chicken Breasts
+2%%tbsp BBQ seasoning
+2%%Burger buns
+50%g%Chips 
+1%%Lettuce leaves
+
+ChickenFajitas
+125%g%chicken breasts, sliced into thin strips
+0.25%%onion, thinly sliced
+0.5%%cloves of garlic, minced
+2%%tortillas
+Optional:
+0.25%%bell pepper, thinly sliced
+0.5%tsp%chili powder
+0.25%tsp%ground cumin
+0.25%tsp%Paprika
+0.25%%Lime, juiced
+
+ChickenFriedRice
+100%g%Chicken Breast, cubed and optionally marinated in soysauce and garlic
+100%g%Rice, cooked and cooled
+1%%Eggs, beaten
+0.25%%Carrot, cut into small chunks
+0.25%%Onion, Diced
+0.5%%Hand fulls of Frozen Peas
+0.5%%Spring Onions, sliced
+0.5%%Garlic Cloves, roughly chopped
+0.25%tsp%Seasame Oil
+0.75%tbsp%Soy sauce
+
+ChickenGyros
+0.25%kg%chicken legs
+125%ml%Natural Yogurt
+0.25%%Red onion
+0.25%%cucumber
+62.5%g%Self raising flour
+0.5%%large tomatoes
+0.25%%lemon
+0.25%%garlic Bulb
+0.25%%packet of roast veg mix
+
+ChillieLoadedWedges
+125%g%Beef mince
+0.25%%beef stock cube
+0.5%%cloves of garlic
+0.5%%Bell peppers
+225%g%Potatoes
+100%g%Tomato Passata
+30%g%Cheddar Cheese
+0.25%%Tin Black beans
+0.5%%Carrots
+0.25%%Onion
+75%ml%water
+
+Chips&CurrySauce
+200%g%Coconut Milk
+0.5%%tbsp Plain Flour
+0.5%%chicken stock cube 
+0.5%%carrot
+0.5%%Onion
+5%g%Ginger, grated
+1.5%%cloves of garlic
+1%%tbsp mild curry powder
+1%%tbsp soy sauce
+2%%Jacket Potatoes
+
+ChocolateFondue
+12.5%g%Butter
+12.5%g%plain chocolate, broken into small chunks
+0.25%tbsp%cocoa powder
+0.5%tbsp%Golden Syrup
+
+ChorizoHash
+60%g%Chorizo Slices, cut into thin strips
+2%%Baking Potatoes, cut into litle chunks
+2%%Medium Eggs
+0.5%%Red Chilli, diced
+0.5%%Onion, diced
+0.5%%Spring Onion, sliced
+0.5%%Red Pepper, diced
+
+CowboyStew
+50%g%bacon, chopped into pieces
+2%%Pork Sausages
+0.25%%onion, finely chopped
+0.25%%Red chilli, deseeded and finely chopped
+0.5%%Baking potatoes, cut into 2cm chunks
+100%g%tin chopped Tomatoes
+Optional:
+
+FrenchOnionSoup
+1.75%%Onions, thinly sliced
+1%%Garlic cloves, finely chopped
+0.25%%heaped tbsp plain flour
+1%%tbsp Worcestershire sauce
+0.25%%tbsp fresh thyme
+237.5%ml%Beef stock 
+31.25%g%ball mozzarella
+0.25%%crusty roll
+
+JensonsFamousCurry
+1%%Chicken Breasts, cubed
+0.25%%Jar of Blue Dragon Thair Red Curry Paste
+0.25%%chicken stock pot
+1%%nests of thin noodles
+0.5%%Red Chillies, chopped
+0.25%%tin of coconut milk
+0.5%tsp%Tumeric
+0.5%tsp%Cumin
+0.5%tbsp%Honey 
+0.5%tbsp%Fish sauce
+
+LambTikkaCurry
+83.33%g%Lamb Mince
+0.33%%handfuls of dried lentils
+66.67%g%Tomato Passata
+0.33%%Carrots, gradet
+25%g%Spinach
+0.17%tsp%Tumeric
+0.5%%Garlic Cloves
+33.33%g%Tikka Curry Paste 
+0.17%%Chicken Stock cube
+33.33%ml%of Water
+
+LoadedJacketPotatoes
+2.67%%Bacon Rashers
+0.67%%Mozzarella Balls
+66.67%g%Cream Cheese
+2.67%%Baking Potatoes
+0.67%%tbsp Chives
+
+Mac&CheeseWithChorizo&Bacon
+16.67%g%Butter
+16.67%g%Plain Flour
+166.67%ml%Milk
+0.33%tsp%Mustard
+0.33%tsp%Smoked Paprika
+0.33%tsp%Cumin
+100%g%Macaroni
+166.67%g%any cheese (Reccomend a combination of Red Leicester and Cheddar)
+
+Meatballs
+6%%Meatballs
+0.25%%Jar of bolognese sauce
+50%g%Broccoli
+37.5%g%of frozen peas
+0.25%%teaspoon Mixed herbs
+0.25%%Beef stock cube, crumbled
+87.5%g%Pasta (such as spaghetti, penne or fusilli)
+0.25%%Cattor, grated
+0.25%%tsp Grated Parmesan cheese, for serving
+
+MincemeatShortbread
+4.69%g%semolina
+7.81%g%caster sugar
+12.5%g%plain flour
+12.5%g%butter
+50%g%Mincemeat
+7.81%g%Plain flour
+6.25%g%butter
+6.25%g%caster sugar
+0.06%%egg yolk
+
+NaanBreadPizza
+1%%Naan Breads
+2%%tbsp tomato puree
+0.5%tsp%Mixed herbs
+0.5%tsp%Garlic Granules
+50%g%Cheese, grated
+50%g%Peperoni
+
+PastaBake
+83.33%g%Rigatoni Pasta
+0.33%%Jar Tomato and Pepperoni Pasta Bake Sauce
+0.33%%Pack of German Salami
+0.67%%Mozzarella Balls
+33.33%g%Grated Cheddar Cheese
+0.67%%Cloves of garlic
+0.33%%tbsp Balsamic Vinegar
+0.33%%tsp mixed herbs
+0.33%%tsp Oregano
+
+PeanutButter&ChocolateOatBars
+31.67%g%Peanut Butter
+15.83%g%Honey
+33.33%g%Porridge Oats
+16.67%g%milk chocolate, broken into chunks
+3.33%g%Salted Peanuts, roughly chopped
+
+PeriPeriChicken
+0.4%kg%whole chicken
+30%ml%water or chicken stock
+1%%Garlic cloves
+10%ml%vegetable oil
+5%ml%white or red wine vinegar
+0.6%%tbsp soy sauce
+0.2%%tbsp Tobasco sauce
+0.4%%tbsp smoked paprika
+0.6%%tsp dried oregano
+0.2%%tsp caster sugar
+0.2%%tbsp lemon juice
+0.6%%red onions
+100%g%baby new potatoes
+0.8%%corn on the cob
+
+Sausage&TomatoPasta
+0.25%%pack of good quality sausages (about 400g)
+0.25%%tin of plumb tomatoes (400g)
+0.25%%large onion, finely chopped
+0.75%%garlic cloves, minced
+7.5%g%fresh basil leaves, chopped
+0.5%%tbsp cream cheese
+100%g%pasta (penne or fusilli)
+0.25%tsp%Grated Parmesan cheese, to serve
+
+SausageCasserole
+2%%Pork Sausages
+0.25%%Onion, sliced
+0.5%%Garlic Cloves, finely chopped
+0.75%%Baking potatoes, chopped into 4cm chunks
+1%%Carrots, chopped into 4cm chuncks
+0.25%tbsp%tomato puree
+0.25%tbsp%Plain Flour
+0.25%L%chicken stock (made from stock cubes)
+0.25%tbsp%ready-made English Mustard 
+100%g%tin butter beans, drained
+5%g%Fresh parsley, chopped
+
+SausagePastaWine
+1.5%%caramelised onion sausages
+0.25%%large onion, finely chopped
+100%g%of tinned tomatoes
+75%g%Pasta (fusilli or farfalle)
+37.5%g%of frozen peas
+0.25%tsp%vegetable bullion powder
+0.25%tsp%gravy granules
+0.25%tsp%Grated parmesan cheese to serve 
+
+SesameSeedChicken
+1%%Chicken Breasts
+35%g%Cornflour
+1%%eggs
+2.5%%tsp paprika
+0.5%%tsp of garlic granules
+1%%Garlic cloves
+0.5%%tbsp sesame oil
+0.5%%tbsp rice wine vinegar
+0.5%%tbsp dark brown sugar
+0.5%%tbsp ketchup
+0.5%%tbsp honey
+1.5%%tbsp sweet chilli sauce
+1.5%%tbsp Soy sauce (to taste)
+0.5%%tbsp Sesame seeds
+1%%spring onions
+75%g%Rice
+75%g%Frozen Peas
+
+SlowCookerHoneyGarlicNoodles
+1%%Chicken Breasts
+3.5%%tbsp Soy Sauce
+0.5%%tbsp Hoisin Sauce
+3.5%%tbsp honey
+0.5%%tbsp ginger
+0.5%%tbsp Cornflour
+0.5%%tbsp water
+0.5%%Chicken Stock cube
+50%ml%water
+1%%nests of Noodles
+1%%Spring Onion, sliced
+
+SteakSandwiches
+2%%Steaks
+2%%Torpedo Buns
+1%%Onion, chopped
+1%%Mozeralla Ball
+2%tbsp%Butter
+1%tbsp%Parsley, finely chopped
+2%%Garlic cloves, finely chopped
+
+ToffeeSauce
+31.25%g%Butter
+25%g%Light muscovado sugar
+1.5%tbsp%double cream
+0.25%%Apple, sliced
+0.25%%Banana, sliced
+0.25%%kiwi, sliced
+
+TomsTrayBake
+1%%chicken breasts
+0.25%%Spanish chorizo ring
+0.25%%butternut squash, peeled and diced into 2cm cubes
+125%g%baby potatoes, halved if too large
+1%%cloves of garlic, roughly chopped
+0.25%tsp%thyme
+Optional:
+

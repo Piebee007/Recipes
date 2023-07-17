@@ -59,10 +59,88 @@
     .ingredient-container select {
       margin-right: 5px;
     }
+
+    /* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  .time-container {
+    display: block;
+  }
+
+  .time-container input {
+    margin-bottom: 10px;
+  }
+
+  .ingredient-subcontainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ingredient-subcontainer input,
+  .ingredient-subcontainer select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Adjust styles for tablet-sized screens */
+  .time-container {
+    display: flex;
+  }
+
+  .time-container input {
+    margin-bottom: 0;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+  /* Adjust styles for larger screens */
+  .time-container {
+    display: flex;
+  }
+
+  .time-container input {
+    margin-bottom: 0;
+  }
+}
+
     </style>
   </head>
   <body>
-      <h1>Add Recipe</h1>
+    <h1>Add Recipe</h1>
+  <h2>How to Add a Recipe:</h2>
+  <p>Welcome! To add a recipe, please follow these steps:</p>
+
+  <ol>
+    <li>Fill in the required information</li>
+    <li>Add Ingredients:</li>
+    <ul>
+      <li>Click on the "Add Ingredient" button to add an ingredient.</li>
+      <li>For each ingredient, enter the quantity, unit, and ingredient name.</li>
+      <li>Click on the "Add Ingredient Subheading" button to add a subheading for a section of ingredients (e.g., sauce).</li>
+    </ul>
+    <li>Add Instructions:</li>
+    <ul>
+      <li>Enter the recipe instructions, with each line representing a new instruction.</li>
+      <li>If you want to create a subheading within the instructions, write the name of the subheading followed by a ":" at the end.</li>
+      <li>For any optional food items, write the heading "Optional:". </li>
+    </ul>
+    <li>Optional: Provide Credit</li>
+    <ul>
+      <li>If you would like to be credited for the recipe, enter your name or username in the Credit field.</li>
+    </ul>
+    <li>Preview and Save:</li>
+    <ul>
+      <li>Click the "Preview" button to review the filled-out recipe.</li>
+      <li>Make sure all fields are correctly filled.</li>
+      <li>Click the "Save" button to generate a text file of the recipe.</li>
+      <li>Send the text file to the intended recipient.</li>
+    </ul>
+  </ol>
+      <!-- <h1>Add Recipe</h1>
       <h2>How to add a recipe:</h2>
       <p>To add a recipe, fill in the boxes below. </p>
       <p>Click on the "Add Ingredient" button to add additional ingredients.</p>
@@ -70,28 +148,28 @@
        <p> For the instructions, each line is a new instruction. If you want a subheading for the instructions, write the name of the subheading and leave a ":" at the end to show it is a subheading.</p>
        <p> If you would like credit, fill out the box. Otherwise leave it blank.</p> 
        <p> Click Preview to make sure things have been filled out correctly.</p>
-       <p> Then hit save and send the text file to me</p>
+       <p> Then hit save and send the text file to me</p> -->
       <label for="recipeTitle">Recipe Title:</label>
-      <input class = "text-input" type="text" id="recipeTitle" name="recipeTitle"><br>
+      <input class = "text-input" type="text" id="recipeTitle" name="recipeTitle" ><br>
 
       <label for="recipeCategory">Category:</label>
-      <input class = "text-input" type="text" id="recipeCategory" name="recipeCategory"><br>
+      <input class = "text-input" type="text" id="recipeCategory" name="recipeCategory" placeholder="E.g Chicken"><br>
 
       <div class="time-container">
         <label for="prepHours">Prep Time:</label>
-        <input class = "text-input" type="number" id="prepHours" name="prepHours" style="width: 40px; text-align: center;"placeholder="HH"> 
+        <input class = "text-input" type="number" id="prepHours" name="prepHours" style="width: 40px; text-align: center;"placeholder="HH" min = "0"> 
         <span  style="font-weight: bold;">:</span> 
-        <input class = "text-input"type="number" id="prepMinutes" name="prepMinutes" style="width: 40px; text-align: center;">
+        <input class = "text-input"type="number" id="prepMinutes" name="prepMinutes" style="width: 40px; text-align: center;"placeholder="MM" min="0" max="60">
       </div>
       <div class="time-container">
         <label for="cookHours">Cook Time:</label>
-        <input class = "text-input" type="number" id="cookHours" name="cookHours" style="width: 40px; text-align: center;"> 
+        <input class = "text-input" type="number" id="cookHours" name="cookHours" style="width: 40px; text-align: center;"placeholder="HH" min="0"> 
         <span style="font-weight: bold;">:</span> 
-        <input class = "text-input" type="number" id="cookMinutes" name="cookMinutes" style="width: 40px; text-align: center;">
+        <input class = "text-input" type="number" id="cookMinutes" name="cookMinutes" style="width: 40px; text-align: center;"placeholder="MM" min="0" max="60">
       </div>
 
       <label for="recipeServes">Serves:</label>
-      <input class = "text-input" type="number" id="recipeServes" name="recipeCategory" min="1"><br>
+      <input class = "text-input" type="number" id="recipeServes" name="recipeCategory" min="1"placeholder="E.g. 4"><br>
 
       <div>
         <label for="ingredients">Ingredients:</label>
@@ -182,16 +260,18 @@
         }
 
         function preview(){
+            if (validateForm()){
+              var previewText = take_form_data('html');
+              var previewContainer = document.getElementById("previewContainer");
+              var previewElement = document.createElement("div");
+              previewElement.innerHTML = previewText;
+              previewContainer.appendChild(previewElement);
+            }
             
-            //console.log(take_form_data())
-            var previewText = take_form_data('html');
-            var previewContainer = document.getElementById("previewContainer");
-            var previewElement = document.createElement("div");
-            previewElement.innerHTML = previewText;
-            previewContainer.appendChild(previewElement);
         }
 
         function save_data(){
+          if (validateForm()){
             var text = take_form_data('text')
             var blob = new Blob([text[0]], { type: "text/plain" });
             console.log(text)
@@ -205,6 +285,7 @@
 
             // Clean up the URL object
             URL.revokeObjectURL(downloadLink.href);
+          }
         }
         function take_form_data(format){
             var string_data = ""
@@ -285,7 +366,6 @@
             if (format == "html"){
                 return string_data
             }else{
-                console.log(text_file)
                 return [text_file, recipe_title+".txt"]
             }
         }
@@ -310,6 +390,31 @@
             }
             return text
         }
-    // </script>
+        function validateForm() {
+          var recipeTitle = document.getElementById("recipeTitle").value;
+          var recipeCategory = document.getElementById("recipeCategory").value;
+          var prepHours = document.getElementById("prepHours").value;
+          var prepMinutes = document.getElementById("prepMinutes").value;
+          // Add more variables for other fields that require validation
+          console.log(recipeTitle)
+          // Perform validation checks
+          if (recipeTitle == "") {
+            alert("Please enter a recipe title.");
+            return false;
+          }
+          if (recipeCategory == "") {
+            alert("Please enter a recipe category.");
+            return false;
+          }
+          if (prepHours == "" || prepMinutes == "" || isNaN(prepHours) || isNaN(prepMinutes)) {
+            alert("Please enter valid prep time.");
+            return false;
+          }
+          // Add more validation checks for other fields
+
+          // If all validations pass, return true to allow form submission
+          return true;
+        }
+     </script>
   </body>
 </html>

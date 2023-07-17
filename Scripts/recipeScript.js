@@ -40,12 +40,12 @@ function recipe_text(file_txt){
     createP("<h2>"+"Cook Time: "+convert_to_time(cook_time)+"</h2>");
     //Servings
     let serves = new String (file_txt[4].substr(7));
-    createP("<h2 id ='serving' data-value = "+ serves+">"+"Serves: "+serves+"</h2>");
-    createP("<button onclick='decrement_serving()'> - </button>")
-    createP("<button onclick='increment_serving()'> + </button>")
+    let serving_text = "<div class='serving-section'>" + "<h2 id ='serving' data-value = "+ serves+">"+"Serves: "+serves+"</h2>"
+    serving_text += "<div class='buttons'><button onclick='decrement_serving()'> - </button><button onclick='increment_serving()'> + </button>"
+    serving_text += "</div></div>"
+    createP(serving_text)
+
     createP("<h2>Ingredients:</h2>")
-
-
     // Add the ingredients list
     var ingredients = "<ul class='ingredients'>";
     var instruction_start;

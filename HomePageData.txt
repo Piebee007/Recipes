@@ -10,7 +10,7 @@ ChickenBurgers, Chicken, 0:10, 0:15, 25
 ChickenFajitas, Chicken, 0:15, 0:20, 35
 ChickenFriedRice, Chicken, 0:15, 0:15, 30
 ChickenGyros, Chicken, 0:20, 0:45, 65
-ChillieLoadedWedges, Beef, 0:20, 0:45, 65
+ChilliLoadedWedges, Beef, 0:20, 0:45, 65
 Chips&CurrySauce, Potato, 0:15, 0:40, 55
 ChocolateFondue, Dessert, 0:15, 0:10, 25
 ChorizoHash, Chorizo, 0:10, 0:25, 35

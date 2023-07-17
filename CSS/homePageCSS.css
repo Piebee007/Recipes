@@ -28,6 +28,17 @@ nav ul li {
   margin-right: 10px;
 }
 
+nav li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+nav li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
