@@ -1,41 +1,41 @@
-<html>
-  <style>
-    .serving-section {
-  display: flex;
-  align-items: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #generateButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #generateButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Your Shopping List</h1>
+    <p>This is your one-stop destination for managing your shopping needs. You can add, remove, and generate your shopping list easily.</p>
+    <button id="generateButton">Generate Shopping List</button>
 
-#serving {
-  margin-right: 10px;
-}
+    <!-- Your JavaScript code for generating the shopping list goes here -->
 
-.buttons {
-  display: flex;
-}
-
-button {
-  background-color: #f2f2f2;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  color: #333;
-  margin-left: 5px;
-}
-
-button:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-  </style>
-  <div class="serving-section">
-    <h2 id="serving" data-value="4">Serves: 4</h2>
-    <div class="buttons">
-      <button onclick="decrement_serving()">-</button>
-      <button onclick="increment_serving()">+</button>
-    </div>
-  </div>
-  
+</body>
 </html>

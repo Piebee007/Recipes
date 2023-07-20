@@ -9,12 +9,19 @@ def formatNumber(num):
     else: 
         return ""
     
+def isfloat(num):
+    try:
+        float(num)
+        return True
+    except ValueError:
+        return False
+    
 units = ["g", "kg", "oz", "L", "ml", "tsp", "tbsp"]
 def one_portion(line, serving_size):
-    text = ""
+    text = [line]
     value = ""
     recipe_line = line.split(" ")
-    if (recipe_line[0].isdigit()):
+    if (isfloat(recipe_line[0])):
         return formatNumber(float(recipe_line[0])/serving_size), "",recipe_line[1:len(recipe_line)]
     else:
         if (recipe_line[0][len(recipe_line[0])-1] != ":"):
@@ -27,7 +34,7 @@ def one_portion(line, serving_size):
             if "Optional" in recipe_line[0]:
                 return "","", [recipe_line[0] +"\n"]
 
-    return value, "",text
+    return value, "",""
 
 unique_categories = []
 
@@ -46,13 +53,12 @@ for file_name in file_array:
 
         if ingredient_section == True:
             ing_value, ing_unit, ing_text = one_portion(line, serving_size)
-            print(ing_text)
-            
-            if ing_value != "" or ing_text != "":
-                if "Optional:" in ing_text[0]:
-                    ingredients += "Optional:\n"
-                else:
-                    ingredients += str(ing_value) + "%" + ing_unit + "%"+ " ".join(ing_text)
+            #print(ing_text)
+
+            if "Optional" in line:
+                ingredients += line
+            elif (ing_value != "" or ing_text != ""):
+                ingredients += str(ing_value) + "%" + ing_unit + "%"+ " ".join(ing_text)
             #ingredients += line 
         
         if  "Ingredients" in line:
