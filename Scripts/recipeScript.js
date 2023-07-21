@@ -129,7 +129,7 @@ function base_value(){
     
 }
 
-const units = ["g", "kg", "oz", "l", "ml", "tsp", "tbsp"]
+const units = ["g", "kg", "oz", "lbs", "l", "ml", "tsp", "tbsp"]
 
 function calculate_base_value(str, serving){
     var str_split = str.split(" ")

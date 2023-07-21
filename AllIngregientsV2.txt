@@ -1,3 +1,13 @@
+AppleGalette
+1%oz%Plain Flour
+0.75%oz%Butter
+0.25%%Egg Yolks
+0.25%%Drops Vanilla Extract
+0.06%%Lemon Rind
+0.5%oz%Granulated Sugar
+0.75%oz%Icing Sugar
+0.38%tbsp%Boiling Water
+
 Bangers&MashWithOnionGravy
 2%%Pork Sausages
 1%tbsp%butter
@@ -21,8 +31,6 @@ BeckysBbqPasta
 30%g%Soft Cheese
 15%g%Cheddar Cheese
 50%ml%Pasta Water
-%%To Serve:
-%%Grated Parmesan
 
 BeerCanChicken
 0.2%%Large whole chicken
@@ -30,7 +38,7 @@ BeerCanChicken
 0.4%%cloves of garlic
 0.2%%tbsp garlic powder
 0.2%%tbsp dried oregano
-%%1/2 tbsp mixed herbs
+0.1%%tbsp mixed herbs
 0.2%%tbsp salt
 0.2%%tbsp ground black pepper
 0.2%%red onion
@@ -51,7 +59,6 @@ BreakfastQuesadillas
 1%%Plain Wraps
 37.5%g%Red Leicester or Cheddar cheese, Grated
 Optional:
-%%Ketchup or BBQ sauce
 
 ButternutRisotto
 87.5%g%Risotto Rice
@@ -76,11 +83,10 @@ CajunChicken
 
 Chicken&ChorizoPasta
 75%g%Pasta (Rigatoni)
-25%g%Diced Chorizo
+25%g%Chorizo, Diced
 1%%Chicken Breasts, Cubed
-0.5%%Diced Onions
+0.5%%Onion, Diced
 1%%Garlic Cloves, Chopped
-%%Sprinkle of chili flakes
 0.5%tsp%Paprika
 1%tbsp%Tomato Puree
 50%ml%Single Cream
@@ -101,22 +107,13 @@ ChickenFajitas
 0.25%%onion, thinly sliced
 0.5%%cloves of garlic, minced
 2%%tortillas
-Optional:
+Optional: 
 0.25%%bell pepper, thinly sliced
-%%Seasoning:
 0.5%tsp%chili powder
 0.25%tsp%ground cumin
 0.25%tsp%Paprika
-%%0.5tsp dried oregano
 0.25%%Lime, juiced
-%%Optional toppings: 
-%%Lettuce, shredded 
-%%Cucumber, sliced
-%%Tomato, sliced
-%%Sour cream
-%%Guacamole
-%%Salsa
-%%Grated Cheese
+Optional toppings: 
 
 ChickenFriedRice
 100%g%Chicken Breast, cubed and optionally marinated in soy sauce and garlic
@@ -134,7 +131,6 @@ ChickenGyros
 0.25%kg%chicken legs
 125%ml%Natural Yogurt
 0.25%%Red onion
-%%2-3 Baking potatoes
 0.25%%cucumber
 62.5%g%Self raising flour
 0.5%%large tomatoes
@@ -148,7 +144,6 @@ ChilliLoadedWedges
 0.5%%cloves of garlic
 0.5%%Bell peppers
 225%g%Potatoes
-%%Mexican spice (Paprika, chilli powder, oregano, mixed herbs)
 100%g%Tomato Passata
 30%g%Cheddar Cheese
 0.25%%Tin Black beans
@@ -190,10 +185,18 @@ CowboyStew
 0.25%%onion, finely chopped
 0.25%%Red chilli, deseeded and finely chopped
 0.5%%Baking potatoes, cut into 2cm chunks
-%%2x400g tins baked beans
 100%g%tin chopped Tomatoes
-%%(TEST PEAS)
-Optional:
+Optional: 160g tin sweetcorn, drained
+
+CremeEggCheesecake
+18.75%g%Chocolate Digestives, crushed
+9.38%g%Unsalted Butter, melted
+9.38%g%Icing Sugar
+35%g%Cream Cheese
+7.5%ml%Lemon Juice
+11.25%g%Mini Creme Eggs, cut into quarters
+9.38%g%White Chocolate
+9.38%g%Milk Chocolate
 
 FrenchOnionSoup
 1.75%%Onions, thinly sliced
@@ -216,28 +219,28 @@ JensonsFamousCurry
 0.5%tsp%Cumin
 0.5%tbsp%Honey 
 0.5%tbsp%Fish sauce
-%%Simmer the curry for 5-10 minutes to allow the flavours to meld together.
-%%While the curry is simmering, cook the noodles according to the package instructions.
-%%Check the curry tastes correctly as the fish sauce can be very salty. If this is the case, add more honey and mix well.
-%%Once the noodles are cooked, drain them and add them to the curry, mixing gently to coat them in the sauce.
-%%Serve with some chopped fresh chillies for garnish.
-%%Credit: Jenson
+
+JuliePasta
+37.5%g%Salami
+0.25%%Red Onion, sliced
+0.25%%Garlic Clove, diced
+1%tbsp%Balsamic Vinegar
+100%g%Chopped Tomato Tin
+5%g%Fresh Basil, Chopped
+75%g%Rigatoni
+0.25%%Mozzarella Ball, Sliced
+
 LambTikkaCurry
 83.33%g%Lamb Mince
-%%1-2 Red Chillies
 0.33%%handfuls of dried lentils
 66.67%g%Tomato Passata
 0.33%%Carrots, grated
 25%g%Spinach
 0.17%tsp%Turmeric
-%%2-3 Red onions
 0.5%%Garlic Cloves
 33.33%g%Tikka Curry Paste 
 0.17%%Chicken Stock cube
 33.33%ml%of Water
-%%To Serve:
-%%Rice
-%%Naan Bread
 
 LoadedJacketPotatoes
 2.67%%Bacon Rashers
@@ -253,18 +256,12 @@ Mac&CheeseWithChorizo&Bacon
 0.33%tsp%Mustard
 0.33%tsp%Smoked Paprika
 0.33%tsp%Cumin
-%%Salt & Pepper to taste
-%%1/2 Chorizo Ring
-%%4-6 Bacon Rashers
-%%2-4 Garlic Cloves
 100%g%Macaroni
 166.67%g%any cheese (Recommend a combination of Red Leicester and Cheddar)
 
 Meatballs
 6%%Meatballs
 0.25%%Jar of Bolognese sauce
-%%1-2 Onions, chopped
-%%2-3 Garlic cloves, minced
 50%g%Broccoli
 37.5%g%of frozen peas
 0.25%%teaspoon Mixed herbs
@@ -280,7 +277,6 @@ MincemeatShortbread
 12.5%g%plain flour
 12.5%g%butter
 50%g%Mincemeat
-%%Sablee Pastry:
 7.81%g%Plain flour
 6.25%g%butter
 6.25%g%caster sugar
@@ -293,7 +289,7 @@ NaanBreadPizza
 0.5%tsp%Garlic Granules
 50%g%Cheese, grated
 50%g%Peperoni
-%%(Optional) Any other toppings
+(Optional) Any other toppings
 
 PastaBake
 83.33%g%Rigatoni Pasta
@@ -316,10 +312,7 @@ PeanutButter&ChocolateOatBars
 PeriPeriChicken
 0.4%kg%whole chicken
 30%ml%water or chicken stock
-%%Peri Peri Sauce:
 1%%Garlic cloves
-%%1-5 red chillies (as hot as you dare!)
-%%2cm piece of fresh ginger
 10%ml%vegetable oil
 5%ml%white or red wine vinegar
 0.6%%tbsp soy sauce
@@ -328,12 +321,17 @@ PeriPeriChicken
 0.6%%tsp dried oregano
 0.2%%tsp caster sugar
 0.2%%tbsp lemon juice
-%%Vegetables:
 0.6%%red onions
 100%g%baby new potatoes
 0.8%%corn on the cob
 Optional:
-%%Coleslaw
+
+RaspberryLayerCheesecake
+12.5%g%Digestives, crushed
+5%g%Margarine, melted
+3%g%Sachets Raspberry jelly
+25%g%Light Soft Cheese
+25%g%Raspberry Yogurt
 
 Sausage&TomatoPasta
 0.25%%pack of good quality sausages (about 400g)
@@ -370,15 +368,11 @@ SausagePastaWine
 0.25%tsp%Grated parmesan cheese to serve 
 
 SesameSeedChicken
-%%Chicken:
 1%%Chicken Breasts
 35%g%Cornflour
 1%%eggs
 2.5%%tsp paprika
-%%Sauce:
 0.5%%tsp of garlic granules
-%%1/2 tsp salt and pepper
-%%8-10 tbsp plain flour
 1%%Garlic cloves
 0.5%%tbsp sesame oil
 0.5%%tbsp rice wine vinegar
@@ -389,7 +383,6 @@ SesameSeedChicken
 1.5%%tbsp Soy sauce (to taste)
 0.5%%tbsp Sesame seeds
 1%%spring onions
-%%To Serve:
 75%g%Rice
 75%g%Frozen Peas
 
@@ -416,27 +409,30 @@ SteakSandwiches
 2%%Garlic cloves, finely chopped
 
 ToffeeSauce
-%%Sauce:
 31.25%g%Butter
 25%g%Light muscovado sugar
 1.5%tbsp%double cream
-%%Fruit:
 0.25%%Apple, sliced
 0.25%%Banana, sliced
 0.25%%kiwi, sliced
-%%Handful of strawberries, halved
-%%Handful of grapes
 
 TomsTrayBake
 1%%chicken breasts
 0.25%%Spanish chorizo ring
 0.25%%butternut squash, peeled and diced into 2cm cubes
 125%g%baby potatoes, halved if too large
-%%2-3 sweet potatoes, peeled and diced into 2cm cubes
-%%1-2 red onions, roughly chopped
 1%%cloves of garlic, roughly chopped
 0.25%tsp%thyme
-%%Salt and pepper to taste
 Optional:
 50%g%broccoli, peas or green beans
+
+WarmCookieDough
+31.25%g%Butter
+25%g%Caster Sugar
+25%g%Brown Sugar
+0.25%%Egg
+0.25%tsp%Vanilla Essence
+56.25%g%Self-raising Flour
+25%g%Chocolate Chips
+Optional: 
 

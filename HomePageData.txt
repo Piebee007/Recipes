@@ -1,10 +1,12 @@
 Beef, Breakfast, Chicken, Chorizo, Dessert, Lamb, Pasta, Peperoni, Potato, Sausage, Soup, Steak
+AppleGalette, Dessert, 1:0 , 0:10 , 70
 Bangers&MashWithOnionGravy, Sausage, 0:15, 1:05, 80
 BeckysBbqPasta, Chicken, 0:10, 0:20, 30
 BeerCanChicken, Chicken, 0:20, 1:10, 90
 BiscoffCake, Dessert, 0:05, 0:20, 25
 BreakfastQuesadillas, Breakfast, 0:15, 0:25, 40
 ButternutRisotto, Chicken, 0:20, 0:35, 55
+CajunChicken, Chicken, 0:15, 0:50, 65
 Chicken&ChorizoPasta, Chicken, 0:15, 0:20, 35
 ChickenBurgers, Chicken, 0:10, 0:15, 25
 ChickenFajitas, Chicken, 0:15, 0:20, 35
@@ -15,8 +17,10 @@ Chips&CurrySauce, Potato, 0:15, 0:40, 55
 ChocolateFondue, Dessert, 0:15, 0:10, 25
 ChorizoHash, Chorizo, 0:10, 0:25, 35
 CowboyStew, Sausage, 0:15, 0:45, 60
+CremeEggCheesecake, Dessert, 3:30, 0:0, 210
 FrenchOnionSoup, Soup, 0:10, 0:50, 60
 JensonsFamousCurry, Chicken, 0:10, 0:25, 35
+JuliePasta, Pasta, 0:5, 0:35, 40
 LambTikkaCurry, Lamb, 0:20, 0:40, 60
 LoadedJacketPotatoes, Potato, 0:20, 1:40, 120
 Mac&CheeseWithChorizo&Bacon, Chorizo, 0:15, 1:00, 75
@@ -26,6 +30,7 @@ NaanBreadPizza, Peperoni, 0:10, 0:05, 15
 PastaBake, Pasta, 0:05, 0:35, 40
 PeanutButter&ChocolateOatBars, Dessert, 0:15, 2:00, 135
 PeriPeriChicken, Chicken, 0:30, 1:50, 140
+RaspberryLayerCheesecake, Dessert, 0:15, 0:02, 17
 Sausage&TomatoPasta, 0:10, 0:25, 35
 SausageCasserole, Sausage, 0:10, 0:45, 55
 SausagePastaWine, Sausage, 0:05, 0:40, 45
@@ -34,3 +39,4 @@ SlowCookerHoneyGarlicNoodles, Chicken, 0:15, 6:00, 375
 SteakSandwiches, Steak, 0:10, 0:20, 30
 ToffeeSauce, Dessert, 0:10, 0:10, 20
 TomsTrayBake, Chorizo, 0:30, 0:50, 80
+WarmCookieDough, Dessert, 0:15, 0:15, 30
