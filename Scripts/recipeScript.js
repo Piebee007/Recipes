@@ -27,25 +27,28 @@ function setup(){
 
 
 function recipe_text(file_txt){
+    var html_text = ""
     //Recipe Title
-    createP("<h1>"+file_txt[0]+"</h1>");
+    html_text += "<h1>"+file_txt[0]+"</h1>"
     //Category
     let category = new String (file_txt[1].substr(10))
-    createP("<h2>"+"Category: "+category+"</h2>");
+    html_text += "<h2>"+"Category: "+category+"</h2>"
     //Prep Time
     let prep_time = new String(file_txt[2].substr(11))
-    createP("<h2>"+"Prep Time: "+convert_to_time(prep_time)+"</h2>");
+    html_text += "<h2>"+"Prep Time: "+convert_to_time(prep_time)+"</h2>"
     //Cook Time
     let cook_time = new String(file_txt[3].substr(11))
-    createP("<h2>"+"Cook Time: "+convert_to_time(cook_time)+"</h2>");
+    html_text += "<h2>"+"Cook Time: "+convert_to_time(cook_time)+"</h2>"
     //Servings
     let serves = new String (file_txt[4].substr(7));
     let serving_text = "<div class='serving-section'>" + "<h2 id ='serving' data-value = "+ serves+">"+"Serves: "+serves+"</h2>"
     serving_text += "<div class='buttons'><button onclick='decrement_serving()'> - </button><button onclick='increment_serving()'> + </button>"
     serving_text += "</div></div>"
-    createP(serving_text)
+    html_text += serving_text
 
-    createP("<h2>Ingredients:</h2>")
+    html_text +=  "<button id='ShoppingListButton' onclick='add_recipe_to_shopping_list()'>Add to Shopping List</button>"
+
+    html_text += "<h2>Ingredients:</h2>"
     // Add the ingredients list
     var ingredients = "<ul class='ingredients'>";
     var instruction_start;
@@ -64,10 +67,10 @@ function recipe_text(file_txt){
         
     }
     ingredients += "</ul>"
-    createP(ingredients);
+    html_text += ingredients
 
 
-    createP("<h2>Instructions:</h2>")
+    html_text += "<h2>Instructions:</h2>"
     var instructions = "<ol class='instructions'>";
     let credit_start = 0;
     for (let i=instruction_start+1; i<file_txt.length; i++){
@@ -84,7 +87,7 @@ function recipe_text(file_txt){
         }
     }
     instructions += "</ol>"
-    createP(instructions);
+    html_text += instructions
 
     if (credit_start != 0){
         let credit_text = file_txt[credit_start].substr(8);
@@ -95,7 +98,9 @@ function recipe_text(file_txt){
         }else{
             credit_html += "<p class='credit'>Credit: " + credit_text + "</p>"
         }
-        createP(credit_html)
+        html_text += credit_html
+
+        createP(html_text)
     }
 }
 
@@ -128,6 +133,7 @@ function base_value(){
     }
     
 }
+
 
 const units = ["g", "kg", "oz", "lbs", "l", "ml", "tsp", "tbsp"]
 
@@ -216,3 +222,14 @@ function decrement_serving(){
 //     sessionStorage.setItem('recipe_list', new_txt)
 //     console.log(filename)
 // }
+
+function add_recipe_to_shopping_list(){
+    const getURLParams = new URLSearchParams(window.location.search)
+    const firstParameter = getURLParams.entries().next().value[0]
+
+    // Get the serving value from the HTML element
+    const servingElement = document.getElementById('serving');
+    const servingValue = servingElement.getAttribute('data-value');
+
+    localStorage.setItem(firstParameter, servingValue);
+}

@@ -48,8 +48,11 @@ function setup(){
         var optional = false
         var html_text = ""
         var checkbox_num = 0
-        html_text += "<div id='" + ingredients[i][0] + " container' class='recipe-container'>"
+        html_text += "<div id='" + ingredients[i][0] + " container' class='recipe-container' data-value='" + ingredients[i][0] + "'>"
+        html_text += "<div class='title-container'>"
         html_text += "<h2>" + ingredients[i][0] + "</h2>"
+        html_text += "<button class='close-button' onclick='remove_recipe(" +'"' + ingredients[i][0] + '"'+ ")'>x</button>"
+        html_text += "</div>"
         html_text += "<div class='serving-section'>"
         html_text += "<h3 class='serving' id='"+ingredients[i][0] + " serving"+"' data-value='" + meal_servings[i] + "'> Serves: " + meal_servings[i] + "</h3>"
         
@@ -213,4 +216,9 @@ function get_all_ingredients(){
         });
     }
     return ingredients
+}
+
+function remove_recipe(recipe){
+    localStorage.removeItem(recipe)
+    location.reload()
 }

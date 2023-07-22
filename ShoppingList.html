@@ -8,6 +8,32 @@
             input[type='checkbox'] {
                 margin-left: 20px;
             }
+            /* Add CSS to control the visibility of the X button */
+            .title-container {
+                position: relative;
+            }
+
+            .close-button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                visibility: hidden; /* Initially hide the X button */
+                background-color: red;
+            }
+
+            /* Show the X button when hovering over the title-container */
+            .recipe-container:hover .close-button {
+                visibility: visible;
+            }
         </style>
     </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FE4TPP0QE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8FE4TPP0QE');
+    </script>
 </html>
