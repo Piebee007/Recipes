@@ -27,6 +27,9 @@ function setup(){
 
 
 function recipe_text(file_txt){
+    //Set the title of the page to file_txt[0]
+    document.title = file_txt[0]
+
     var html_text = ""
     //Recipe Title
     html_text += "<h1>"+file_txt[0]+"</h1>"
