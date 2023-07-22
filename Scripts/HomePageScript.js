@@ -71,3 +71,59 @@ function convert_to_time(time){
     }
     return text
 }
+
+function searchRecipes() {
+    const searchValue = document.getElementById('searchInput').value.toLowerCase();
+    const recipeCategories = document.getElementsByTagName('h2');
+    let noResults = true;
+    if (searchValue == "") {
+        noResults = false;
+    }
+    
+  
+    for (const category of recipeCategories) {
+      const recipeLinksDiv = category.nextElementSibling;
+      const recipeLinks = recipeLinksDiv.getElementsByClassName('recipe-box');
+      let anyMatch = false;
+      let allRecipeBoxesHidden = true;
+  
+      // Search in the category header (h2 element)
+      const categoryTitle = category.innerText.toLowerCase();
+      if (categoryTitle.includes(searchValue)) {
+        anyMatch = true;
+  
+        // Show all recipe-links in the category if the category header matches the search
+        for (const recipeLink of recipeLinks) {
+          recipeLink.style.display = '';
+          allRecipeBoxesHidden = false;
+        }
+      } else {
+        for (const recipeLink of recipeLinks) {
+          const recipeTitle = recipeLink.getElementsByTagName('h3')[0].innerText.toLowerCase();
+  
+          if (recipeTitle.includes(searchValue)) {
+            recipeLink.style.display = '';
+            anyMatch = true;
+            allRecipeBoxesHidden = false;
+          } else {
+            recipeLink.style.display = 'none';
+          }
+        }
+      }
+  
+      // Show/hide the parent h2 based on anyMatch value
+      category.style.display = anyMatch ? '' : 'none';
+  
+      // Show/hide the parent recipe-links div based on the visibility of recipe-box elements
+      recipeLinksDiv.style.display = allRecipeBoxesHidden ? 'none' : '';
+
+      if (anyMatch) {
+        noResults = false;
+      }
+    }
+    // Show/hide the noResultsMessage based on the noResults value
+    const noResultsMessage = document.getElementById('noResultsMessage');
+    noResultsMessage.style.display = noResults ? 'block' : 'none';
+  }
+  
+  

@@ -103,8 +103,11 @@ function recipe_text(file_txt){
         }
         html_text += credit_html
 
-        createP(html_text)
+
+        
+        
     }
+    createP(html_text)
 }
 
 
@@ -236,3 +239,4 @@ function add_recipe_to_shopping_list(){
 
     localStorage.setItem(firstParameter, servingValue);
 }
+

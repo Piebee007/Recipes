@@ -35,29 +35,16 @@
       <li><a href="AddRecipe.html">Add Recipe</a></li>
       <li><a href="ShoppingList.html">Shopping List</a></li>
     </ul>
+    <input type="text" id="searchInput" placeholder="Search for recipes...">
   </nav>
-  
+  <div id="noResultsMessage" >
+    No recipes found.
+  </div>
   <div class="container">
-    <!-- <div class="recipe-box">
-      <img src="recipe1.jpg" alt="Recipe 1">
-      <h3>Recipe 1</h3>
-      <p>Prep Time: 20 minutes</p>
-      <p>Cook Time: 30 minutes</p>
-    </div>
-
-    <div class="recipe-box">
-      <img src="recipe2.jpg" alt="Recipe 2">
-      <h3>Recipe 2</h3>
-      <p>Prep Time: 15 minutes</p>
-      <p>Cook Time: 25 minutes</p>
-    </div>
-
-    <div class="recipe-box">
-      <img src="recipe3.jpg" alt="Recipe 3">
-      <h3>Recipe 3</h3>
-      <p>Prep Time: 10 minutes</p>
-      <p>Cook Time: 20 minutes</p>
-    </div> -->
   </div>
 </body>
+  <script>
+    document.getElementById('searchInput').addEventListener('input', searchRecipes);
+    searchRecipes(); // Initial search to show all recipes
+  </script>
 </html>

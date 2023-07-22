@@ -46,7 +46,7 @@ nav li a:hover {
 }
 
 .recipe-links {
-  padding: 2em;
+  padding: 0.5em;
   display: grid;
   grid-gap: 1em;
   grid-template-columns: repeat(auto-fit,minmax(350px, 3fr));
@@ -70,3 +70,75 @@ nav li a:hover {
     cursor:pointer;
     background-color: rgb(208, 206, 206);
   }
+
+  /* Change the padding and margin around the h2 tags */
+  .recipe-box h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #searchInput {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-size: 14px;
+    width: 200px;
+  }
+  
+  /* Optional: Adjust the search input size for different screen sizes */
+  @media (max-width: 600px) {
+    #searchInput {
+      width: 150px;
+    }
+  }
+
+  /* Larger nav bar on mobile devices */
+@media (max-width: 600px) {
+  nav {
+    height: 70px; /* Adjust the height as needed */
+  }
+  
+  nav li {
+    margin-right: 10px;
+  }
+  
+  #searchInput {
+    width: 150px;
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+}
+  
+  
+#noResultsMessage {
+  display: none;
+  color: #FF0000; /* Change the color as per your design */
+  font-size: 16px; /* Change the font size as per your design */
+  margin-top: 10px;
+}
+  
+  

@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        #generateButton {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #generateButton:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Search Test</title>
 </head>
 <body>
-    <h1>Welcome to Your Shopping List</h1>
-    <p>This is your one-stop destination for managing your shopping needs. You can add, remove, and generate your shopping list easily.</p>
-    <button id="generateButton">Generate Shopping List</button>
+  <h1>Recipe Search</h1>
+  <input type="text" id="searchInput" placeholder="Search for recipes...">
+  
+  <div id="recipeList">
+    <div class="recipe-box">
+      <h3>Chilli Loaded Wedges</h3>
+      <p>Prep: 20 minutes | Cook: 45 minutes</p>
+    </div>
+    <div class="recipe-box">
+      <h3>Meatballs</h3>
+      <p>Prep: 10 minutes | Cook: 25 minutes</p>
+    </div>
+    <div class="recipe-box">
+      <h3>Beckys Bbq Pasta</h3>
+      <p>Prep: 10 minutes | Cook: 20 minutes</p>
+    </div>
+    <!-- Add more recipe boxes here -->
+  </div>
 
-    <!-- Your JavaScript code for generating the shopping list goes here -->
+  <script>
+    function searchRecipes() {
+      const searchValue = document.getElementById('searchInput').value.toLowerCase();
+      const recipeBoxes = document.getElementsByClassName('recipe-box');
 
+      for (const recipeBox of recipeBoxes) {
+        const recipeTitle = recipeBox.getElementsByTagName('h3')[0].innerText.toLowerCase();
+
+        if (recipeTitle.includes(searchValue)) {
+          recipeBox.style.display = 'block';
+        } else {
+          recipeBox.style.display = 'none';
+        }
+      }
+    }
+
+    document.getElementById('searchInput').addEventListener('input', searchRecipes);
+    searchRecipes(); // Initial search to show all recipes
+  </script>
 </body>
 </html>
