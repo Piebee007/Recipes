@@ -60,6 +60,16 @@ BreakfastQuesadillas
 37.5%g%Red Leicester or Cheddar cheese, Grated
 Optional:
 
+Brownies
+11.56%g%Unsalted Butter
+11.56%g%Dark Chocolate
+5.31%g%Plain Flour
+2.5%g%Cocoa Powder
+3.12%g%White Chocolate
+3.12%g%Milk Chocolate
+0.19%%Eggs
+17.19%g%Golden Caster Sugar
+
 ButternutRisotto
 87.5%g%Risotto Rice
 2%%rashers of Bacon

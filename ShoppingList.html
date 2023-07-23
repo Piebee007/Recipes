@@ -8,7 +8,6 @@
             input[type='checkbox'] {
                 margin-left: 20px;
             }
-            /* Add CSS to control the visibility of the X button */
             .title-container {
                 position: relative;
             }
@@ -17,13 +16,14 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                visibility: hidden; /* Initially hide the X button */
                 background-color: red;
             }
 
             /* Show the X button when hovering over the title-container */
             .recipe-container:hover .close-button {
                 visibility: visible;
+                /*make the cursor show a pointer*/
+                cursor: pointer;
             }
         </style>
         <title>Shopping List</title>
@@ -37,4 +37,24 @@
 
         gtag('config', 'G-GSJV2RPDMC');
         </script>
+
+    <body>
+        <h1>Introduction to the Shopping List Page</h1>
+        <p>Welcome to our convenient and efficient Shopping List page! Here, we've designed a smart system that generates a comprehensive shopping list based on the portion size you need for your meals. Whether you're cooking for yourself, your family, or a group of friends, our shopping list will ensure you have all the right ingredients in the perfect quantities.</p>
+        
+        <h2>How it Works</h2>
+        <ol>
+            <li>
+            <strong>Recipe Integration:</strong> To add a recipe, simply visit the recipe page you desire and click the "Add to Shopping List" button. This will automatically add all the required ingredients to your shopping list for that specific recipe. 
+            <br><br>
+            Any <strong>Optional</strong> ingredients can be selected using the checkbox
+            </li>
+            <br>
+            <li>
+            Click on the + or - buttons to change the portion size for the meal you are having. This will automatically update the shopping list to reflect the new portion size.
+            </li>
+        </ol>
+        <br>
+        <strong> Coming Soon: Add a recipe from this page and add your own ingredients</strong>
+    </body>
 </html>

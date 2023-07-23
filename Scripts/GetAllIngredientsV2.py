@@ -40,7 +40,9 @@ unique_categories = []
 
 file_array = glob.glob('Recipes/*.txt')
 ingredients = ""
+all_file_names = ""
 for file_name in file_array:
+    all_file_names += file_name[8:len(file_name)-4] + "\n"
     ingredients += file_name[8:len(file_name)-4] + "\n"
     file = open(file_name, "r")
     ingredient_section = False
@@ -73,4 +75,8 @@ for file_name in file_array:
 
 file =  open("AllIngregientsV2.txt", "w")
 file.write(ingredients)
+file.close()
+
+file =  open("AllFileNames.txt", "w")
+file.write(all_file_names)
 file.close()
