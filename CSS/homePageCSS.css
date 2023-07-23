@@ -56,7 +56,7 @@ header {
     background-color: #777;
     color: #fff;
     padding: 10px;
-    height: 30px;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: space-between; /* Add this to align items at the ends */
