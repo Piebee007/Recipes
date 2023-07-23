@@ -6,6 +6,8 @@
     <script language="javascript" type="text/javascript"
     src="Scripts/HomePageScript.js"></script>
     <link rel ="stylesheet" href="CSS/homePageCSS.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Recipe Homepage</title>
 </head>
 <!-- Google tag (gtag.js) -->
@@ -21,17 +23,10 @@
   <header>
     <h1>Recipe Homepage</h1>
   </header>
-  
-  <!-- <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Recipes</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav> -->
   <nav>
-    <ul>
+    <!-- <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> -->
+    <ul class="nav-links" id="navLinks">
+      <li id="HomeLink"><a href="index.html">Home</a></li>
       <li><a href="AddRecipe.html">Add Recipe</a></li>
       <li><a href="ShoppingList.html">Shopping List</a></li>
     </ul>

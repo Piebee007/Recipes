@@ -11,33 +11,7 @@ header {
   text-align: center;
 }
 
-nav {
-  background-color: #777;
-  color: #fff;
-  padding: 10px;
-}
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav li a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
-}
-
-nav li a:hover {
-  background-color: #333;
-  color: #fff;
-}
 
 .recipe-grid {
   display: grid;
@@ -78,28 +52,51 @@ nav li a:hover {
   }
 
 
-
   nav {
+    background-color: #777;
+    color: #fff;
+    padding: 10px;
+    height: 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Add this to align items at the ends */
+  }
+
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide the menu icon by default for larger screens */
   }
   
   nav ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     align-items: center;
   }
   
-  nav li {
-    margin-right: 20px;
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
   }
   
-  nav a {
+  nav li a {
     text-decoration: none;
     color: #333;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block; /* Use inline-block to allow vertical alignment */
+    vertical-align: middle; /* Vertically align the link's content */
+
   }
+  
+  nav li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+
   
   #searchInput {
     border: 1px solid #ccc;
@@ -109,29 +106,39 @@ nav li a:hover {
     font-size: 14px;
     width: 200px;
   }
-  
-  /* Optional: Adjust the search input size for different screen sizes */
-  @media (max-width: 600px) {
-    #searchInput {
-      width: 150px;
-    }
-  }
 
-  /* Larger nav bar on mobile devices */
+
+
+/* Media query for smaller screen sizes */
 @media (max-width: 600px) {
   nav {
-    height: 70px; /* Adjust the height as needed */
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto; /* Reset the height to auto for smaller screens */
   }
-  
+
+  .menu-icon {
+    display: block; /* Show the menu icon for smaller screens */
+    margin-bottom: 10px; /* Add some spacing below the menu icon */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   nav li {
-    margin-right: 10px;
+    margin-right: 0;
+    margin-bottom: 5px; /* Add some spacing between the links for smaller screens */
   }
-  
+ 
+
   #searchInput {
-    width: 150px;
-    font-size: 12px; /* Adjust the font size as needed */
+    margin: 10px 0; /* Add some spacing between the navigation bar and the search bar */
   }
 }
+
+
   
   
 #noResultsMessage {
@@ -139,6 +146,7 @@ nav li a:hover {
   color: #FF0000; /* Change the color as per your design */
   font-size: 16px; /* Change the font size as per your design */
   margin-top: 10px;
+  text-align: center;
 }
   
   
