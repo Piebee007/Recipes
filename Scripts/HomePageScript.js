@@ -126,4 +126,9 @@ function searchRecipes() {
     noResultsMessage.style.display = noResults ? 'block' : 'none';
   }
   
+
+  // function toggleMenu() {
+  //   const navLinks = document.querySelector('.nav-links');
+  //   navLinks.classList.toggle('active');
+  // }
   
