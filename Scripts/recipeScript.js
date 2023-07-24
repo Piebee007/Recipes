@@ -128,7 +128,7 @@ function recipe_text(file_txt){
         
     }
     createP(html_text)
-    createP(window.innerWidth)
+    
 }
 
 
