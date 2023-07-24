@@ -1,6 +1,8 @@
 var x;
 var file_txt;
 var filename;
+var img_name;
+var img_found = false;
 function preload(){
     //filename = sessionStorage.getItem('file')
     let url = window.location.href
@@ -16,6 +18,13 @@ function preload(){
         }
     }
     file_txt = loadStrings('./Recipes/' + recipe_param + '.txt')
+    //Try and load the image
+    img_name = './Images/' + recipe_param + '.png'
+    //img_found = checkImageExists(img_name)
+
+
+
+    
 }
 
 
@@ -31,6 +40,13 @@ function recipe_text(file_txt){
     document.title = file_txt[0]
 
     var html_text = ""
+    html_text += "<div class='recipe-header'>"
+    if (img_found){
+        html_text += "<div class='recipe-image-container'>"
+        html_text += "<img src='"+img_name+"' alt='Recipe Image', class='recipe-image'>"
+        html_text += "</div>"
+    }
+    html_text += "<div class='recipe-info'>"
     //Recipe Title
     html_text += "<h1>"+file_txt[0]+"</h1>"
     //Category
@@ -49,7 +65,11 @@ function recipe_text(file_txt){
     serving_text += "</div></div>"
     html_text += serving_text
 
+    html_text += "</div></div>"
+
     html_text +=  "<button id='ShoppingListButton' onclick='add_recipe_to_shopping_list()'>Add to Shopping List</button>"
+
+
 
     html_text += "<h2>Ingredients:</h2>"
     // Add the ingredients list
@@ -108,6 +128,7 @@ function recipe_text(file_txt){
         
     }
     createP(html_text)
+    createP(window.innerWidth)
 }
 
 
@@ -240,3 +261,23 @@ function add_recipe_to_shopping_list(){
     localStorage.setItem(firstParameter, servingValue);
 }
 
+async function checkImageExists(url) {
+    try {
+      await loadImageThing(url);
+      console.log("Image exists and loaded successfully!");
+      img_found = true;
+      return true;
+    } catch (error) {
+      console.log("Image does not exist or failed to load!");
+    }
+    return false;
+  }
+
+  function loadImageThing(url) {
+    return new Promise(function(resolve, reject) {
+      var img = new Image();
+      img.onload = resolve;
+      img.onerror = reject;
+      img.src = url;
+    });
+  }

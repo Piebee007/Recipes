@@ -12,6 +12,32 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+  .recipe-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .recipe-image-container{
+    overflow: hidden;
+    height: 300px;
+    width: 400px;
+  }
+
+  .recipe-image-container img {
+    height: auto;
+    width: 100%;
+  }
+
+  /* .recipe-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+  } */
   
   h1 {
     color: #333;

@@ -1,48 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Search Test</title>
+  <title>Check Image Existence using try-catch</title>
 </head>
 <body>
-  <h1>Recipe Search</h1>
-  <input type="text" id="searchInput" placeholder="Search for recipes...">
-  
-  <div id="recipeList">
-    <div class="recipe-box">
-      <h3>Chilli Loaded Wedges</h3>
-      <p>Prep: 20 minutes | Cook: 45 minutes</p>
-    </div>
-    <div class="recipe-box">
-      <h3>Meatballs</h3>
-      <p>Prep: 10 minutes | Cook: 25 minutes</p>
-    </div>
-    <div class="recipe-box">
-      <h3>Beckys Bbq Pasta</h3>
-      <p>Prep: 10 minutes | Cook: 20 minutes</p>
-    </div>
-    <!-- Add more recipe boxes here -->
-  </div>
-
   <script>
-    function searchRecipes() {
-      const searchValue = document.getElementById('searchInput').value.toLowerCase();
-      const recipeBoxes = document.getElementsByClassName('recipe-box');
-
-      for (const recipeBox of recipeBoxes) {
-        const recipeTitle = recipeBox.getElementsByTagName('h3')[0].innerText.toLowerCase();
-
-        if (recipeTitle.includes(searchValue)) {
-          recipeBox.style.display = 'block';
-        } else {
-          recipeBox.style.display = 'none';
-        }
+    async function checkImageExists(url) {
+      try {
+        await loadImage(url);
+        console.log("Image exists and loaded successfully!");
+      } catch (error) {
+        console.log("Image does not exist or failed to load!");
       }
     }
 
-    document.getElementById('searchInput').addEventListener('input', searchRecipes);
-    searchRecipes(); // Initial search to show all recipes
+    function loadImage(url) {
+      return new Promise(function(resolve, reject) {
+        var img = new Image();
+        img.onload = resolve;
+        img.onerror = reject;
+        img.src = url;
+      });
+    }
+
+    // Example usage:
+    var imageUrl = "./Images/BeerCanChicken.png";
+    checkImageExists(imageUrl);
+
+    console.log("hey")
   </script>
 </body>
 </html>
