@@ -24,7 +24,9 @@ def one_portion(line, serving_size):
     if (isfloat(recipe_line[0])):
         return formatNumber(float(recipe_line[0])/serving_size), "",recipe_line[1:len(recipe_line)]
     else:
-        if (recipe_line[0][len(recipe_line[0])-1] != ":"):
+        if (recipe_line[0] == ""):
+            return "", "", recipe_line[1:len(recipe_line)]
+        elif (recipe_line[0][len(recipe_line[0])-1] != ":"):
             for unit in units:
                 if unit in recipe_line[0]:
                     temp_value = recipe_line[0][0:(len(recipe_line[0]))- len(unit)]

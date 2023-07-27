@@ -218,6 +218,14 @@ FrenchOnionSoup
 31.25%g%ball mozzarella
 0.25%%crusty roll
 
+HawaiianBbqChickenPizza
+1%%Plain Flatbread
+1.5%tbsp%BBQ Sauce
+0.5%%Chicken Breast
+0.5%%Red Onion, thinly sliced
+1%%Pineapple slices, grilled and cut thinly
+62.5%g%Grated Mozzarella
+
 JensonsFamousCurry
 1%%Chicken Breasts, cubed
 0.25%%Jar of Blue Dragon Thai Red Curry Paste
@@ -252,6 +260,15 @@ LambTikkaCurry
 0.17%%Chicken Stock cube
 33.33%ml%of Water
 
+LemonDrizzleCake
+0.75%oz%Self Raising Flour
+0.62%oz%Castor Sugar
+0.5%oz%Butter
+0.25%%Eggs
+0.06%%Cup Milk
+%%Grated Rind of Lemon
+0.38%%Lemons Juiced
+
 LoadedJacketPotatoes
 2.67%%Bacon Rashers
 0.67%%Mozzarella Balls
@@ -280,6 +297,14 @@ Meatballs
 Optional:
 0.25%%Carrot, grated
 0.25%%tsp Grated Parmesan cheese, for serving
+
+MillionaireShortbread
+12.5%g%Caster Sugar
+34.38%g%Plain Flour
+12.5%g%Milk Chocolate
+12.5%g%Caster Sugar
+0.25%tbsp%Golden Syrup
+0.12%%Can Condensed Milk
 
 MincemeatShortbread
 4.69%g%semolina

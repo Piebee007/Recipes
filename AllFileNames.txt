@@ -19,12 +19,15 @@ ChorizoHash
 CowboyStew
 CremeEggCheesecake
 FrenchOnionSoup
+HawaiianBbqChickenPizza
 JensonsFamousCurry
 JuliePasta
 LambTikkaCurry
+LemonDrizzleCake
 LoadedJacketPotatoes
 Mac&CheeseWithChorizo&Bacon
 Meatballs
+MillionaireShortbread
 MincemeatShortbread
 NaanBreadPizza
 PastaBake

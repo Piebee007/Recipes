@@ -5,6 +5,7 @@ BeckysBbqPasta, Chicken, 0:10, 0:20, 30
 BeerCanChicken, Chicken, 0:20, 1:10, 90
 BiscoffCake, Dessert, 0:05, 0:20, 25
 BreakfastQuesadillas, Breakfast, 0:15, 0:25, 40
+Brownies, Dessert, 0:25, 0:35, 60
 ButternutRisotto, Chicken, 0:20, 0:35, 55
 CajunChicken, Chicken, 0:15, 0:50, 65
 Chicken&ChorizoPasta, Chicken, 0:15, 0:20, 35
@@ -19,12 +20,15 @@ ChorizoHash, Chorizo, 0:10, 0:25, 35
 CowboyStew, Sausage, 0:15, 0:45, 60
 CremeEggCheesecake, Dessert, 3:30, 0:0, 210
 FrenchOnionSoup, Soup, 0:10, 0:50, 60
+HawaiianBbqChickenPizza, Chicken, 0:30, 0:15, 45
 JensonsFamousCurry, Chicken, 0:10, 0:25, 35
 JuliePasta, Pasta, 0:5, 0:35, 40
 LambTikkaCurry, Lamb, 0:20, 0:40, 60
+LemonDrizzleCake, Dessert, 0:10, 0:40, 50
 LoadedJacketPotatoes, Potato, 0:20, 1:40, 120
 Mac&CheeseWithChorizo&Bacon, Chorizo, 0:15, 1:00, 75
 Meatballs, Beef, 0:10, 0:25, 35
+MillionaireShortbread, Dessert, 0:20, 0:30, 50
 MincemeatShortbread, Dessert, 0:45, 0:35, 80
 NaanBreadPizza, Peperoni, 0:10, 0:05, 15
 PastaBake, Pasta, 0:05, 0:35, 40
