@@ -35,7 +35,7 @@ PastaBake, Pasta, 0:05, 0:35, 40
 PeanutButter&ChocolateOatBars, Dessert, 0:15, 2:00, 135
 PeriPeriChicken, Chicken, 0:30, 1:50, 140
 RaspberryLayerCheesecake, Dessert, 0:15, 0:02, 17
-Sausage&TomatoPasta, 0:10, 0:25, 35
+Sausage&TomatoPasta, Sausage, 0:10, 0:25, 35
 SausageCasserole, Sausage, 0:10, 0:45, 55
 SausagePastaWine, Sausage, 0:05, 0:40, 45
 SesameSeedChicken, Chicken, 0:20, 0:30, 50
