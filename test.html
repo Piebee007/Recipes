@@ -1,167 +1,66 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <style>
-    .ingredient-container {
-      margin-bottom: 10px;
-    }
-
-    .ingredient-container input,
-    .ingredient-container select {
-      margin-right: 5px;
-    }
-  </style>
-</head>
-<body>
-  <h2>Recipe Form</h2>
-  
-  <div>
-    <label for="title">Title:</label>
-    <input type="text" id="title">
-  </div>
-  
-  <div>
-    <label for="category">Category:</label>
-    <input type="text" id="category">
-  </div>
-  
-  <div>
-    <label for="prep-time">Prep Time:</label>
-    <div class="time-container">
-      <input type="text" id="prep-hours" placeholder="HH">
-      <span>:</span>
-      <input type="text" id="prep-minutes" placeholder="MM">
-    </div>
-  </div>
-  
-  <div>
-    <label for="cook-time">Cook Time:</label>
-    <div class="time-container">
-      <input type="text" id="cook-hours" placeholder="HH">
-      <span>:</span>
-      <input type="text" id="cook-minutes" placeholder="MM">
-    </div>
-  </div>
-  
-  <div>
-    <label for="ingredients">Ingredients:</label>
-    <div id="ingredient-list">
-      <div class="ingredient-container">
-        <input type="text" class="ingredient-quantity" placeholder="Quantity">
-        <select class="ingredient-unit">
-          <option value="Unit">Unit</option>
-          <option value="N/A">N/A</option>
-          <option value="g">g</option>
-          <option value="kg">kg</option>
-          <option value="ml">ml</option>
-          <option value="L">L</option>
-          <option value="tsp">tsp</option>
-          <option value="tbsp">tbsp</option>
-        </select>
-        <input type="text" class="ingredient-name" placeholder="Ingredient">
-      </div>
-    </div>
-    <button id="add-ingredient-btn">Add Ingredient</button>
-  </div>
-  
-  <script>
-    document.getElementById("add-ingredient-btn").addEventListener("click", function() {
-      var ingredientList = document.getElementById("ingredient-list");
-      
-      var ingredientContainer = document.createElement("div");
-      ingredientContainer.className = "ingredient-container";
-      
-      var quantityInput = document.createElement("input");
-      quantityInput.type = "text";
-      quantityInput.className = "ingredient-quantity";
-      quantityInput.placeholder = "Quantity";
-      
-      var unitSelect = document.createElement("select");
-      unitSelect.className = "ingredient-unit";
-      var unitOptions = ["Unit","N/a","g", "kg", "ml", "L", "tsp", "tbsp"];
-      for (var i = 0; i < unitOptions.length; i++) {
-        var option = document.createElement("option");
-        option.value = unitOptions[i];
-        option.text = unitOptions[i];
-        unitSelect.appendChild(option);
-      }
-      
-      var nameInput = document.createElement("input");
-      nameInput.type = "text";
-      nameInput.className = "ingredient-name";
-      nameInput.placeholder = "Ingredient";
-      
-      ingredientContainer.appendChild(quantityInput);
-      ingredientContainer.appendChild(unitSelect);
-      ingredientContainer.appendChild(nameInput);
-      
-      ingredientList.appendChild(ingredientContainer);
-    });
-  </script>
-</body>
-</html> -->
-<!-- <!DOCTYPE html>
-<html>
-<body>
-  <h1>Recipe Form</h1>
-  
-  <button onclick="preview()">Preview</button>
-  
-  <div id="previewContainer"></div>
-  
-  <script>
-    function preview() {
-      var previewText = "<h1>Hi</h1>";
-      var previewContainer = document.getElementById("previewContainer");
-      var previewElement = document.createElement("div");
-      previewElement.innerHTML = previewText;
-      previewContainer.appendChild(previewElement);
-    }
-  </script>
-</body>
-</html> -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>List Manipulation</title>
-  <style>
-    .selected {
-      background-color: yellow;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  #drag-container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  .draggable {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    cursor: grab;
+  }
+</style>
 </head>
 <body>
-  <h1>List Manipulation</h1>
-
-  <ul id="myList">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-    <li>Item 4</li>
-    <li>Item 5</li>
+  <ul id="drag-container">
+    <li class="draggable" draggable="true">3 garlic</li>
+    <li class="draggable" draggable="true">2 chicken breast</li>
+    <li class="draggable" draggable="true">1 onion</li>
   </ul>
 
-  <button onclick="moveUp()">Move Up</button>
-  <button onclick="moveDown()">Move Down</button>
+<script>
+  const dragContainer = document.getElementById('drag-container');
+  let draggedItem = null;
 
-  <script>
-    function moveUp() {
-      var list = document.getElementById("myList");
-      var selectedItem = list.querySelector(".selected");
-      
-      if (selectedItem && selectedItem.previousElementSibling) {
-        list.insertBefore(selectedItem, selectedItem.previousElementSibling);
-      }
-    }
+  dragContainer.addEventListener('dragstart', (event) => {
+    draggedItem = event.target;
+    event.target.style.opacity = '0.5';
+  });
 
-    function moveDown() {
-      var list = document.getElementById("myList");
-      var selectedItem = list.querySelector(".selected");
-      
-      if (selectedItem && selectedItem.nextElementSibling) {
-        list.insertBefore(selectedItem.nextElementSibling, selectedItem);
-      }
+  dragContainer.addEventListener('dragend', (event) => {
+    event.target.style.opacity = '1';
+  });
+
+  dragContainer.addEventListener('dragover', (event) => {
+    event.preventDefault();
+    const afterElement = getDragAfterElement(dragContainer, event.clientY);
+    if (afterElement == null) {
+      dragContainer.appendChild(draggedItem);
+    } else {
+      dragContainer.insertBefore(draggedItem, afterElement);
     }
-  </script>
+  });
+
+  function getDragAfterElement(container, y) {
+    const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')];
+
+    return draggableElements.reduce((closest, child) => {
+      const box = child.getBoundingClientRect();
+      const offset = y - box.top - box.height / 2;
+      if (offset < 0 && offset > closest.offset) {
+        return { offset: offset, element: child };
+      } else {
+        return closest;
+      }
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
+  }
+</script>
 </body>
 </html>
