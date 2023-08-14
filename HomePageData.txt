@@ -40,7 +40,7 @@ SausageCasserole, Sausage, 0:10, 0:45, 55
 SausagePastaWine, Sausage, 0:05, 0:40, 45
 SesameSeedChicken, Chicken, 0:20, 0:30, 50
 SlowCookerHoneyGarlicNoodles, Chicken, 0:15, 6:00, 375
-Smash Burger Tacos, Beef, 0:20, 0:10, 30
+SmashBurgerTacos, Beef, 0:20, 0:10, 30
 SteakSandwiches, Steak, 0:10, 0:20, 30
 ToffeeSauce, Dessert, 0:10, 0:10, 20
 TomsTrayBake, Chorizo, 0:30, 0:50, 80
