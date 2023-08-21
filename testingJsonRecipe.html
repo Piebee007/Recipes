@@ -1,0 +1,157 @@
+<html>
+    <head> 
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tom's Recipes</title>
+        <!-- <script language="javascript" type="text/javascript"
+        src="Scripts/p5.js"></script>
+        <script language="javascript" type="text/javascript"
+        src="Scripts/recipeScript.js"></script> -->
+        <link rel ="stylesheet" href="CSS/recipeCSS.css">
+        <title>Recipe Page</title>
+    </head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSJV2RPDMC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GSJV2RPDMC');
+    </script>
+
+    <script>
+        function convert_to_time(time){
+            var text = ""
+            let time_split= time.split(":")
+            if (time_split[0] =="1"){
+                text += time_split[0] + " hour "
+            }else if (time_split[0] != "0"){
+                text += time_split[0] + " hours "
+            }
+
+            if (time_split[1] != "00"){
+                if (time_split[1][0] == "0"){
+                    text += time_split[1][1] + " minutes"
+                }else{
+                    text += time_split[1] + " minutes"
+                }
+                
+            }
+            return text
+        }
+        // Load the recipe data from the JSON file
+        window.onload = loadRecipe;
+
+        function loadRecipe(){
+            // Fetch the JSON data from the file using the Fetch API
+            fetch('recipe.json')
+                .then(response => response.json())
+                .then(recipeData => {
+                    recipeData = recipeData.recipe
+                    addRecipe(recipeData)
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+
+            }
+        function addRecipe(recipeData){
+            //Add the recipe-name
+            var recipeNameElement = document.getElementById("recipe-title");
+            recipeNameElement.textContent = recipeData.recipe_title;
+            //Add the recipe-category
+            var recipeCategoryElement = document.getElementById("recipe-category");
+            recipeCategoryElement.textContent = "Category: " + recipeData.category;
+            //Add the recipe-prep-time
+            var recipePrepTimeElement = document.getElementById("recipe-prep-time");
+            recipePrepTimeElement.textContent = "Prep Time: " + convert_to_time(recipeData.prep_time);
+            //Add the recipe-cook-time
+            var recipeCookTimeElement = document.getElementById("recipe-cook-time");
+            recipeCookTimeElement.textContent = "Cook Time: " + convert_to_time(recipeData.cook_time);
+            //Add the recipe-servings
+            var recipeServingsElement = document.getElementById("recipe-servings");
+            recipeServingsElement.textContent = "Servings: " + recipeData.servings
+            recipeServingsElement.dataset.value = recipeData.servings
+            
+            
+            //Add the recipe-ingredients
+            let ingredient_list_first = true
+            for (var i = 0; i < recipeData.ingredients.length; i++){
+                if (ingredient_list_first == true){
+                    document.getElementById("recipe-ingredients").innerHTML += "<ul>"
+                    ingredient_list_first = false
+                }
+                var ingredient = recipeData.ingredients[i];
+                if (ingredient.subheading != null){
+                    document.getElementById("recipe-ingredients").innerHTML += "</ul><h3>" + ingredient.subheading + "</h3><ul>"
+                    console.log("hey")
+                    }else{
+                    var ingredientElement = document.createElement("li");
+                    ingredientElement.class = "ingredient";
+                    let temp_text = ""
+                    if (ingredient.quantity != null){
+                        temp_text += ingredient.quantity + " "
+                    }
+                    if (ingredient.unit != null){
+                        temp_text += ingredient.unit + " "
+                    }1
+                    temp_text += ingredient.name
+                    ingredientElement.textContent = temp_text
+                    document.getElementById("recipe-ingredients").appendChild(ingredientElement);
+                }
+            }   
+
+            //Add the recipe-instructions
+            for (var i = 0; i < recipeData.instructions.length; i++){
+                var instruction = recipeData.instructions[i];
+                var instructionElement = document.createElement("li");
+                instructionElement.class = "instruction";
+                instructionElement.textContent = instruction;
+                document.getElementById("recipe-instructions-list").appendChild(instructionElement);
+            }
+
+            //Add the recipe-credit. If it is a link, add it to recipe-credit-link, otherwise add it to recipe-credit-text
+            recipeCredit = recipeData.credit
+            recipeCreditElement = document.getElementById("recipe-credit-text");
+            recipeCreditLinkElement = document.getElementById("recipe-credit-link");
+            if (recipeCredit.includes("http")){
+                recipeCreditLinkElement.textContent = recipeCredit;
+                recipeCreditLinkElement.href = recipeCredit;
+                recipeCreditElement.style.display = "none";
+            }else{
+                recipeCreditElement.textContent = "Credit: " + recipeCredit;
+                recipeCreditLinkElement.style.display = "none";
+            }
+
+
+            
+        }
+    </script>
+
+    <body>
+        <div class="recipe-header">
+            <div class="recipe-info">
+                <h1 id="recipe-title"></h1>
+                <h2 id="recipe-category"></h2>
+                <h2 id="recipe-prep-time"></h2>
+                <h2 id="recipe-cook-time"></h2>
+                <div id="serving-info">
+                    <h2 id="recipe-servings"></h2>
+                    <div id="serving-buttons">
+                        <button onclick="decrement_serving()">-</button>
+                        <button onclick="increment_serving()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="recipe-ingredients">
+        </div>
+        
+        <div id="recipe-instructions">
+            <h2>Instructions: </h2>
+            <ol id="recipe-instructions-list">
+            </ol>
+        </div>
+
+        <a id="recipe-credit-link"></a>
+        <p id="recipe-credit-text"></p>
+    </body>
+</html>
