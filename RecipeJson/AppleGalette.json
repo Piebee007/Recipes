@@ -1,0 +1,103 @@
+{
+    "recipe": {
+        "recipe_title": "Apple Galette",
+        "category": "Dessert",
+        "prep_time": "1:00",
+        "cook_time": "0:10",
+        "servings": "Serves: 8",
+        "ingredients": [
+            {
+                "name": "PlainFlour",
+                "quantity": "8",
+                "unit": "oz"
+            },
+            {
+                "name": "Butter",
+                "quantity": "6",
+                "unit": "oz"
+            },
+            {
+                "name": "IcingSugar",
+                "quantity": "2.5",
+                "unit": "oz"
+            },
+            {
+                "name": "EggYolks",
+                "quantity": "2"
+            },
+            {
+                "name": "DropsVanilla Extract",
+                "quantity": "2"
+            },
+            {
+                "subheading": "Apple Filling:"
+            },
+            {
+                "name": "CookingApples",
+                "quantity": "2",
+                "unit": "lbs"
+            },
+            {
+                "name": "Butter",
+                "quantity": "0.5",
+                "unit": "oz"
+            },
+            {
+                "name": "LemonRind",
+                "quantity": "0.5"
+            },
+            {
+                "name": "GranulatedSugar",
+                "quantity": "4",
+                "unit": "oz"
+            },
+            {
+                "subheading": "Icing:"
+            },
+            {
+                "name": "IcingSugar",
+                "quantity": "6",
+                "unit": "oz"
+            },
+            {
+                "name": "BoilingWater",
+                "quantity": "3",
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": []
+            },
+            {
+                "subheading": "For the biscuit:"
+            },
+            {
+                "steps" : [
+                    "Put everything in a bowl and knead together to form a paste.",
+                    "Chill in the fridge for half an hour.",
+                    "Roll into 2 disks, then cook at 190°C for 10-12 minutes."
+                ]
+            },
+            {
+                "subheading": "Apple Filling:"
+            },
+            {
+                "steps" : [
+                    "Peel the apples and cut into chunks.",
+                    "Add the apple, butter, sugar and lemon rind to the pan on a gentle heat. Stir until a puree is formed.",
+                    "Put between the pastry."
+                ]
+            },
+            {
+                "subheading": "Icing"
+            },
+            {
+                "steps" : [
+                    "Mix the icing sugar and water together then cover the top biscuit with the Icing"
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}
