@@ -1,0 +1,90 @@
+{
+    "recipe": {
+        "recipe_title": "BeerCanChicken",
+        "category": "Chicken",
+        "prep_time": "0:20",
+        "cook_time": "1:10",
+        "servings": "5",
+        "ingredients": [
+            {
+                "name": "Large whole chicken",
+                "quantity": "1"
+            },
+            {
+                "name": "Cans of light beer",
+                "quantity": "2"
+            },
+            {
+                "name": "cloves of garlic",
+                "quantity": "2"
+            },
+            {
+                "name": "garlic powder",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "dried oregano",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "mixed herbs",
+                "quantity": "0.5",
+                "unit": "tbsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "ground black pepper",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "red onion",
+                "quantity": "1"
+            },
+            {
+                "name": "Potatoes",
+                "quantity": "5"
+            },
+            {
+                "name": "Carrots",
+                "quantity": "4"
+            },
+            {
+                "name": "Frozen peas",
+                "quantity": "200",
+                "unit": "g"
+            },
+            {
+                "name": "Green Beans",
+                "quantity": "200",
+                "unit": "g"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Preheat oven to 175\u00c2\u00b0C",
+                    "In a bowl, mix the garlix powder, dried oregano, mixed herbs, salt, pepper and chopped garlic",
+                    "Pour 1/3 of a can of beer into the bottom of a baking dish. Place the beer can in the centre of the baking dish",
+                    "Fit the whole chicken over the open beer can with the legs on the bottom. With the chicken breasts facing you, use a knife to ut a small slit on each side. Press the tip of each wing into the slit",
+                    "Rub the seasoning mix over the entire chicken",        
+                    "Open the second can of beer and pour 1/2 of it into the pan",
+                    "Bake the chicken in the preheated oven for 45 minutes.",
+                    "Pour the remaining beer into the pan under the chicken and continue to cook until no longer pink and the juices run clear",
+                    "Once cooked, leave to rest for 10 minutes",
+                    "25 minutes before the chicken is cooked, get some peeled and chopped potatoes in a pan of cold water and boil",
+                    "In another pan get some cold water for the carrots, green beans and peas and get boiling.",
+                    "When boiling add the carrots. Then after 10 minutes add the green beans. With 5 minutes left add the frozen peas",
+                    "Then serve with some gravy"
+                ]
+            }
+        ],
+        "credit": "https://www.allrecipes.com/recipe/214617/baked-beer-can-chicken/"
+    }
+}

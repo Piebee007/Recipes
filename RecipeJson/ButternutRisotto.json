@@ -1,0 +1,75 @@
+{
+    "recipe": {
+        "recipe_title": "Bacon & Butternut Risotto",
+        "category": "Chicken",
+        "prep_time": "0:20",
+        "cook_time": "0:35",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Risotto Rice",
+                "quantity": "350",
+                "unit": "g"
+            },
+            {
+                "name": "rashers of Bacon",
+                "quantity": "8"
+            },
+            {
+                "name": "garlic cloves",
+                "quantity": "2"
+            },
+            {
+                "name": "Parsley",
+                "quantity": "20",
+                "unit": "g"
+            },
+            {
+                "name": "Diced butternut squash",
+                "quantity": "600",
+                "unit": "g"
+            },
+            {
+                "name": "chicken stock",
+                "quantity": "1500",
+                "unit": "ml"
+            },
+            {
+                "name": "Onions",
+                "quantity": "2"
+            },
+            {
+                "name": "Grated Italian Style Cheese",
+                "quantity": "50",
+                "unit": "g"
+            },
+            {
+                "subheading": "Optional:"
+            },
+            {
+                "name": "Chicken Scraps",
+                "quantity": "200",
+                "unit": "g"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Preheat the oven to 200°C. Put the diced butternut squash on a baking tray and drizzle over some oil and season with salt and pepper.",
+                    "Roast until golden, 25-30 minutes. Turn halfway through cooking",
+                    "Chop the onion. garlic and parsley into small pieces.",
+                    "Chop the bacon rashers into 1cmx1cm squares",
+                    "Get a saucepan with the chicken stick to simmer",
+                    "Heat a splash of oil in another large saucepan on medium head. Add the onion and bacon.",
+                    "Stir and cook until the onion is soft and the bacon is browned, 5-6 minutes",
+                    "Add the garlic and cook for 1 minute more. Then stir in the risotto rice",
+                    "Cook for 1-2 minutes.",
+                    "Add a ladeful of the stock and stir. Once the rice has absorbed the stock, add another ladelful and continue to stir.",
+                    "Continue adding stock and stirring regularly, until all the stock has been absorbed by the rice - 'Al denta'",
+                    "Add the cooked butternut squash, cheese, 3/4 parsley and a knob of butter"
+                ]
+            }
+        ],
+        "credit": "https://www.hellofresh.co.uk/recipes/creamy-risotto-week-17-fam-58aed714d56afa4fd06463b3"
+    }
+}

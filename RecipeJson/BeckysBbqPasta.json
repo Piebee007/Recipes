@@ -1,0 +1,91 @@
+{
+    "recipe": {
+        "recipe_title": "Beckys Bbq Pasta",
+        "category": "Chicken",
+        "prep_time": "0:10",
+        "cook_time": "0:20",
+        "servings": "2",
+        "ingredients": [
+            {
+                "name": "Chicken Breast, cut into bite size pieces",
+                "quantity": "2"
+            },
+            {
+                "name": "Bacon, cut into 1cm^2",
+                "quantity": "40",
+                "unit": "g"
+            },
+            {
+                "name": "Pasta (Rigatoni)",
+                "quantity": "150",
+                "unit": "g"
+            },
+            {
+                "name": "BBQ Sauce",
+                "quantity": "70",
+                "unit": "g"
+            },
+            {
+                "name": "Medium Onion, diced",
+                "quantity": "1"
+            },
+            {
+                "name": "Garlic Clove, finely chopped",
+                "quantity": "1"
+            },
+            {
+                "name": "BBQ seasoning",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Oregano",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Garlic Granules",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Soft Cheese",
+                "quantity": "60",
+                "unit": "g"
+            },
+            {
+                "name": "Cheddar Cheese",
+                "quantity": "30",
+                "unit": "g"
+            },
+            {
+                "name": "Pasta Water",
+                "quantity": "100",
+                "unit": "ml"
+            },
+            {
+                "subheading": "To Serve:"
+            },
+            {
+                "name": "Parmesan"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Cook the pasta according to the package instructions. Drain, but reserve 100ml of the pasta water.",
+                    "Season the chicken breasts with BBQ seasoning, oregano, and garlic granules.",
+                    "In A large pan, coook the chicken over medium-high heat until cooked through. Remove from the pan and let it rest for a few minutes.",
+                    "In the same pan, add the onion, garlic and bacon. Cook until the bacon is crispy and the onion becomes translucent and slightly caramelized.",
+                    "Add the BBQ sauce to the pan and stir well to combine with the onions, garlic and bacon.",
+                    "Stir in the soft cheese and cheddar cheese until melted and well incorporated into the sauce.",
+                    "Add the cooked pasta and chicken to the pan and toss it in the sauce, coating the everything evenly.",
+                    "If the sauce is too thick, add the reserved pasta water gradually to loosen it up.",
+                    "Serve the BBQ pasta in bowls, topped with grated Parmesan cheese.",
+                    "Enjoy Becky's delicious BBQ Pasta!"
+                ]
+            }
+        ],
+        "credit": "Becky"
+    }
+}

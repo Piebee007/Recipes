@@ -1,6 +1,6 @@
 import json
 
-fileName = "Recipes/Bangers&MashWithOnionGravy.txt"
+fileName = "Recipes/ButternutRisotto.txt"
 
 recipe_json = {
     "recipe": {
@@ -60,7 +60,7 @@ for line in file.readlines():
                 if split_line[1] in units:
                     unit = split_line[1]
                 else:
-                    text += split_line[1]
+                    text += split_line[1] + " "
                 for word in split_line[2:]:
                     text += word + " "
 
@@ -70,7 +70,9 @@ for line in file.readlines():
                     recipe_json["recipe"]["ingredients"].append({"name": text.strip(), "quantity": quantity})
                 else:
                     recipe_json["recipe"]["ingredients"].append({"name": text.strip(), "quantity": quantity, "unit": unit}) 
-
+    elif line.startswith("Credit:"):
+        recipe_json["recipe"]["credit"] = line.replace("Credit: ", "").strip()
+        instructions = False
     elif line.startswith("Ingredients:"):
         ingredients = True
     if instructions == True:
@@ -84,7 +86,12 @@ for line in file.readlines():
     elif line.startswith("Instructions:"):
         instructions = True
         ingredients = False
-    elif line.startswith("Credit:"):
-        recipe_json["recipe"]["credit"] = line.replace("Credit: ", "").strip()
+    
 
 print(json.dumps(recipe_json, indent=4))
+
+file.close()
+
+new_filename = "RecipeJson/" + fileName.split("/")[1].replace(".txt", "") + ".json"
+with open(new_filename, "w") as outfile:
+    json.dump(recipe_json, outfile, indent=4)

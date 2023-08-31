@@ -1,0 +1,61 @@
+{
+    "recipe": {
+        "recipe_title": "Bangers & Mash With Onion Gravy",
+        "category": "Sausage",
+        "prep_time": "0:15",
+        "cook_time": "1:05",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Pork Sausages",
+                "quantity": "8"
+            },
+            {
+                "name": "butter",
+                "quantity": "4",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Onions, thinly sliced",
+                "quantity": "2"
+            },
+            {
+                "name": "baking potatoes, chopped into 2cm chunks",
+                "quantity": "8"
+            },
+            {
+                "name": "flour",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "thyme springs",
+                "quantity": "6"
+            },
+            {
+                "name": "beef stock",
+                "quantity": "600",
+                "unit": "ml"
+            },
+            {
+                "name": "Small bunch of fresh Parsley, finely chopped",
+                "quantity": "1"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Put a frying pan on high heat with some oil. Add the sausages and brown all over, then take them out. They do not need to be fully cooked.",
+                    "Turn the heat down to low and put 1tbsp of the butter and the onions. The onions will take 30 minutes to caramelise. Make sure to move them around the pan to avoid burning.",
+                    "While the onions are softening, fill a sauce pan with cold water, add some salt and put the potatoes in the water. Bring them to a boil and simmer until soft.",
+                    "When the onions have caramelised, add the flour, salt, pepper and the thyme. Then add the stock and mix well.",
+                    "Bring the mixture to a simmer and let it bubble away for 20 minutes. It will start to get thicker.",
+                    "Remove the thyme from the pan and return the sausages. Let it simmer for a further 5 minutes to finish cooking the sausages.",
+                    "Drain the potatoes, season generously and mix in 3tbsp of butter. Mash the potatoes as well as you can. Then mix in the parsley",
+                    "Place a bed of the mash on each plate with 2 sausages on top and spoon over the rich onion gravy."
+                ]
+            }
+        ],
+        "credit": "Meals By Mitch"
+    }
+}
