@@ -1,0 +1,57 @@
+{
+    "recipe": {
+        "recipe_title": "Chorizo Hash",
+        "category": "Chorizo",
+        "prep_time": "0:10",
+        "cook_time": "0:25",
+        "servings": "2",
+        "ingredients": [
+            {
+                "name": "Chorizo Slices, cut into thin strips",
+                "quantity": "120",
+                "unit": "g"
+            },
+            {
+                "name": "Baking Potatoes, cut into little chunks",
+                "quantity": "4"
+            },
+            {
+                "name": "Medium Eggs",
+                "quantity": "4"
+            },
+            {
+                "name": "Red Chilli, diced",
+                "quantity": "1"
+            },
+            {
+                "name": "Onion, diced",
+                "quantity": "1"
+            },
+            {
+                "name": "Spring Onion, sliced",
+                "quantity": "1"
+            },
+            {
+                "subheading": "Optional:"
+            },
+            {
+                "name": "Red Pepper, diced",
+                "quantity": "1"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Fill a pot with water and bring it to a boil. Add the potatoes and parboil them for 5-10 minutes until they are partially cooked.",
+                    "Heat a pan over medium heat and add the chorizo. Cook for about a minute, then set it aside.",
+                    "In the same pan, add the potatoes. Cook until they start to brown and become tender.",
+                    "Add the diced onion, chili, and optional red pepper to the pan. Cook for 5 minutes until the vegetables soften.",
+                    "Season the hash with salt and pepper according to your taste. Return the chorizo to the pan.",
+                    "Set the hash aside and quickly clean the pan. Fry the eggs in the cleaned pan.",
+                    "To serve, place the fried eggs on top of the chorizo hash and sprinkle with sliced spring onions."
+                ]
+            }
+        ],
+        "credit": "Meals By Mitch"
+    }
+}

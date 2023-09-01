@@ -1,0 +1,41 @@
+{
+    "recipe": {
+        "recipe_title": "Chocolate Fondue",
+        "category": "Dessert",
+        "prep_time": "0:15",
+        "cook_time": "0:10",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Butter",
+                "quantity": "50",
+                "unit": "g"
+            },
+            {
+                "name": "plain chocolate, broken into small chunks",
+                "quantity": "50",
+                "unit": "g"
+            },
+            {
+                "name": "cocoa powder",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Golden Syrup",
+                "quantity": "2",
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Place the butter, chocolate, cocoa powder and golden syrup in a small saucepan.",
+                    "Heat gently on a hob, stirring constantly, until all of the ingredients have melted and are well combined.",
+                    "Serve with an assortment of fruit to dip."
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

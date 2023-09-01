@@ -1,0 +1,56 @@
+{
+    "recipe": {
+        "recipe_title": "Cajun  Chicken",
+        "category": "Chicken",
+        "prep_time": "0:15",
+        "cook_time": "0:50",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Chicken Breasts",
+                "quantity": "4"
+            },
+            {
+                "name": "Paprika",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Cayenne Pepper",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Garlic Powder",
+                "quantity": "2",
+                "unit": "tsp"
+            },
+            {
+                "name": "Dried Oregano",
+                "quantity": "2",
+                "unit": "tsp"
+            },
+            {
+                "name": "Oil",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Potatoes",
+                "quantity": "5"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Combine spices, oregano and oil in a large bowl; add chicken and ensure it is evenly coated. (Optionally leave to marinate for an hour).",
+                    "Cut the Potatoes into wedges. Then microwave for 11 minutes.",
+                    "Roast for 20-25 minutes at 220°C and then start the chicken.",
+                    "Cook the chicken for 25 minutes. Cook for high heat for about 5 minutes, then low for the rest.",
+                    "Serve with a salad"
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

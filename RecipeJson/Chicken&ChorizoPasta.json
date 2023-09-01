@@ -1,0 +1,72 @@
+{
+    "recipe": {
+        "recipe_title": "Chicken & Chorizo Pasta",
+        "category": "Chicken",
+        "prep_time": "0:15",
+        "cook_time": "0:20",
+        "servings": "2",
+        "ingredients": [
+            {
+                "name": "Pasta (Rigatoni)",
+                "quantity": "150",
+                "unit": "g"
+            },
+            {
+                "name": "Chorizo, Diced",
+                "quantity": "50",
+                "unit": "g"
+            },
+            {
+                "name": "Chicken Breasts, Cubed",
+                "quantity": "2"
+            },
+            {
+                "name": "Onion, Diced",
+                "quantity": "1"
+            },
+            {
+                "name": "Garlic Cloves, Chopped",
+                "quantity": "2"
+            },
+            {
+                "name": "Sprinkle of chili flakes"
+            },
+            {
+                "name": "Paprika",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Tomato Puree",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Single Cream",
+                "quantity": "100",
+                "unit": "ml"
+            },
+            {
+                "name": "Handfuls of Spinach",
+                "quantity": "4"
+            },
+            {
+                "name": "Grated Parmesan",
+                "quantity": "20",
+                "unit": "g"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Bring a large pot of salted water to a boil. Add the pasta and cook according to the package instructions until al dente. Drain and set aside.",
+                    "Heat a large pan over medium head and add the chicken, chorizo, onion, garlic and spices.",
+                    "Once the chicken is cooked, add the tomato puree and the single cream.",
+                    "Add the spinach to the pan and cook until it wilts down. Add the cooked pasta to the pan and toss everything together until the pasta is evenly coated with the creamy sauce.",
+                    "Divide the creamy chicken and chorizo pasta between two plates. Sprinkle grated Parmesan over the top for added flavor and enjoy!"
+                ]
+            }
+        ],
+        "credit": "https://vm.tiktok.com/ZGJ9nRybV/"
+    }
+}

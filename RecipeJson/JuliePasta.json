@@ -1,0 +1,62 @@
+{
+    "recipe": {
+        "recipe_title": "Julie Pasta",
+        "category": "Pasta",
+        "prep_time": "0:5",
+        "cook_time": "0:35",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Salami",
+                "quantity": "150",
+                "unit": "g"
+            },
+            {
+                "name": "Red Onion, sliced",
+                "quantity": "1"
+            },
+            {
+                "name": "Garlic Clove, diced",
+                "quantity": "1"
+            },
+            {
+                "name": "Balsamic Vinegar",
+                "quantity": "4",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Chopped Tomato Tin",
+                "quantity": "400",
+                "unit": "g"
+            },
+            {
+                "name": "Fresh Basil, Chopped",
+                "quantity": "20",
+                "unit": "g"
+            },
+            {
+                "name": "Rigatoni",
+                "quantity": "300",
+                "unit": "g"
+            },
+            {
+                "name": "Mozzarella Ball, Sliced",
+                "quantity": "1"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Preheat the oven to 190°C.",
+                    "Heat the olive oil in a frying pan, and fry half the salami (cut into quarters) until quite crisp. Add the onion and garlic and cook slowly until the onion is soft.",
+                    "Add the balsamic vinegar, chopped tomatoes, creme fraiche and basil.",
+                    "Mix together, season to taste, and simmer for a few minutes.",
+                    "Cook the rigatoni until 'al dente. Drain, and tip into a baking dish and pour over the sauce.",
+                    "Lay the mozzarella over the top with the rest of the salami.",
+                    "Bake in the preheated oven for 25 minutes until golden."
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

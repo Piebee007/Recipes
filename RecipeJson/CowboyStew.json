@@ -1,0 +1,60 @@
+{
+    "recipe": {
+        "recipe_title": "Cowboy Stew",
+        "category": "Sausage",
+        "prep_time": "0:15",
+        "cook_time": "0:45",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "bacon, chopped into pieces",
+                "quantity": "200",
+                "unit": "g"
+            },
+            {
+                "name": "Pork Sausages",
+                "quantity": "8"
+            },
+            {
+                "name": "onion, finely chopped",
+                "quantity": "1"
+            },
+            {
+                "name": "Red chilli, deseeded and finely chopped",
+                "quantity": "1"
+            },
+            {
+                "name": "Baking potatoes, cut into 2cm chunks",
+                "quantity": "2"
+            },
+            {
+                "name": "tins baked beans",
+                "quantity": "2400",
+                "unit": "xg"
+            },
+            {
+                "name": "tin chopped Tomatoes",
+                "quantity": "400",
+                "unit": "g"
+            },
+            {
+                "name": "(TEST PEAS)"
+            },
+            {
+                "subheading": "Optional: 160g tin sweetcorn, drained"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Put a large pan or casserole dish on a medium heat. Add the bacon and cook until crisp. Take it out and set it aside for later.",
+                    "Add the sausages and brown them all over then set aside with the bacon. They do not need to be cooked through.",
+                    "Add tge onion and chilli and soften for 3-4 minutes. Then add the potatoes along with the beans, tomatoes and optionally sweetcorn. Fill one of the tins with water and add to the pan. Stir everything, then put a lid on and simmer for 15 minutes.",
+                    "Take off the lid, add the bacon and sausages to the pan and mix to ensure nothing is sticking to the bottom. Let it bubble away for another 15 minutes with the lid off.",
+                    "Serve when the potatoes have completely softened."
+                ]
+            }
+        ],
+        "credit": "Meals by Mitch"
+    }
+}

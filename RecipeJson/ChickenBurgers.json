@@ -1,0 +1,53 @@
+{
+    "recipe": {
+        "recipe_title": "Chicken Burgers",
+        "category": "Chicken",
+        "prep_time": "0:10",
+        "cook_time": "0:15",
+        "servings": "2",
+        "ingredients": [
+            {
+                "name": "chicken Breasts",
+                "quantity": "2"
+            },
+            {
+                "name": "BBQ seasoning",
+                "quantity": "4",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Burger buns",
+                "quantity": "4"
+            },
+            {
+                "name": "Chips",
+                "quantity": "100",
+                "unit": "g"
+            },
+            {
+                "subheading": "Optional:"
+            },
+            {
+                "name": "Mozzarella ball, sliced",
+                "quantity": "0.5"
+            },
+            {
+                "name": "Lettuce leaves",
+                "quantity": "2"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Preheat the oven to 180°C and put the chips in",
+                    "Butterfly the chicken breasts and then add a light coasting of oil.",
+                    "Then coat in a generous amount of BBQ seasoning",
+                    "Cook the chicken in a frying pan at a medium heat until cooked. (Optional) use a food temperature probe",
+                    "(Optional) Add the mozzarella slices to the chicken and serve when melted",
+                    "Serve on buns with lettuce along with the chips and any other sides"
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

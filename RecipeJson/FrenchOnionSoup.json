@@ -1,0 +1,61 @@
+{
+    "recipe": {
+        "recipe_title": "French Onion Soup",
+        "category": "Soup",
+        "prep_time": "0:10",
+        "cook_time": "0:50",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Onions, thinly sliced",
+                "quantity": "7"
+            },
+            {
+                "name": "Garlic cloves, finely chopped",
+                "quantity": "4"
+            },
+            {
+                "name": "heaped tbsp plain flour",
+                "quantity": "1"
+            },
+            {
+                "name": "Worcestershire sauce",
+                "quantity": "4",
+                "unit": "tbsp"
+            },
+            {
+                "name": "fresh thyme",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Beef stock",
+                "quantity": "950",
+                "unit": "ml"
+            },
+            {
+                "name": "ball mozzarella",
+                "quantity": "125",
+                "unit": "g"
+            },
+            {
+                "name": "crusty roll",
+                "quantity": "1"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Put a pan on low heat and add 2tbsp oil followed by the onions. Take good care of the onions, moving them around every couple of minutes to ensure that they do not burn. This should take 30 minutes to caramelise.",
+                    "Add the garlic and cook for a further minute, then stir through the flour and mix well until there are no lumps.",
+                    "Ad the Worcestershire sauce and thyme and mix well. Preheat the oven to 180°C.",
+                    "Pour in the stock, put the lid on the pan and allow the soup to simmer and bubble away on a low heat for 10 mintues.",
+                    "Divide the soup equally into 4 ovenproof dishes on a baking tray.",
+                    "Cut the crusty roll into 2cm chunks and place them on top of the soup. Break the ball of mozzarella into chunks and place them on top of the bread.",
+                    "Put the baking tray in the oven for 10 minutes or until the cheese has melted and turned golden. Scatter a few thyme leaves on top and serve."
+                ]
+            }
+        ],
+        "credit": "Meals by Mitch"
+    }
+}

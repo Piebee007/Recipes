@@ -1,0 +1,72 @@
+{
+    "recipe": {
+        "recipe_title": "Chicken Gyros",
+        "category": "Chicken",
+        "prep_time": "0:20",
+        "cook_time": "0:45",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "chicken legs",
+                "quantity": "1",
+                "unit": "kg"
+            },
+            {
+                "name": "Natural Yogurt",
+                "quantity": "500",
+                "unit": "ml"
+            },
+            {
+                "name": "Red onion",
+                "quantity": "1"
+            },
+            {
+                "name": "Baking potatoes",
+                "quantity": "23",
+                "unit": "-"
+            },
+            {
+                "name": "cucumber",
+                "quantity": "1"
+            },
+            {
+                "name": "Self raising flour",
+                "quantity": "250",
+                "unit": "g"
+            },
+            {
+                "name": "large tomatoes",
+                "quantity": "2"
+            },
+            {
+                "name": "lemon",
+                "quantity": "1"
+            },
+            {
+                "name": "garlic Bulb",
+                "quantity": "1"
+            },
+            {
+                "name": "packet of roast veg mix",
+                "quantity": "1"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Marinate the chicken legs with lemon juice, yogurt, 3 cloves of garlic and the seasoning mix",
+                    "When ready to cook, preheat the oven to 180\u00c2\u00b0C and cook for 40 minutes",
+                    "In the mean time, cut up the baking potatoes so they are thin like fries. Cover with oil, salt and pepper",
+                    "Cook for 20-30 minutes",
+                    "For the tzatziki, grate up the cucumber and squeeze out the water. Add some yogurt, lemon juice, salt, paper, grated garlic, some olive oil and optionally some dill",
+                    "For the flatbread, add equal parts self raising flour and yogurt and a pinch of salt",
+                    "Kneed on an oiled board. Then roll out and cook on a screaching hot pan for a couple of minutes on each side",
+                    "Shread all the chicken up.",
+                    "Add to the flatbread: tzatziki sauce, chicken, fries, onion and tomato"
+                ]
+            }
+            
+        ],
+        "credit": ""
+    }
+}

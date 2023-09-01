@@ -1,0 +1,96 @@
+{
+    "recipe": {
+        "recipe_title": "Lamb Tikka Curry",
+        "category": "Lamb",
+        "prep_time": "0:20",
+        "cook_time": "0:40",
+        "servings": "6",
+        "ingredients": [
+            {
+                "name": "Lamb Mince",
+                "quantity": "500",
+                "unit": "g"
+            },
+            {
+                "name": "Red Chillies",
+                "quantity": "12",
+                "unit": "-"
+            },
+            {
+                "name": "handfuls of dried lentils",
+                "quantity": "2"
+            },
+            {
+                "name": "Tomato Passata",
+                "quantity": "400",
+                "unit": "g"
+            },
+            {
+                "name": "Carrots, grated",
+                "quantity": "2"
+            },
+            {
+                "name": "Spinach",
+                "quantity": "150",
+                "unit": "g"
+            },
+            {
+                "name": "Turmeric",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Red onions",
+                "quantity": "23",
+                "unit": "-"
+            },
+            {
+                "name": "Garlic Cloves",
+                "quantity": "3"
+            },
+            {
+                "name": "Tikka Curry Paste",
+                "quantity": "200",
+                "unit": "g"
+            },
+            {
+                "name": "Chicken Stock cube",
+                "quantity": "1"
+            },
+            {
+                "name": "of Water",
+                "quantity": "200",
+                "unit": "ml"
+            },
+            {
+                "subheading": "To Serve:"
+            },
+            {
+                "name": "Rice"
+            },
+            {
+                "name": "Naan Bread"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Heat a large frying pan on high heat (no oil)",
+                    "Then get a pan of water boiling and boil the lentils for 5-7 minutes",
+                    "When hot, add the lamb mince and use a spoon to break it up.Cook until browned, 5-6 minutes",
+                    "Whilst the lamb cooks, chop the red onion into small pieces",
+                    "Once the lamb has browned, drain and discard any excess fat. Add the onion to the lamb and cook until softened, 3-4 minutes",
+                    "While the onion cooks, finely chop the deseeded chillies.",
+                    "Peel and chop the garlic. Grate the carrots finely.",
+                    "Once the onion has softened, stir in the tikka paste, garlic, carrot, half of the chilli, turmeric and chillie powder (add more or less if you want it spicier)",
+                    "Cook for 1 minutes",
+                    "Add the passata (not the full tub), water and chicken stock, then stir through",
+                    "Stir in the lentils with salt, pepper and a pinch of sugar. Then simmer until thickened.",
+                    "Add spinach to the curry a handful at the time.",
+                    "Serve with rice (boiled with turmeric in the water) and naan bread"
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

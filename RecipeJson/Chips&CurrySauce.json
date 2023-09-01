@@ -1,0 +1,73 @@
+{
+    "recipe": {
+        "recipe_title": "Chips & Curry Sauce",
+        "category": "Potato",
+        "prep_time": "0:15",
+        "cook_time": "0:40",
+        "servings": "2",
+        "ingredients": [
+            {
+                "name": "Coconut Milk",
+                "quantity": "400",
+                "unit": "g"
+            },
+            {
+                "name": "Plain Flour",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "chicken stock cube",
+                "quantity": "1"
+            },
+            {
+                "name": "carrot",
+                "quantity": "1"
+            },
+            {
+                "name": "Onion",
+                "quantity": "1"
+            },
+            {
+                "name": "Ginger, grated",
+                "quantity": "10",
+                "unit": "g"
+            },
+            {
+                "name": "cloves of garlic",
+                "quantity": "3"
+            },
+            {
+                "name": "mild curry powder",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "soy sauce",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Jacket Potatoes",
+                "quantity": "4"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Preheat the oven at 180°C",
+                    "Cut up the jacket potatoes into batons (with the skins on). Put into a bowl and drizzle on some oil. Add salt, pepper and a table spoon of curry powder",
+                    "Put into the oven and cook for 30-40 minutes",
+                    "For the sauce, add grated carrot and chopped onion to a pan at medium Heat",
+                    "Let it soften for 3-4 minutes. Then add the garlic and a bit of ginger",
+                    "After a minute, add a heaped table spoon of curry powder and flour, then mix through",
+                    "Gradually add chicken stock, mixing everytime.",
+                    "Add half a tin of coconut milk and the soy sauce. Stir it through and heat through for 10 minutes",
+                    "Pass it through a siev or blend",
+                    "(Optional) For serving add cheese to the chips for the last couple minutes. Garnish with spring onion"
+                ]
+            }
+        ],
+        "credit": "https://vm.tiktok.com/ZMYLaRTpv/"
+    }
+}

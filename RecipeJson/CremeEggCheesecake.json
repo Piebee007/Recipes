@@ -1,0 +1,79 @@
+{
+    "recipe": {
+        "recipe_title": "Creme Egg Cheesecake",
+        "category": "Dessert",
+        "prep_time": "3:30",
+        "cook_time": "0:0",
+        "servings": "8",
+        "ingredients": [
+            {
+                "name": "Chocolate Digestives, crushed",
+                "quantity": "150",
+                "unit": "g"
+            },
+            {
+                "name": "Unsalted Butter, melted",
+                "quantity": "75",
+                "unit": "g"
+            },
+            {
+                "subheading": "For the Cheesecake:300ml Double cream"
+            },
+            {
+                "name": "Icing Sugar",
+                "quantity": "75",
+                "unit": "g"
+            },
+            {
+                "name": "Cream Cheese",
+                "quantity": "280",
+                "unit": "g"
+            },
+            {
+                "name": "Lemon Juice",
+                "quantity": "60",
+                "unit": "ml"
+            },
+            {
+                "name": "Mini Creme Eggs, cut into quarters",
+                "quantity": "90",
+                "unit": "g"
+            },
+            {
+                "subheading": "To Decorate:3 Creme Eggs"
+            },
+            {
+                "name": "White Chocolate",
+                "quantity": "75",
+                "unit": "g"
+            },
+            {
+                "name": "Milk Chocolate",
+                "quantity": "75",
+                "unit": "g"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Mix the crushed biscuits and the butter, then press into a cake tin with a removable bottom.",
+                    "Beat the double cream with the icing sugar until it forms soft, floppy peaks.",
+                    "Fold in the cream cheese, lemon juice and chopped mini creme eggs until everything is combined.",
+                    "Put on top of the biscuit base and level out.",
+                    "Leave to firm up in the fridge for at least 2 hours or overnight.",
+                    "Remove from the tin by running a slim, sharp knife around the edge and popping it out."
+                ]
+            },
+            {
+                "subheading": "To Decorate:"
+            },
+            {
+                "steps": [
+                    "Melt the chocolate and drizzle on top.",
+                    "Then cut the cream eggs in half and sit on top."
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

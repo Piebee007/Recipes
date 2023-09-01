@@ -1,0 +1,101 @@
+{
+    "recipe": {
+        "recipe_title": "Chicken Fajitas",
+        "category": "Chicken",
+        "prep_time": "0:15",
+        "cook_time": "0:20",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "chicken breasts, sliced into thin strips",
+                "quantity": "500",
+                "unit": "g"
+            },
+            {
+                "name": "onion, thinly sliced",
+                "quantity": "1"
+            },
+            {
+                "name": "cloves of garlic, minced",
+                "quantity": "2"
+            },
+            {
+                "name": "tortillas",
+                "quantity": "8"
+            },
+            {
+                "subheading": "Optional:"
+            },
+            {
+                "name": "bell pepper, thinly sliced",
+                "quantity": "1"
+            },
+            {
+                "subheading": "Seasoning:"
+            },
+            {
+                "name": "chili powder",
+                "quantity": "2",
+                "unit": "tsp"
+            },
+            {
+                "name": "ground cumin",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Paprika",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "dried oregano",
+                "quantity": "0.5",
+                "unit": "tsp"
+            },
+            {
+                "name": "Lime, juiced",
+                "quantity": "1"
+            },
+            {
+                "subheading": "Optional toppings:"
+            },
+            {
+                "name": "Lettuce, shredded"
+            },
+            {
+                "name": "Cucumber, sliced"
+            },
+            {
+                "name": "Tomato, sliced"
+            },
+            {
+                "name": "Sour cream"
+            },
+            {
+                "name": "Guacamole"
+            },
+            {
+                "name": "Salsa"
+            },
+            {
+                "name": "Grated Cheese"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "In a bowl, combine the chili powder, ground cumin, paprika, dried oregano, minced garlic, lime juice, salt, and pepper. Mix well to create a marinade.",
+                    "Place the sliced chicken in a separate bowl and pour the marinade over it. Toss the chicken until it is evenly coated. Let it marinate for at least 10 minutes, or refrigerate for up to 1 hour for more flavor.",
+                    "Heat 1 tablespoon of olive oil in a large skillet or frying pan over medium-high heat. Add the marinated chicken to the skillet, and cook for 5-6 minutes, stirring occasionally, until the chicken is cooked through and slightly browned. Remove the chicken from the skillet and set it aside.",
+                    "If using a bell pepper, in the same skillet, heat the remaining tablespoon of olive oil. Add the sliced onion and bell pepper to the skillet, and cook for 4-5 minutes, stirring occasionally, until the vegetables are tender-crisp. If not using a bell pepper, proceed to the next step.",
+                    "Return the cooked chicken to the skillet (without the bell pepper) with the onions and stir to combine. Cook for an additional 1-2 minutes to heat everything through.",
+                    "Warm the flour tortillas either by wrapping them in foil and placing them in a preheated oven at 180°C (350°F) for a few minutes or by heating them in a dry skillet over medium heat for about 30 seconds on each side.",
+                    "Serve the chicken and onion mixture in warm tortillas. Garnish with your preferred toppings such as sour cream, guacamole, salsa, shredded cheese, and chopped cilantro.",
+                    "Roll up the tortillas and enjoy the delicious chicken fajitas!"
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}
