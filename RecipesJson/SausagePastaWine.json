@@ -1,0 +1,67 @@
+{
+    "recipe": {
+        "recipe_title": "Sausage Pasta Wine",
+        "category": "Sausage",
+        "prep_time": "0:05",
+        "cook_time": "0:40",
+        "servings": "Serves:4",
+        "ingredients": [
+            {
+                "name": "caramelised onion sausages",
+                "quantity": "6"
+            },
+            {
+                "name": "large onion, finely chopped",
+                "quantity": "1"
+            },
+            {
+                "name": "of tinned tomatoes",
+                "quantity": "400",
+                "unit": "g"
+            },
+            {
+                "name": "Pasta (fusilli or farfalle)",
+                "quantity": "300",
+                "unit": "g"
+            },
+            {
+                "name": "of frozen peas",
+                "quantity": "150",
+                "unit": "g"
+            },
+            {
+                "name": "vegetable bullion powder",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "gravy granules",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Grated parmesan cheese to serve",
+                "quantity": "1",
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Fry sausages slowly until just cooked. Remove and cut into bite size pieces.",
+                    "Add chopped onion to sausage pan and cook slowly.",
+                    "To another large pan, add the cut sausages and add a large class of wine/small bottle. Gently simmer.",
+                    "Once the onion is cooked, add the tin of tomatoes and heat through adding the bullion and gravy granules.",
+                    "Transfer this mixture to the sausages.",
+                    "Rinse out the tomatoe tin with some water and add it to the frying the sauapan to deglaze it. Then add to the sausages.",
+                    "Cook for about 20-30 minutes (longer the better). The sauce should have thickened but should still be fairly liquidy.",
+                    "Cook the pasta as per instructions. With 5 minutes to go, add the frozen peas (make sure the pasta is boiling fiercely when you add the peas).",
+                    "Drain the pasta and peas and then add them to the sausage mixture.",
+                    "Mix to make sure pasta is covered in the sauce. Keep on the heat for about 2 minutes.",
+                    "Serve hot, garnished with grated parmesan cheese if desired."
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

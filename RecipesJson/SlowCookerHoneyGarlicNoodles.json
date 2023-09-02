@@ -1,0 +1,78 @@
+{
+    "recipe": {
+        "recipe_title": "Slow Cooker Honey Garlic Noodles",
+        "category": "Chicken",
+        "prep_time": "0:15",
+        "cook_time": "6:00",
+        "servings": "2",
+        "ingredients": [
+            {
+                "name": "Chicken Breasts",
+                "quantity": "2"
+            },
+            {
+                "name": "Soy Sauce",
+                "quantity": "7",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Hoisin Sauce",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "honey",
+                "quantity": "7",
+                "unit": "tbsp"
+            },
+            {
+                "name": "ginger",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Cornflour",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "water",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Chicken Stock cube",
+                "quantity": "1"
+            },
+            {
+                "name": "water",
+                "quantity": "100",
+                "unit": "ml"
+            },
+            {
+                "name": "nests of Noodles",
+                "quantity": "2"
+            },
+            {
+                "name": "Spring Onion, sliced",
+                "quantity": "2"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Boil the kettle and prepare the chicken stock.",
+                    "In a small bowl, mix the cornflour and water to create a slurry.",
+                    "Place the chicken breasts, soy sauce, hoisin sauce, honey, minced ginger, garlic, cornflour slurry, and chicken stock in the slow cooker.",
+                    "Stir the ingredients to combine, then set the slow cooker to low heat for 6 hours.",
+                    "Cook the noodles according to the package instructions.",
+                    "Once the chicken is cooked and tender, use two forks to shred it inside the slow cooker.",
+                    "Add the sliced spring onions and cooked noodles to the slow cooker, then mix everything together.",
+                    "Allow the flavors to meld for a few minutes on low heat.",
+                    "Serve the delicious honey garlic noodles hot and enjoy!"
+                ]
+            }
+        ],
+        "credit": "Holly and Ross"
+    }
+}

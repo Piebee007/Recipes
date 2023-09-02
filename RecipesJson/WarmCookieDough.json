@@ -1,0 +1,74 @@
+{
+    "recipe": {
+        "recipe_title": "Warm Cookie Dough",
+        "category": "Dessert",
+        "prep_time": "0:15",
+        "cook_time": "0:15",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Butter",
+                "quantity": "125",
+                "unit": "g"
+            },
+            {
+                "name": "Caster Sugar",
+                "quantity": "100",
+                "unit": "g"
+            },
+            {
+                "name": "Brown Sugar",
+                "quantity": "100",
+                "unit": "g"
+            },
+            {
+                "name": "Egg",
+                "quantity": "1"
+            },
+            {
+                "name": "Vanilla Essence",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt",
+                "quantity": "0.5",
+                "unit": "tsp"
+            },
+            {
+                "name": "Self-raising Flour",
+                "quantity": "225",
+                "unit": "g"
+            },
+            {
+                "name": "Chocolate Chips",
+                "quantity": "100",
+                "unit": "g"
+            },
+            {
+                "subheading": "Optional:"
+            },
+            {
+                "name": "Ice Cream"
+            },
+            {
+                "name": "Sauce"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "In a large bowl, mix the butter, caster & brown sugar.",
+                    "Add the egg & vanilla essence a mix again.",
+                    "Next add the flour, salt and choc chips, and mix again thoroughly.",
+                    "Preheat the oven to 200°C.",
+                    "Divide the mixture between 4 pie dishes.",
+                    "Press the dough into the dishes and then put into the oven for 6 minutes.",
+                    "Reduce the oven temp to 180°C and continue to bake for around another 7 minutes. It should be golden on the top & soft in the middle.",
+                    "Serve with ice-cream & sauce."
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

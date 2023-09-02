@@ -1,0 +1,79 @@
+{
+    "recipe": {
+        "recipe_title": "Toms Tray Bake",
+        "category": "Chorizo",
+        "prep_time": "0:30",
+        "cook_time": "0:50",
+        "servings": "Serves:4",
+        "ingredients": [
+            {
+                "name": "chicken breasts",
+                "quantity": "4"
+            },
+            {
+                "name": "Spanish chorizo ring",
+                "quantity": "1"
+            },
+            {
+                "name": "butternut squash, peeled and diced into 2cm cubes",
+                "quantity": "1"
+            },
+            {
+                "name": "baby potatoes, halved if too large",
+                "quantity": "500",
+                "unit": "g"
+            },
+            {
+                "name": "sweet potatoes, peeled and diced into 2cm cubes",
+                "quantity": "23",
+                "unit": "-"
+            },
+            {
+                "name": "red onions, roughly chopped",
+                "quantity": "12",
+                "unit": "-"
+            },
+            {
+                "name": "cloves of garlic, roughly chopped",
+                "quantity": "4"
+            },
+            {
+                "name": "thyme",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt and pepper to taste"
+            },
+            {
+                "subheading": "Optional:"
+            },
+            {
+                "name": "broccoli, peas or green beans",
+                "quantity": "200",
+                "unit": "g"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Preheat the oven to 200°C/180°C fan/gas mark 6.",
+                    "In a large roasting tin or baking tray, add the diced butternut squash, sweet potatoes, baby potatoes, red onions, garlic, thyme, oil, salt and pepper.Drizzle with olive oil and sprinkle with thyme leaves, salt and pepper. Toss everything together to coat evenly.",
+                    "Roast the vegetables for 15 minutes.",
+                    "Meanwhile, slice the chorizo into 5mm rounds and dice the chicken breasts into 2cm cubes.",
+                    "Add the chorizo to the roasting tin and toss everything together. Roast for another 10-15 minutes until the chorizo starts to crisp up.",
+                    "Add the diced chicken to the tin and toss everything together again. Roast for another 15-20 minutes until the chicken is cooked through and the vegetables are tender and caramelised."
+                ]
+            },
+            {
+                "subheading": "Optional: in the last 5-10 minutes of cooking, add the broccoli or green beans to the tin and toss everything together."
+            },
+            {
+                "steps": [
+                    "Serve hot, garnished with extra thyme leaves if desired."
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

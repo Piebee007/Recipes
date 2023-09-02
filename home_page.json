@@ -1,0 +1,380 @@
+{
+    "categories": [
+        "Dessert",
+        "Sausage",
+        "Chicken",
+        "Breakfast",
+        "Beef",
+        "Potato",
+        "Chorizo",
+        "Soup",
+        "Pasta",
+        "Lamb",
+        "Peperoni",
+        "Steak"
+    ],
+    "recipes": [
+        {
+            "recipe_file": "Bangers&MashWithOnionGravy",
+            "recipe_title": "Bangers & Mash With Onion Gravy",
+            "recipe_category": "Sausage",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "1:05",
+            "recipe_total_time": "80"
+        },
+        {
+            "recipe_file": "BeckysBbqPasta",
+            "recipe_title": "Beckys Bbq Pasta",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:20",
+            "recipe_total_time": "30"
+        },
+        {
+            "recipe_file": "BeerCanChicke",
+            "recipe_title": "BeerCanChicken",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "1:10",
+            "recipe_total_time": "90"
+        },
+        {
+            "recipe_file": "BreakfastQuesadilla",
+            "recipe_title": "Breakfast Quesadillas",
+            "recipe_category": "Breakfast",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:25",
+            "recipe_total_time": "40"
+        },
+        {
+            "recipe_file": "ButternutRisott",
+            "recipe_title": "Bacon & Butternut Risotto",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "0:35",
+            "recipe_total_time": "55"
+        },
+        {
+            "recipe_file": "CajunChicke",
+            "recipe_title": "Cajun  Chicken",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:50",
+            "recipe_total_time": "65"
+        },
+        {
+            "recipe_file": "Chicken&ChorizoPasta",
+            "recipe_title": "Chicken & Chorizo Pasta",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:20",
+            "recipe_total_time": "35"
+        },
+        {
+            "recipe_file": "ChickenBurger",
+            "recipe_title": "Chicken Burgers",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:15",
+            "recipe_total_time": "25"
+        },
+        {
+            "recipe_file": "ChickenFajita",
+            "recipe_title": "Chicken Fajitas",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:20",
+            "recipe_total_time": "35"
+        },
+        {
+            "recipe_file": "ChickenFriedRice",
+            "recipe_title": "Chicken Fried Rice",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:15",
+            "recipe_total_time": "30"
+        },
+        {
+            "recipe_file": "ChickenGyr",
+            "recipe_title": "Chicken Gyros",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "0:45",
+            "recipe_total_time": "65"
+        },
+        {
+            "recipe_file": "ChilliLoadedWedge",
+            "recipe_title": "Chilli Loaded Wedges",
+            "recipe_category": "Beef",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "0:45",
+            "recipe_total_time": "65"
+        },
+        {
+            "recipe_file": "Chips&CurrySauce",
+            "recipe_title": "Chips & Curry Sauce",
+            "recipe_category": "Potato",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:40",
+            "recipe_total_time": "55"
+        },
+        {
+            "recipe_file": "ChorizoHash",
+            "recipe_title": "Chorizo Hash",
+            "recipe_category": "Chorizo",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:25",
+            "recipe_total_time": "35"
+        },
+        {
+            "recipe_file": "CowboyStew",
+            "recipe_title": "Cowboy Stew",
+            "recipe_category": "Sausage",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:45",
+            "recipe_total_time": "60"
+        },
+        {
+            "recipe_file": "FrenchOnionSoup",
+            "recipe_title": "French Onion Soup",
+            "recipe_category": "Soup",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:50",
+            "recipe_total_time": "60"
+        },
+        {
+            "recipe_file": "HawaiianBbqChickenPizza",
+            "recipe_title": "Hawaiian BBQ Chicken Pizza",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:30",
+            "recipe_cook_time": "0:15",
+            "recipe_total_time": "45"
+        },
+        {
+            "recipe_file": "FamousCurry",
+            "recipe_title": "Jenson's Famous Curry",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:25",
+            "recipe_total_time": "35"
+        },
+        {
+            "recipe_file": "uliePasta",
+            "recipe_title": "Julie Pasta",
+            "recipe_category": "Pasta",
+            "recipe_prep_time": "0:5",
+            "recipe_cook_time": "0:35",
+            "recipe_total_time": "40"
+        },
+        {
+            "recipe_file": "LambTikkaCurry",
+            "recipe_title": "Lamb Tikka Curry",
+            "recipe_category": "Lamb",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "0:40",
+            "recipe_total_time": "60"
+        },
+        {
+            "recipe_file": "LoadedJacketPotatoe",
+            "recipe_title": "Loaded Jacket Potatoes",
+            "recipe_category": "Potato",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "1:40",
+            "recipe_total_time": "120"
+        },
+        {
+            "recipe_file": "Mac&CheeseWithChorizo&Bac",
+            "recipe_title": "Mac & Cheese With Chorizo & Bacon",
+            "recipe_category": "Chorizo",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "1:00",
+            "recipe_total_time": "75"
+        },
+        {
+            "recipe_file": "Meatball",
+            "recipe_title": "Meatballs",
+            "recipe_category": "Beef",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:25",
+            "recipe_total_time": "35"
+        },
+        {
+            "recipe_file": "NaanBreadPizza",
+            "recipe_title": "Naan Bread Pizza",
+            "recipe_category": "Peperoni",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:05",
+            "recipe_total_time": "15"
+        },
+        {
+            "recipe_file": "PastaBake",
+            "recipe_title": "Pasta Bake",
+            "recipe_category": "Pasta",
+            "recipe_prep_time": "0:05",
+            "recipe_cook_time": "0:35",
+            "recipe_total_time": "40"
+        },
+        {
+            "recipe_file": "PeriPeriChicke",
+            "recipe_title": "Peri Peri Chicken",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:30",
+            "recipe_cook_time": "1:50",
+            "recipe_total_time": "140"
+        },
+        {
+            "recipe_file": "Sausage&TomatoPasta",
+            "recipe_title": "Sausage & Tomato Pasta",
+            "recipe_category": "Sausage",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:25",
+            "recipe_total_time": "35"
+        },
+        {
+            "recipe_file": "SausageCasserole",
+            "recipe_title": "Sausage Casserole",
+            "recipe_category": "Sausage",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:45",
+            "recipe_total_time": "55"
+        },
+        {
+            "recipe_file": "SausagePastaWine",
+            "recipe_title": "Sausage Pasta Wine",
+            "recipe_category": "Sausage",
+            "recipe_prep_time": "0:05",
+            "recipe_cook_time": "0:40",
+            "recipe_total_time": "45"
+        },
+        {
+            "recipe_file": "SesameSeedChicke",
+            "recipe_title": "Sesame Seed Chicken",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "0:30",
+            "recipe_total_time": "50"
+        },
+        {
+            "recipe_file": "SlowCookerHoneyGarlicNoodle",
+            "recipe_title": "Slow Cooker Honey Garlic Noodles",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "6:00",
+            "recipe_total_time": "375"
+        },
+        {
+            "recipe_file": "SteakSandwiche",
+            "recipe_title": "Steak Sandwiches",
+            "recipe_category": "Steak",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:20",
+            "recipe_total_time": "30"
+        },
+        {
+            "recipe_file": "TomsTrayBake",
+            "recipe_title": "Toms Tray Bake",
+            "recipe_category": "Chorizo",
+            "recipe_prep_time": "0:30",
+            "recipe_cook_time": "0:50",
+            "recipe_total_time": "80"
+        }
+    ],
+    "deserts": [
+        {
+            "recipe_file": "AppleGalette",
+            "recipe_title": "Apple Galette",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "1:00",
+            "recipe_cook_time": "0:10",
+            "recipe_total_time": "70"
+        },
+        {
+            "recipe_file": "BiscoffCake",
+            "recipe_title": "BiscoffCake",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:05",
+            "recipe_cook_time": "0:20",
+            "recipe_total_time": "25"
+        },
+        {
+            "recipe_file": "Brownie",
+            "recipe_title": "Brownies",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:25",
+            "recipe_cook_time": "0:35",
+            "recipe_total_time": "60"
+        },
+        {
+            "recipe_file": "ChocolateFondue",
+            "recipe_title": "Chocolate Fondue",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:10",
+            "recipe_total_time": "25"
+        },
+        {
+            "recipe_file": "CremeEggCheesecake",
+            "recipe_title": "Creme Egg Cheesecake",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "3:30",
+            "recipe_cook_time": "0:0",
+            "recipe_total_time": "210"
+        },
+        {
+            "recipe_file": "LemonDrizzleCake",
+            "recipe_title": "Lemon Drizzle Cake",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:40",
+            "recipe_total_time": "50"
+        },
+        {
+            "recipe_file": "MillionaireShortbread",
+            "recipe_title": "Millionaire Shortbread",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "0:30",
+            "recipe_total_time": "50"
+        },
+        {
+            "recipe_file": "MincemeatShortbread",
+            "recipe_title": "Mincemeat Shortbread",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:45",
+            "recipe_cook_time": "0:35",
+            "recipe_total_time": "80"
+        },
+        {
+            "recipe_file": "PeanutButter&ChocolateOatBar",
+            "recipe_title": "Peanut Butter & Chocolate Oat Bars",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "2:00",
+            "recipe_total_time": "135"
+        },
+        {
+            "recipe_file": "aspberryLayerCheesecake",
+            "recipe_title": "Raspberry Layer Cheesecake",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:02",
+            "recipe_total_time": "17"
+        },
+        {
+            "recipe_file": "ToffeeSauce",
+            "recipe_title": "Toffee Sauce",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:10",
+            "recipe_total_time": "20"
+        },
+        {
+            "recipe_file": "WarmCookieDough",
+            "recipe_title": "Warm Cookie Dough",
+            "recipe_category": "Dessert",
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:15",
+            "recipe_total_time": "30"
+        }
+    ]
+}

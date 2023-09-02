@@ -1,0 +1,57 @@
+{
+    "recipe": {
+        "recipe_title": "Steak Sandwiches",
+        "category": "Steak",
+        "prep_time": "0:10",
+        "cook_time": "0:20",
+        "servings": "",
+        "ingredients": [
+            {
+                "name": "Steaks",
+                "quantity": "2"
+            },
+            {
+                "name": "Torpedo Buns",
+                "quantity": "2"
+            },
+            {
+                "name": "Onion, chopped",
+                "quantity": "1"
+            },
+            {
+                "name": "Mozzeralla Ball",
+                "quantity": "1"
+            },
+            {
+                "name": "Butter",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Parsley, finely chopped",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Garlic cloves, finely chopped",
+                "quantity": "2"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Pat the steaks dry and season generously.",
+                    "Combine the garlic and parsely with the butter and spread on the torpedo buns.",
+                    "Put the onions on low heat with a splace of water. Cover with a lid until caramelised.",
+                    "Then cook the steaks on high heat according to your desired doneness, turning once. The cooking time will depend on the thickness of the steaks and your preference.",
+                    "Once cooked, remove the staks from the pan and wrap them in foil. ALlow to rest for at least 5 minutes.",
+                    "Add the Mozeralla ball to the caramelised onions and allow to melt.",
+                    "Thinly slice the rested steaks and place them on the torpedo buns.",
+                    "Top the steak with the melted mozzarella and onion mixture.",
+                    "Serve the steak sandwiches warm and enjoy!"
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

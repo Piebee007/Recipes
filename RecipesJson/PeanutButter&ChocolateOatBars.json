@@ -1,0 +1,50 @@
+{
+    "recipe": {
+        "recipe_title": "Peanut Butter & Chocolate Oat Bars",
+        "category": "Dessert",
+        "prep_time": "0:15",
+        "cook_time": "2:00",
+        "servings": "12",
+        "ingredients": [
+            {
+                "name": "Peanut Butter",
+                "quantity": "380",
+                "unit": "g"
+            },
+            {
+                "name": "Honey",
+                "quantity": "190",
+                "unit": "g"
+            },
+            {
+                "name": "Porridge Oats",
+                "quantity": "400",
+                "unit": "g"
+            },
+            {
+                "name": "milk chocolate, broken into chunks",
+                "quantity": "200",
+                "unit": "g"
+            },
+            {
+                "name": "Salted Peanuts, roughly chopped",
+                "quantity": "40",
+                "unit": "g"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Put the peanut butter and honey in a microwave-safe bowl and microwave on full power in 30-second bursts until you have a silky, glossy and smooth mixture.",
+                    "Take out the bowl and gradually stir in the oats until they are well combined with the honey and peanut butter mixture.",
+                    "Line a baking tray with cling film (25cm x 18cm x 4cm tray).",
+                    "Tip the peanut butter and oat mixture into the tray and press it down gently with the back of the spoon into the bottom of the tray. Put the tray in the fridge for 1 hour to set.",
+                    "Microwave the chocolate in a bowl on full power in 30-secon bursts until it has melted. Tip it on top of the oats, smoothing it with the back of a spoon. Sprinkle the peanuts on top.",
+                    "Put the tray back in the fridge for a further hour until the chocolate is firm.",
+                    "Cut into squares or rectangluar bars and serve."
+                ]
+            }
+        ],
+        "credit": "Meals by Mitch"
+    }
+}

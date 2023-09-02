@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel ="stylesheet" href="CSS/homePageCSS.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Homepage</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GSJV2RPDMC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GSJV2RPDMC');
+</script>
+<script>
+    document.getElementById('searchInput').addEventListener('input', searchRecipes);
+    searchRecipes(); // Initial search to show all recipes
+</script>
+<script>
+    function convert_to_time(time){
+    var text = ""
+    let time_split= time.split(":")
+    if (time_split[0] =="1"){
+        text += time_split[0] + " hour "
+    }else if (time_split[0] != "0"){
+        text += time_split[0] + " hours "
+    }
+
+    if (time_split[1] != "00"){
+        if (time_split[1][0] == "0"){
+            text += time_split[1][1] + " minutes"
+        }else{
+            text += time_split[1] + " minutes"
+        }
+        
+    }
+    return text
+}
+
+function searchRecipes() {
+    const searchValue = document.getElementById('searchInput').value.toLowerCase();
+    const recipeCategories = document.getElementsByTagName('h2');
+    let noResults = true;
+    if (searchValue == "") {
+        noResults = false;
+    }
+    
+  
+    for (const category of recipeCategories) {
+      const recipeLinksDiv = category.nextElementSibling;
+      const recipeLinks = recipeLinksDiv.getElementsByClassName('recipe-box');
+      let anyMatch = false;
+      let allRecipeBoxesHidden = true;
+  
+      // Search in the category header (h2 element)
+      const categoryTitle = category.innerText.toLowerCase();
+      if (categoryTitle.includes(searchValue)) {
+        anyMatch = true;
+  
+        // Show all recipe-links in the category if the category header matches the search
+        for (const recipeLink of recipeLinks) {
+          recipeLink.style.display = '';
+          allRecipeBoxesHidden = false;
+        }
+      } else {
+        for (const recipeLink of recipeLinks) {
+          const recipeTitle = recipeLink.getElementsByTagName('h3')[0].innerText.toLowerCase();
+  
+          if (recipeTitle.includes(searchValue)) {
+            recipeLink.style.display = '';
+            anyMatch = true;
+            allRecipeBoxesHidden = false;
+          } else {
+            recipeLink.style.display = 'none';
+          }
+        }
+      }
+  
+      // Show/hide the parent h2 based on anyMatch value
+      category.style.display = anyMatch ? '' : 'none';
+  
+      // Show/hide the parent recipe-links div based on the visibility of recipe-box elements
+      recipeLinksDiv.style.display = allRecipeBoxesHidden ? 'none' : '';
+
+      if (anyMatch) {
+        noResults = false;
+      }
+    }
+    // Show/hide the noResultsMessage based on the noResults value
+    const noResultsMessage = document.getElementById('noResultsMessage');
+    noResultsMessage.style.display = noResults ? 'block' : 'none';
+  }
+
+  function load_home_page_file(){
+    // Get homepage json file
+    // Load the recipe data from the JSON file
+    window.onload = loadRecipe;
+    fetch('home_page.json')
+        .then(response => response.json())
+        .then(recipeData => {
+            recipeData = recipeData.recipes
+            //addRecipe(recipeData)
+        })
+        .catch(error => console.error('Error fetching JSON:', error));
+
+    }
+    function generate_home_page(homePage){
+        
+    }
+
+</script>
+<body>
+    <header>
+        <h1>Recipe Homepage</h1>
+    </header>
+    <nav>
+        <ul class="nav-links" id="navLinks">
+          <li id="HomeLink"><a href="index.html">Home</a></li>
+          <li><a href="AddRecipe.html">Add Recipe</a></li>
+          <li><a href="ShoppingList.html">Shopping List</a></li>
+        </ul>
+        <input type="text" id="searchInput" placeholder="Search for recipes...">
+    </nav>
+    <div id="noResultsMessage" >
+        No recipes found.
+    </div>
+    <div class="container">
+    </div>
+</body>
+</html>
+

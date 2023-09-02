@@ -1,0 +1,84 @@
+{
+    "recipe": {
+        "recipe_title": "Mac & Cheese With Chorizo & Bacon",
+        "category": "Chorizo",
+        "prep_time": "0:15",
+        "cook_time": "1:00",
+        "servings": "3",
+        "ingredients": [
+            {
+                "name": "Butter",
+                "quantity": "50",
+                "unit": "g"
+            },
+            {
+                "name": "Plain Flour",
+                "quantity": "50",
+                "unit": "g"
+            },
+            {
+                "name": "Milk",
+                "quantity": "500",
+                "unit": "ml"
+            },
+            {
+                "name": "Mustard",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Smoked Paprika",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Cumin",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt & Pepper to taste"
+            },
+            {
+                "name": "Chorizo Ring",
+                "quantity": "12",
+                "unit": "/"
+            },
+            {
+                "name": "Bacon Rashers",
+                "quantity": "46",
+                "unit": "-"
+            },
+            {
+                "name": "Garlic Cloves",
+                "quantity": "24",
+                "unit": "-"
+            },
+            {
+                "name": "Macaroni",
+                "quantity": "300",
+                "unit": "g"
+            },
+            {
+                "name": "any cheese (Recommend a combination of Red Leicester and Cheddar)",
+                "quantity": "500",
+                "unit": "g"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Begin by chopping the bacon and chorizo, then cook them over medium heat until the bacon is thoroughly cooked.",
+                    "Chop the garlic and add it to the pan. Continue cooking until the bacon and chorizo become crispy.",
+                    "In a large pot, bring salted water to a boil and cook the macaroni until it is al dente.",
+                    "Meanwhile, melt the butter over medium heat in a separate saucepan. Add the flour and mix until well combined. Cook the roux for 2 minutes.",
+                    "Gradually add the milk to the saucepan, stirring continuously to prevent lumps and to ensure it doesn't stick to the bottom of the pan.",
+                    "Cook the sauce for 10-15 minutes, adding more milk if it becomes too thick. Once cooked, turn off the heat and stir in the paprika, black pepper, and cumin.",
+                    "Add the grated cheese and the cooked bacon/chorizo mixture to the sauce. Taste the sauce and adjust the seasonings as needed, considering that additional salt may not be necessary due to the presence of cheese and chorizo.",
+                    "Combine the macaroni with the cheese sauce and pour the mixture into a large oven-proof dish. Top it with additional cheese and bake at 200°C for 25-30 minutes, or until the top becomes crispy."
+                ]
+            }
+        ],
+        "credit": "Credit:https://vm.tiktok.com/ZGJx8peoN/"
+    }
+}

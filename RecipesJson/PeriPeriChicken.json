@@ -1,0 +1,122 @@
+{
+    "recipe": {
+        "recipe_title": "Peri Peri Chicken",
+        "category": "Chicken",
+        "prep_time": "0:30",
+        "cook_time": "1:50",
+        "servings": "5",
+        "ingredients": [
+            {
+                "name": "whole chicken",
+                "quantity": "2",
+                "unit": "kg"
+            },
+            {
+                "name": "water or chicken stock",
+                "quantity": "150",
+                "unit": "ml"
+            },
+            {
+                "subheading": "Peri Peri Sauce:"
+            },
+            {
+                "name": "Garlic cloves",
+                "quantity": "5"
+            },
+            {
+                "name": "red chillies (as hot as you dare!)",
+                "quantity": "15",
+                "unit": "-"
+            },
+            {
+                "name": "piece of fresh ginger",
+                "quantity": "2",
+                "unit": "cm"
+            },
+            {
+                "name": "vegetable oil",
+                "quantity": "50",
+                "unit": "ml"
+            },
+            {
+                "name": "white or red wine vinegar",
+                "quantity": "25",
+                "unit": "ml"
+            },
+            {
+                "name": "soy sauce",
+                "quantity": "3",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Tabasco sauce",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "smoked paprika",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "dried oregano",
+                "quantity": "3",
+                "unit": "tsp"
+            },
+            {
+                "name": "caster sugar",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "lemon juice",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "subheading": "Vegetables:"
+            },
+            {
+                "name": "red onions",
+                "quantity": "3"
+            },
+            {
+                "name": "baby new potatoes",
+                "quantity": "500",
+                "unit": "g"
+            },
+            {
+                "name": "corn on the cob",
+                "quantity": "4"
+            },
+            {
+                "subheading": "Optional:"
+            },
+            {
+                "name": "Coleslaw"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Preheat the oven to 180°C. Sit the chicken in a large roasting tin and season with salt, pepper and a drizzle of oil",
+                    "Place in the oven for 1 hour. Meanwhile prepare the peri sauce."
+                ]
+            },
+            {
+                "subheading": "For the peri peri sauce, add the following to an electric blender: garlic, chillis, ginger, vegetable oil, white/red wine vinegar, soy sauce, tabasco sauce, smoked paprika, dried oregano, caster sugar and lemon juice"
+            },
+            {
+                "steps": [
+                    "Remove the chicken after 1 hour and tip threequaters of the peri peri sauce onto it, spreading all over with a spoon",
+                    "Peel and quater the onions and toss them around the chicken along with the potatoes",
+                    "Return to the oven for another 50 minutes. It will mosy likely look burnt but don't worry about it",
+                    "Take the chicken out to carve and return the tray to the oven to keep warm",
+                    "Add the left over peri peri sauce to the chicken",
+                    "Serve with corn on the cob and optionally coleslaw."
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

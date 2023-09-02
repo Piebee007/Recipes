@@ -1,0 +1,62 @@
+{
+    "recipe": {
+        "recipe_title": "Sausage & Tomato Pasta",
+        "category": "Sausage",
+        "prep_time": "0:10",
+        "cook_time": "0:25",
+        "servings": "Serves:4",
+        "ingredients": [
+            {
+                "name": "pack of good quality sausages (about 400g)",
+                "quantity": "1"
+            },
+            {
+                "name": "tin of plumb tomatoes (400g)",
+                "quantity": "1"
+            },
+            {
+                "name": "large onion, finely chopped",
+                "quantity": "1"
+            },
+            {
+                "name": "garlic cloves, minced",
+                "quantity": "3"
+            },
+            {
+                "name": "fresh basil leaves, chopped",
+                "quantity": "30",
+                "unit": "g"
+            },
+            {
+                "name": "cream cheese",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "pasta (penne or fusilli)",
+                "quantity": "400",
+                "unit": "g"
+            },
+            {
+                "name": "Grated Parmesan cheese, to serve",
+                "quantity": "1",
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Remove the sausage skins and break up the sausage meat into a hot pan with a bit of oil.",
+                    "Once the sausage meat starts to brown, add the chopped onions and cook for 2-3 minutes.",
+                    "Add the chopped garlic and cook for 1 minute.",
+                    "Pour in the entire can of plum tomatoes and break them up with a spoon.",
+                    "Fill the empty tomato can halfway with water and add it to the pan. Season with salt and pepper.",
+                    "In a separate pot, bring salted water to a boil and cook the pasta according to package instructions.",
+                    "When the pasta is almost done, add the fresh basil and a heaped tablespoon of cream cheese to the sausage and tomato sauce and stir.",
+                    "Drain the cooked pasta and add it to the pan with the sauce. Mix everything together and serve."
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

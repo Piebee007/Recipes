@@ -1,0 +1,79 @@
+{
+    "recipe": {
+        "recipe_title": "Sausage Casserole",
+        "category": "Sausage",
+        "prep_time": "0:10",
+        "cook_time": "0:45",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Pork Sausages",
+                "quantity": "8"
+            },
+            {
+                "name": "Onion, sliced",
+                "quantity": "1"
+            },
+            {
+                "name": "Garlic Cloves, finely chopped",
+                "quantity": "2"
+            },
+            {
+                "name": "Baking potatoes, chopped into 4cm chunks",
+                "quantity": "3"
+            },
+            {
+                "name": "Carrots, chopped into 4cm chunks",
+                "quantity": "4"
+            },
+            {
+                "name": "tomato puree",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Plain Flour",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "chicken stock (made from stock cubes)",
+                "quantity": "1",
+                "unit": "L"
+            },
+            {
+                "name": "ready-made English Mustard",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "subheading": "Optional:"
+            },
+            {
+                "name": "tin butter beans, drained",
+                "quantity": "400",
+                "unit": "g"
+            },
+            {
+                "name": "Fresh parsley, chopped",
+                "quantity": "20",
+                "unit": "g"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Heat a pan on high heat and add some oil, then add the sausages. Brown them all over, then take them out and put them to onw side. It doesn't mater if they aren't cooked all the way through.",
+                    "Turn down the heat to medium, add the onion and allow it to soften for 5 minutes while constantly moving it around the pan.",
+                    "Add the garlic, potatoes and carrots and stir for 2 minutes. Then add the tomato puree and stir through.",
+                    "Add the flour and mix it in thoroughly, ensuring that no big lumps remain.",
+                    "Cover everything in the stock, adding the mustard and giving it another stir.",
+                    "Put a lid on the pan and let it simmer for 20 minutes, or until the potatoes and carrots begin to soften.",
+                    "Return the sausages to the pan (with the optional butter beans). Bring the casserole back to the boil and let it bubble away for a further 7-8 minutes on a low heat.",
+                    "Stir through the parsley and serve."
+                ]
+            }
+        ],
+        "credit": "Meals by Mich Book"
+    }
+}

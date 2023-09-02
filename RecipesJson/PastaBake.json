@@ -1,0 +1,66 @@
+{
+    "recipe": {
+        "recipe_title": "Pasta Bake",
+        "category": "Pasta",
+        "prep_time": "0:05",
+        "cook_time": "0:35",
+        "servings": "3",
+        "ingredients": [
+            {
+                "name": "Rigatoni Pasta",
+                "quantity": "250",
+                "unit": "g"
+            },
+            {
+                "name": "Jar Tomato and Pepperoni Pasta Bake Sauce",
+                "quantity": "1"
+            },
+            {
+                "name": "Pack of German Salami",
+                "quantity": "1"
+            },
+            {
+                "name": "Mozzarella Balls",
+                "quantity": "2"
+            },
+            {
+                "name": "Grated Cheddar Cheese",
+                "quantity": "100",
+                "unit": "g"
+            },
+            {
+                "name": "Cloves of garlic",
+                "quantity": "2"
+            },
+            {
+                "name": "Balsamic Vinegar",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "mixed herbs",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Oregano",
+                "quantity": "1",
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Cut up 3/4 of the salami into quaters and finely chop the garlic. Leave the rest to one side",
+                    "Heat a pan to medium heat then add the salami and garlic",
+                    "Preheat the oven to 180°C. Then add the pasta and sauce to a dish. Fill up the jar up to the label with water and pour into the dish",
+                    "Once the salami has browned, add it to the dish along with the balsamic vinegar, mixed herbs and oregano.",
+                    "Mix everything through then put in the oven for 20 minutes. Whilst it is in the oven, grate the cheese and cut the Mozzarella into slices",
+                    "After 20 minutes, add half of the Mozzarella and all of the grated cheese. Return to the oven for 10 minutes",
+                    "Place the left over salami on the top of the pasta bake and then add the Mozzarella. Cook for a further 10 minutes until the cheese is melted"
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}

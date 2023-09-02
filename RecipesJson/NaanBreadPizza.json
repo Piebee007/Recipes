@@ -1,0 +1,55 @@
+{
+    "recipe": {
+        "recipe_title": "Naan Bread Pizza",
+        "category": "Peperoni",
+        "prep_time": "0:10",
+        "cook_time": "0:05",
+        "servings": "2",
+        "ingredients": [
+            {
+                "name": "Naan Breads",
+                "quantity": "2"
+            },
+            {
+                "name": "tomato puree",
+                "quantity": "4",
+                "unit": "tbsp"
+            },
+            {
+                "name": "Mixed herbs",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Garlic Granules",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Cheese, grated",
+                "quantity": "100",
+                "unit": "g"
+            },
+            {
+                "name": "Peperoni",
+                "quantity": "100",
+                "unit": "g"
+            },
+            {
+                "name": "(Optional) Any other toppings"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": [
+                    "Preheat the oven to 180°C",
+                    "Add the tomatoe puree into a bowl and add a splash of water. Then add a sprinkle of salt, pepper, mixed herbs and garlic granules. Mix all together",
+                    "Spread the sauce to the naan breads. Add the grated cheese, peperoni (or other toppings)",
+                    "Put in the oven for 4-5 minutes, until the cheese is all melted",
+                    "Serve with any additional sides"
+                ]
+            }
+        ],
+        "credit": ""
+    }
+}
