@@ -1,6 +1,6 @@
 import json
 
-fileName = "Recipes/WarmCookieDough.txt"
+fileName = "Recipes/SmashBurgerTacos.txt"
 
 recipe_json = {
     "recipe": {

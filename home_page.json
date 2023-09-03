@@ -1,16 +1,15 @@
 {
     "categories": [
-        "Dessert",
-        "Sausage",
-        "Chicken",
-        "Breakfast",
         "Beef",
-        "Potato",
+        "Breakfast",
+        "Chicken",
         "Chorizo",
-        "Soup",
-        "Pasta",
         "Lamb",
+        "Pasta",
         "Peperoni",
+        "Potato",
+        "Sausage",
+        "Soup",
         "Steak"
     ],
     "recipes": [
@@ -261,6 +260,14 @@
             "recipe_prep_time": "0:15",
             "recipe_cook_time": "6:00",
             "recipe_total_time": "375"
+        },
+        {
+            "recipe_file": "SmashBurgerTac",
+            "recipe_title": "Smash Burger Tacos",
+            "recipe_category": "Beef",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "0:10",
+            "recipe_total_time": "30"
         },
         {
             "recipe_file": "SteakSandwiche",

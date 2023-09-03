@@ -38,6 +38,9 @@ header {
     border-radius: 5%; */
     background-color: rgb(246, 246, 246);
     border-radius: .3em;
+    text-decoration: none;
+    /*Text color is black*/
+    color: black;
   }
 
   .recipe-box:hover{

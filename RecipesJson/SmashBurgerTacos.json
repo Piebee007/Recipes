@@ -1,0 +1,102 @@
+{
+    "recipe": {
+        "recipe_title": "Smash Burger Tacos",
+        "category": "Beef",
+        "prep_time": "0:20",
+        "cook_time": "0:10",
+        "servings": "2",
+        "ingredients": [
+            {
+                "name": "Beef Mince",
+                "quantity": "225",
+                "unit": "g"
+            },
+            {
+                "name": "Chili Powder",
+                "quantity": "0.5",
+                "unit": "tsp"
+            },
+            {
+                "name": "Cumin",
+                "quantity": "0.25",
+                "unit": "tsp"
+            },
+            {
+                "name": "Paprika",
+                "quantity": "0.25",
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt",
+                "quantity": "0.5",
+                "unit": "tsp"
+            },
+            {
+                "name": "Garlic Powder",
+                "quantity": "0.25",
+                "unit": "tsp"
+            },
+            {
+                "name": "Cheese, grated",
+                "quantity": "40",
+                "unit": "g"
+            },
+            {
+                "name": "Wraps",
+                "quantity": "4"
+            },
+            {
+                "name": "Slices of Cheese",
+                "quantity": "4"
+            },
+            {
+                "name": "Onion, finely diced",
+                "quantity": "1"
+            },
+            {
+                "name": "Lettuce Leaves",
+                "quantity": "2"
+            },
+            {
+                "subheading": "Optional: Ketchup"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": []
+            },
+            {
+                "subheading": "To make the patty:"
+            },
+            {
+                "steps": [
+                    "In a bowl, combine beef mince, chili powder, cumin, paprika, salt, garlic powder, grated cheese, and finely diced onion. Mix thoroughly.",
+                    "Divide the mixture into 4 portions and shape them into balls."   
+                ]
+            },
+            {
+                "subheading": "Cooking the patty:"
+            },
+            {
+                "steps": [
+                    "Heat a pan over medium-high heat. Place one beef ball in the pan.",
+                    "Lay a wrap on top of the ball and press down with a pan to smash the patty.",
+                    "Cook for 2-3 minutes until the bottom is crispy, then carefully flip the patty.",
+                    "Top the patty with a slice of cheese and cover the pan with a lid to melt the cheese.",
+                    "Once melted, remove the patty from the pan."
+                ]
+            },
+            {
+                "subheading": "Assembling the tacos:"
+            },
+            {
+                "steps": [
+                    "Place shredded lettuce on each wrap.",
+                    "Drizzle with ketchup if desired.",
+                    "Fold the sides of the wrap over the patty to form a taco shape." 
+                ]
+            }
+        ],
+        "credit": "Leanne"
+    }
+}

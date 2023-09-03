@@ -39,10 +39,14 @@ for file_name in file_array:
         home_page_json["deserts"].append(recipe_json_section)
     else:
         home_page_json["recipes"].append(recipe_json_section)
-    if recipe_category not in home_page_json["categories"]:
+    if recipe_category not in home_page_json["categories"] and recipe_category != "Dessert":
         home_page_json["categories"].append(recipe_category)
+
+    
 
 
 #Write the json file
+home_page_json["categories"].sort()
+
 file = open("home_page.json", "w")
 file.write(json.dumps(home_page_json, indent=4))
