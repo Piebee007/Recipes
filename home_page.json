@@ -30,7 +30,7 @@
             "recipe_total_time": "30"
         },
         {
-            "recipe_file": "BeerCanChicke",
+            "recipe_file": "BeerCanChicken",
             "recipe_title": "BeerCanChicken",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:20",
@@ -38,7 +38,7 @@
             "recipe_total_time": "90"
         },
         {
-            "recipe_file": "BreakfastQuesadilla",
+            "recipe_file": "BreakfastQuesadillas",
             "recipe_title": "Breakfast Quesadillas",
             "recipe_category": "Breakfast",
             "recipe_prep_time": "0:15",
@@ -46,7 +46,7 @@
             "recipe_total_time": "40"
         },
         {
-            "recipe_file": "ButternutRisott",
+            "recipe_file": "ButternutRisotto",
             "recipe_title": "Bacon & Butternut Risotto",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:20",
@@ -54,7 +54,7 @@
             "recipe_total_time": "55"
         },
         {
-            "recipe_file": "CajunChicke",
+            "recipe_file": "CajunChicken",
             "recipe_title": "Cajun  Chicken",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:15",
@@ -70,7 +70,7 @@
             "recipe_total_time": "35"
         },
         {
-            "recipe_file": "ChickenBurger",
+            "recipe_file": "ChickenBurgers",
             "recipe_title": "Chicken Burgers",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:10",
@@ -78,7 +78,7 @@
             "recipe_total_time": "25"
         },
         {
-            "recipe_file": "ChickenFajita",
+            "recipe_file": "ChickenFajitas",
             "recipe_title": "Chicken Fajitas",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:15",
@@ -94,7 +94,7 @@
             "recipe_total_time": "30"
         },
         {
-            "recipe_file": "ChickenGyr",
+            "recipe_file": "ChickenGyros",
             "recipe_title": "Chicken Gyros",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:20",
@@ -102,7 +102,7 @@
             "recipe_total_time": "65"
         },
         {
-            "recipe_file": "ChilliLoadedWedge",
+            "recipe_file": "ChilliLoadedWedges",
             "recipe_title": "Chilli Loaded Wedges",
             "recipe_category": "Beef",
             "recipe_prep_time": "0:20",
@@ -174,7 +174,7 @@
             "recipe_total_time": "60"
         },
         {
-            "recipe_file": "LoadedJacketPotatoe",
+            "recipe_file": "LoadedJacketPotatoes",
             "recipe_title": "Loaded Jacket Potatoes",
             "recipe_category": "Potato",
             "recipe_prep_time": "0:20",
@@ -182,7 +182,7 @@
             "recipe_total_time": "120"
         },
         {
-            "recipe_file": "Mac&CheeseWithChorizo&Bac",
+            "recipe_file": "Mac&CheeseWithChorizo&Bacon",
             "recipe_title": "Mac & Cheese With Chorizo & Bacon",
             "recipe_category": "Chorizo",
             "recipe_prep_time": "0:15",
@@ -190,7 +190,7 @@
             "recipe_total_time": "75"
         },
         {
-            "recipe_file": "Meatball",
+            "recipe_file": "Meatballs",
             "recipe_title": "Meatballs",
             "recipe_category": "Beef",
             "recipe_prep_time": "0:10",
@@ -214,7 +214,7 @@
             "recipe_total_time": "40"
         },
         {
-            "recipe_file": "PeriPeriChicke",
+            "recipe_file": "PeriPeriChicken",
             "recipe_title": "Peri Peri Chicken",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:30",
@@ -246,7 +246,7 @@
             "recipe_total_time": "45"
         },
         {
-            "recipe_file": "SesameSeedChicke",
+            "recipe_file": "SesameSeedChicken",
             "recipe_title": "Sesame Seed Chicken",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:20",
@@ -254,7 +254,7 @@
             "recipe_total_time": "50"
         },
         {
-            "recipe_file": "SlowCookerHoneyGarlicNoodle",
+            "recipe_file": "SlowCookerHoneyGarlicNoodles",
             "recipe_title": "Slow Cooker Honey Garlic Noodles",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:15",
@@ -262,7 +262,7 @@
             "recipe_total_time": "375"
         },
         {
-            "recipe_file": "SmashBurgerTac",
+            "recipe_file": "SmashBurgerTacos",
             "recipe_title": "Smash Burger Tacos",
             "recipe_category": "Beef",
             "recipe_prep_time": "0:20",
@@ -270,7 +270,7 @@
             "recipe_total_time": "30"
         },
         {
-            "recipe_file": "SteakSandwiche",
+            "recipe_file": "SteakSandwiches",
             "recipe_title": "Steak Sandwiches",
             "recipe_category": "Steak",
             "recipe_prep_time": "0:10",
@@ -304,7 +304,7 @@
             "recipe_total_time": "25"
         },
         {
-            "recipe_file": "Brownie",
+            "recipe_file": "Brownies",
             "recipe_title": "Brownies",
             "recipe_category": "Dessert",
             "recipe_prep_time": "0:25",
@@ -352,7 +352,7 @@
             "recipe_total_time": "80"
         },
         {
-            "recipe_file": "PeanutButter&ChocolateOatBar",
+            "recipe_file": "PeanutButter&ChocolateOatBars",
             "recipe_title": "Peanut Butter & Chocolate Oat Bars",
             "recipe_category": "Dessert",
             "recipe_prep_time": "0:15",

@@ -27,8 +27,9 @@ for file_name in file_array:
     #get recipe title
     recipe_json = json.load(file)
     recipe_category = recipe_json["recipe"]["category"]
+    print(file_name.strip("RecipesJson\\").split(".")[0])
     recipe_json_section = {
-        "recipe_file": file_name.strip("RecipesJson\\").strip(".json"),
+        "recipe_file": file_name.strip("RecipesJson\\").split(".")[0],
         "recipe_title": recipe_json["recipe"]["recipe_title"],
         "recipe_category": recipe_json["recipe"]["category"],
         "recipe_prep_time": recipe_json["recipe"]["prep_time"],
