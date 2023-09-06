@@ -88,40 +88,62 @@ function load_home_page_file(){
     }
 
 function generate_home_page(homePage){
-    var categories = homePage.categories
-    console.log(categories)
-    //loop through categories
-    for (let i=0; i<categories.length; i++){
-        let category = categories[i]
-        console.log(category)
-        //Add the category as  a <h2> element to the "container" div. Then loop throughthe homePage recipes and add the recipes that belong to the category
-        //Each category will have a <div> element with the class "recipe-links" that will contain all the recipes that belong to the category
+    //Get the url parameters
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    console.log(urlParams)
+    if (urlParams.has('dessert')){
         let container = document.getElementById("container")
         let category_element = document.createElement("h2")
-        category_element.innerHTML = category
+        category_element.innerHTML = "Desserts"
         container.appendChild(category_element)
         let recipe_links = document.createElement("div")
         recipe_links.className = "recipe-links"
         container.appendChild(recipe_links)
-        let recipes = homePage.recipes
+        let recipes = homePage.desserts
         //loop through recipes
         for (let j = 0; j < recipes.length; j++) {
             let recipe = recipes[j]
-            if (recipe.recipe_category == category){
-                let recipe_box = create_box_element(recipe)
-                console.log(recipe.recipe_title)
-                recipe_links.appendChild(recipe_box)
-            }
-            
+            let recipe_box = create_box_element(recipe)
+            console.log(recipe.recipe_title)
+            recipe_links.appendChild(recipe_box)
         }
+    }else{
+      var categories = homePage.categories
+      console.log(categories)
+      //loop through categories
+      for (let i=0; i<categories.length; i++){
+          let category = categories[i]
+          //Add the category as  a <h2> element to the "container" div. Then loop throughthe homePage recipes and add the recipes that belong to the category
+          //Each category will have a <div> element with the class "recipe-links" that will contain all the recipes that belong to the category
+          let container = document.getElementById("container")
+          let category_element = document.createElement("h2")
+          category_element.innerHTML = category
+          container.appendChild(category_element)
+          let recipe_links = document.createElement("div")
+          recipe_links.className = "recipe-links"
+          container.appendChild(recipe_links)
+          let recipes = homePage.recipes
+          //loop through recipes
+          for (let j = 0; j < recipes.length; j++) {
+              let recipe = recipes[j]
+              if (recipe.recipe_category == category){
+                  let recipe_box = create_box_element(recipe)
+                  console.log(recipe.recipe_title)
+                  recipe_links.appendChild(recipe_box)
+              }
+              
+          }
+      }
     }
+
+    
 }
 
 function create_box_element(recipe){
-    console.log(recipe)
     let recipe_box = document.createElement("a")
     recipe_box.className = "recipe-box"
-    recipe_url = "testingJsonRecipe.html?recipe_name="+recipe.recipe_file
+    recipe_url = "recipePage.html?recipe_name="+recipe.recipe_file
     recipe_box.href = recipe_url
     let recipe_title = document.createElement("h3")
     recipe_title.innerHTML = recipe.recipe_title
@@ -129,6 +151,5 @@ function create_box_element(recipe){
     let recipe_time = document.createElement("p")
     recipe_time.innerHTML = "Prep: " + convert_to_time(recipe.recipe_prep_time) + " | Cook: " + convert_to_time(recipe.recipe_cook_time)
     recipe_box.appendChild(recipe_time)
-    console.log(recipe_box)
     return recipe_box
 }

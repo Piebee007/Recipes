@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script language="javascript" type="text/javascript"
+    src="Scripts/p5.js"></script>
+    <script language="javascript" type="text/javascript"
+    src="Scripts/HomePageScript.js"></script>
+    <link rel ="stylesheet" href="CSS/homePageCSS.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Homepage</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GSJV2RPDMC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GSJV2RPDMC');
+</script>
+<body>
+  <header>
+    <h1>Recipe Homepage</h1>
+  </header>
+  <nav>
+    <!-- <div class="menu-icon" onclick="toggleMenu()">&#9776;</div> -->
+    <ul class="nav-links" id="navLinks">
+      <li id="HomeLink"><a href="index.html">Home</a></li>
+      <li><a href="AddRecipe.html">Add Recipe</a></li>
+      <li><a href="ShoppingList.html">Shopping List</a></li>
+    </ul>
+    <input type="text" id="searchInput" placeholder="Search for recipes...">
+  </nav>
+  <div id="noResultsMessage" >
+    No recipes found.
+  </div>
+  <div class="container">
+  </div>
+</body>
+<script>
+  document.getElementById('searchInput').addEventListener('input', searchRecipes);
+  searchRecipes(); // Initial search to show all recipes
+</script>
+</html>

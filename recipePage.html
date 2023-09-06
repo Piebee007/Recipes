@@ -2,11 +2,11 @@
     <head> 
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <title>Tom's Recipes</title>
-        <script language="javascript" type="text/javascript"
+        <!-- <script language="javascript" type="text/javascript"
         src="Scripts/p5.js"></script>
         <script language="javascript" type="text/javascript"
-        src="Scripts/recipeScript.js"></script>
-        <link rel ="stylesheet" href="CSS/recipeCSS.css">
+        src="Scripts/recipeScript.js"></script> -->
+        <link rel ="stylesheet" href="CSS/recipeCSS2.css">
         <title>Recipe Page</title>
     </head>
     <!-- Google tag (gtag.js) -->
@@ -18,4 +18,201 @@
 
         gtag('config', 'G-GSJV2RPDMC');
     </script>
+
+    <script>
+        function convert_to_time(time){
+            var text = ""
+            let time_split= time.split(":")
+            if (time_split[0] =="1"){
+                text += time_split[0] + " hour "
+            }else if (time_split[0] != "0"){
+                text += time_split[0] + " hours "
+            }
+
+            if (time_split[1] != "00"){
+                if (time_split[1][0] == "0"){
+                    text += time_split[1][1] + " minutes"
+                }else{
+                    text += time_split[1] + " minutes"
+                }
+                
+            }
+            return text
+        }
+        // Load the recipe data from the JSON file
+        window.onload = loadRecipe;
+
+        function loadRecipe(){
+            // Fetch the JSON data from the file using the Fetch API
+            //Get the recipe name from the URL
+            var url = window.location.search;
+            var urlParams = new URLSearchParams(url);
+            var recipeName = urlParams.get('recipe_name');
+            console.log(recipeName)
+
+            fetch('RecipesJson/' + recipeName + '.json')
+                .then(response => response.json())
+                .then(recipeData => {
+                    recipeData = recipeData.recipe
+                    addRecipe(recipeData)
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+
+            }
+        function addRecipe(recipeData){
+            //Add the recipe-name
+            var recipeNameElement = document.getElementById("recipe-title");
+            recipeNameElement.textContent = recipeData.recipe_title;
+            //Add the recipe-category
+            var recipeCategoryElement = document.getElementById("recipe-category");
+            recipeCategoryElement.textContent = "Category: " + recipeData.category;
+            //Add the recipe-prep-time
+            var recipePrepTimeElement = document.getElementById("recipe-prep-time");
+            recipePrepTimeElement.textContent = "Prep Time: " + convert_to_time(recipeData.prep_time);
+            //Add the recipe-cook-time
+            var recipeCookTimeElement = document.getElementById("recipe-cook-time");
+            recipeCookTimeElement.textContent = "Cook Time: " + convert_to_time(recipeData.cook_time);
+            //Add the recipe-servings
+            var recipeServingsElement = document.getElementById("recipe-servings");
+            recipeServingsElement.textContent = "Servings: " + recipeData.servings
+            recipeServingsElement.dataset.value = recipeData.servings
+            
+            
+            //Add the recipe-ingredients
+            var ingredientText = ""
+            ingredientText += "<h2>Ingredients: </h2><ul class='ingredients'>"
+            for (var i=0; i < recipeData.ingredients.length; i++){
+                var ingredient = recipeData.ingredients[i];
+                if (ingredient.subheading != null){
+                    ingredientText += "</ul><h3>" + ingredient.subheading + "</h3><ul class='ingredients'>"
+                }else{
+                    let temp_text = ""
+                    if (ingredient.quantity != null){
+                        temp_text += ingredient.quantity 
+                    }
+                    if (ingredient.unit != null){
+                        temp_text += ingredient.unit + " "
+                    }else{
+                        temp_text += " "
+                    }
+                    temp_text += ingredient.name
+                    //get Servings
+                    var servings = document.getElementById("recipe-servings").dataset.value
+                    var datavalue = "data-value='" + ingredient.quantity / servings +"," 
+                    if (ingredient.unit != null){
+                        datavalue += ingredient.unit 
+                    }
+                    datavalue += "'"
+                    if (ingredient.quantity == null){
+                        datavalue = "data-value='null'"
+                    }
+                    ingredientText += "<li class='ingredient'" + datavalue + ">" + temp_text + "</li>"
+                }
+            }
+            ingredientText += "</ul>"
+            document.getElementById("recipe-ingredients").innerHTML = ingredientText 
+
+            //Add the recipe-instructions
+            var instructionText = ""
+            instructionText += "<h2>Instructions: </h2><ol class='instructions'>"
+            for (var i = 0; i < recipeData.instructions.length; i++){
+                var instruction_steps = recipeData.instructions[i]
+                console.log(instruction_steps.steps)
+                if (instruction_steps.subheading != null){
+                    instructionText += "</ol><h3>" + instruction_steps.subheading + "</h3><ol class='instructions'>"
+                }else{
+                    for (var j = 0; j < instruction_steps.steps.length; j++){
+                        var instruction = instruction_steps.steps[j];
+                        instructionText += "<li class='instruction'>" + instruction + "</li>"
+                    }
+                }
+
+            }
+            instructionText += "</ol>"
+            document.getElementById("recipe-instructions").innerHTML = instructionText
+
+            //Add the recipe-credit. If it is a link, add it to recipe-credit-link, otherwise add it to recipe-credit-text
+            recipeCredit = recipeData.credit
+            recipeCreditElement = document.getElementById("recipe-credit-text");
+            recipeCreditLinkElement = document.getElementById("recipe-credit-link");
+            if (recipeCredit.includes("http")){
+                recipeCreditLinkElement.textContent = "Credit";
+                recipeCreditLinkElement.href = recipeCredit;
+                recipeCreditElement.style.display = "none";
+            }else{
+                if (recipeCredit != ""){
+                    recipeCreditElement.textContent = "Credit: " + recipeCredit;
+                    recipeCreditLinkElement.style.display = "none";
+                }
+                
+            }
+
+
+            
+        }
+
+        function increment_serving(){
+            var servings = document.getElementById("recipe-servings").dataset.value
+            document.getElementById("recipe-servings").dataset.value = parseInt(servings) + 1
+            document.getElementById("recipe-servings").textContent = "Servings: " + (parseInt(servings) + 1)
+            update_ingredient_amounts()
+        }
+
+        function decrement_serving(){
+            var servings = document.getElementById("recipe-servings").dataset.value
+            if (servings > 1){
+                document.getElementById("recipe-servings").dataset.value = parseInt(servings) - 1
+                document.getElementById("recipe-servings").textContent = "Servings: " + (parseInt(servings) - 1)
+                update_ingredient_amounts()
+            }
+        }
+
+        function update_ingredient_amounts(){
+            var servings = document.getElementById("recipe-servings").dataset.value
+            var ingredients = document.getElementsByClassName("ingredient")
+
+            //loop through all ingredients, getting the data-value, multiplying the quantity by the new servings, and updating the text
+            for (var i = 0; i < ingredients.length; i++){
+                var ingredient = ingredients[i]
+                if (ingredient.dataset.value != "null"){
+                    var ingredient_data = ingredient.dataset.value.split(",")
+                    var quantity = ingredient_data[0]
+                    var unit = ingredient_data[1]
+                    if (unit != null){
+                        ingredient.textContent = (quantity * servings) + unit + " " + ingredient.textContent.split(" ").slice(1).join(" ")
+                    }else{
+                        ingredient.textContent = (quantity * servings) + " " + ingredient.textContent.split(" ").slice(0).join(" ")
+                    }
+                }
+                
+            }
+
+        }
+    </script>
+
+    <body>
+        <div class="recipe-header">
+            <div class="recipe-info">
+                <h1 id="recipe-title"></h1>
+                <h2 id="recipe-category"></h2>
+                <h2 id="recipe-prep-time"></h2>
+                <h2 id="recipe-cook-time"></h2>
+                <div id="serving-info">
+                    <h2 id="recipe-servings"></h2>
+                    <div id="serving-buttons">
+                        <button onclick="decrement_serving()">-</button>
+                        <button onclick="increment_serving()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="recipe-ingredients">
+        </div>
+        
+        <div id="recipe-instructions">
+        </div>
+
+        <a id="recipe-credit-link" class="credit"></a>
+        <p id="recipe-credit-text" class="credit"></p>
+    </body>
 </html>
