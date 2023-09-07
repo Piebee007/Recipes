@@ -150,6 +150,14 @@
             "recipe_total_time": "45"
         },
         {
+            "recipe_file": "HollysRoasties",
+            "recipe_title": "Holly's Roasties",
+            "recipe_category": "Potato",
+            "recipe_prep_time": "0:20",
+            "recipe_cook_time": "0:35",
+            "recipe_total_time": "55"
+        },
+        {
             "recipe_file": "FamousCurry",
             "recipe_title": "Jenson's Famous Curry",
             "recipe_category": "Chicken",
@@ -286,7 +294,7 @@
             "recipe_total_time": "80"
         }
     ],
-    "desserts": [
+    "deserts": [
         {
             "recipe_file": "AppleGalette",
             "recipe_title": "Apple Galette",

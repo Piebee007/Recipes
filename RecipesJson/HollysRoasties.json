@@ -1,0 +1,87 @@
+{
+    "recipe": {
+        "recipe_title": "Holly's Roasties",
+        "category": "Potato",
+        "prep_time": "0:20",
+        "cook_time": "0:35",
+        "servings": "4",
+        "ingredients": [
+            {
+                "name": "Red Potatoes",
+                "quantity": "900",
+                "unit": "g"
+            },
+            {
+                "name": "Dried Thyme",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "Oil",
+                "quantity": "100",
+                "unit": "ml"
+            }
+        ],
+        "instructions": [
+            {
+                "steps": []
+            },
+            {
+                "subheading": "Preparation:"
+            },
+            {
+                "steps": [
+                    "Preheat oven to 200°C",
+                    "Wash and scrub the red potatoes thoroughly to remove any dirt",
+                    "Peel the potatoes and cut into evenly sized pieces, about 2.5cm to 4cm in diameter. This ensures they cook evenly."
+                ]
+            },
+            {
+                "subheading": "Parboil the Potatoes:"
+            },
+            {
+                "steps": [
+                    "Place the potatoes in a large pot and cover with cold water.",
+                    "Bring to a boil over high heat. Reduce the heat to medium-low and simmer until the potatoes are barely tender when pierced with a fork, about 5 minutes.",
+                    "Pour the oil into a large oven proof dish and place in the oven for 5 minutes to heat the oil."
+                    
+                ]
+                
+            },
+            {
+                "subheading": "Drain and Shake:"
+            },
+            {
+                "steps": [
+                    "Drain the potatoes in a colander and let them sit for a few minutes to dry off slightly.",
+                    "Return the potatoes to the saucepan with the ehat turned off.",
+                    "Add the thyme and salt to the potatoes.",
+                    "Place the lid on the saucepan and give it a good shake to rough up the edges of the potatoes."
+                    
+                ]
+                
+            },
+            {
+                "subheading": "Roasting:"
+            },
+            {
+                "steps": [
+                    "Take the oven proof dish out of the oven and carefully add the potatoes to the hot oil. Then turn and roll them around so they are coated all over.",
+                    "Spread them in a single layer making sure they have plenty of room.",
+                    "Roast the potatoes for 15 mins, then take them out of the oven and turn them over.",
+                    "Put them back in the oven for 10-20 minutes, until they are golden brown and crispy all over.",
+                    "Serve your delicious roasties with your favourite roast dinner."
+
+                    
+                ]
+                
+            }
+        ],
+        "credit": "Holly"
+    }
+}
