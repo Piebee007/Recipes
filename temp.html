@@ -1,33 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Check Image Existence using try-catch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Box to Editable List</title>
 </head>
 <body>
-  <script>
-    async function checkImageExists(url) {
-      try {
-        await loadImage(url);
-        console.log("Image exists and loaded successfully!");
-      } catch (error) {
-        console.log("Image does not exist or failed to load!");
-      }
-    }
+    <h1>Enter Text and Press Enter</h1>
+    <ul id="list"></ul>
+    <textarea id="textBox" rows="4" cols="50" onkeydown="handleKeyPress(event)"></textarea>
+    
 
-    function loadImage(url) {
-      return new Promise(function(resolve, reject) {
-        var img = new Image();
-        img.onload = resolve;
-        img.onerror = reject;
-        img.src = url;
-      });
-    }
+    <script>
+        let editing = null;
 
-    // Example usage:
-    var imageUrl = "./Images/BeerCanChicken.png";
-    checkImageExists(imageUrl);
+        function handleKeyPress(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                const textBox = document.getElementById('textBox');
+                const list = document.getElementById('list');
 
-    console.log("hey")
-  </script>
+                // Split the entered text into lines
+                const lines = textBox.value.split('\n');
+
+                // Add each line as a list item
+                lines.forEach(line => {
+                    if (line.trim() !== '') { // Ignore empty lines
+                        const listItem = document.createElement('li');
+                        listItem.textContent = line;
+                        
+                        // Add a click event listener for editing
+                        listItem.addEventListener('click', () => {
+                            if (editing !== listItem) {
+                                makeEditable(listItem);
+                            }
+                        });
+
+                        list.appendChild(listItem);
+                    }
+                });
+
+                // Clear the text box
+                textBox.value = '';
+            }
+        }
+
+        function makeEditable(li) {
+            const text = li.textContent;
+            li.innerHTML = '<input type="text" value="' + text + '">';
+
+            const input = li.querySelector('input');
+            input.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    saveChanges(li, input.value);
+                }
+                event.stopPropagation();
+            });
+
+            input.addEventListener('blur', () => {
+                saveChanges(li, input.value);
+            });
+
+            editing = li;
+            input.focus();
+        }
+
+        function saveChanges(li, newText) {
+            li.textContent = newText;
+            editing = null;
+        }
+
+        document.addEventListener('click', (event) => {
+            if (editing && !editing.contains(event.target)) {
+                const input = editing.querySelector('input');
+                saveChanges(editing, input.value);
+            }
+        });
+    </script>
 </body>
 </html>

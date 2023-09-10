@@ -3,51 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Recipe</title>
-    <!-- Include your CSS stylesheet here if you have one -->
-    <style>
-        /* CSS to hide the label visually while keeping it accessible */
-        .hidden-label {
-            position: absolute;
-            clip: rect(1px, 1px, 1px, 1px);
-            padding: 0;
-            border: 0;
-            height: 0px;
-            width: 0px;
-            overflow: hidden;
-        }
-    </style>
+    <title>Text Box to List</title>
 </head>
-
 <body>
-    <h1>Add Recipe</h1>
+    <h2>Ingredients:</h2>
+    <ul id="ingredients"></ul>
+    <textarea id="ingredientTextBox" rows="4" cols="50" onkeydown="handleKeyPress(event)"></textarea>
+    
 
-    <h3>Recipe Title:</h3>
-    <label class="hidden-label" for="recipe-title">Recipe Title:</label>
-    <input type="text" id="recipe-title" required>
+    <script>
+        function handleKeyPress(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                const ingredienttextBox = document.getElementById('ingredientTextBox');
+                const ingredientlist = document.getElementById('ingredients');
 
-    <h3>Recipe Category:</h3>
-    <label class="hidden-label" for="recipe-category">Recipe Category:</label>
-    <input type="text" id="recipe-category"  required>
-    <datalist id="categories">
-        <!-- Populate this datalist with existing recipe categories -->
-        <option value="Category 1">
-        <option value="Category 2">
-        <!-- Add more categories as needed -->
-    </datalist><br>
+                // Split the entered text into lines
+                const lines = ingredienttextBox.value.split('\n');
 
+                // Add each line as a list item
+                lines.forEach(line => {
+                    if (line.trim() !== '') { // Ignore empty lines
+                        const listItem = document.createElement('li');
+                        listItem.textContent = line;
+                        ingredientlist.appendChild(listItem);
+                    }
+                });
 
-    <label for="recipe-prep-time">PrepTime</label><br><br>
-
-    <label for="recipe-cook-time">CookTime</label><br><br>
-
-    <label for="recipe-serving" data-value="2">Serves: 2 (Add buttons)</label><br><br>
-
-    <label for="recipe-ingredients">Ingredients:</label>
-    <textarea id="ingredients" rows="4" required></textarea><br><br>
-
-    <label for="recipeInstructions">Instructions:</label>
-    <textarea  id="recipeInstructions" name="recipeInstructions" rows="4" cols="50"></textarea><br>
-
-
-
+                // Clear the text box
+                ingredienttextBox.value = '';
+            }
+        }
+    </script>
+</body>
+</html>

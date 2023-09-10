@@ -1,8 +1,4 @@
 Recipes to add:
- - Toad in the hole 
- - lemon drizzle cake
- - Julie Pasta
- - Chilli wedges
  - Beef in before
  - Lasagna
  - Sheperds pie
@@ -16,3 +12,5 @@ Features to Add:
  - Improve css of homepage
  - Roast dinner Calculator
  - 
+https://www.hellofresh.co.uk/recipes/honey-and-mustard-sausage-traybake-63e28232246012e72804d20a
+https://www.hellofresh.co.uk/recipes/chorizo-linguine-in-creamy-sauce-63a1cefed63b2afe9808c571
