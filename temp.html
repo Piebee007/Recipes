@@ -6,11 +6,24 @@
     <title>Text Box to Editable List</title>
 </head>
 <body>
-    <h1>Enter Text and Press Enter</h1>
+    <h1>Add Recipe</h1>
+    <h2>Recipe Name:</h2>
+    <input type="text" id="recipeName" placeholder="Recipe Name">
+    <h2>Category</h2>
+    <input type="text" id="recipeCategory" placeholder="Category">
+    <h2>Ingredients:</h2>
     <ul id="list"></ul>
     <textarea id="textBox" rows="4" cols="50" onkeydown="handleKeyPress(event)"></textarea>
-    
+    <h2>Instructions</h2>
+    <ol id="instructions"></ol>
+    <textarea id="instructionsBox" rows="4" cols="100" onkeydown="keyPressInstructions(event)"></textarea>
 
+    <br>
+    <button onclick="">Add Header</button>
+    <br>
+    <button>Preview Recipe</button>
+    <br>
+    <button onclick="writeToJSON()">Add Recipe</button>
     <script>
         let editing = null;
 
@@ -19,6 +32,37 @@
                 event.preventDefault();
                 const textBox = document.getElementById('textBox');
                 const list = document.getElementById('list');
+
+                // Split the entered text into lines
+                const lines = textBox.value.split('\n');
+
+                // Add each line as a list item
+                lines.forEach(line => {
+                    if (line.trim() !== '') { // Ignore empty lines
+                        const listItem = document.createElement('li');
+                        listItem.textContent = line;
+                        
+                        // Add a click event listener for editing
+                        listItem.addEventListener('click', () => {
+                            if (editing !== listItem) {
+                                makeEditable(listItem);
+                            }
+                        });
+
+                        list.appendChild(listItem);
+                    }
+                });
+
+                // Clear the text box
+                textBox.value = '';
+            }
+        }
+
+        function keyPressInstructions(event){
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                const textBox = document.getElementById('instructionsBox');
+                const list = document.getElementById('instructions');
 
                 // Split the entered text into lines
                 const lines = textBox.value.split('\n');
@@ -76,6 +120,96 @@
                 saveChanges(editing, input.value);
             }
         });
+
+        function writeToJSON(){
+            let recipe = {
+                "recipe": {
+                    "recipe_title": "",
+                    "category": "",
+                    "prep_time": "0:0",
+                    "cook_time": "0:0",
+                    "servings": "4",
+                    "ingredients": [],
+                    "instructions": [
+                        {
+                            "steps":[]
+                        }
+                    ],
+                    "credit" : ""
+                }
+            }
+            recipe.recipe.recipe_title = document.getElementById("recipeName").value;
+            recipe.recipe.category = document.getElementById("recipeCategory").value;
+
+            let instructions = document.getElementById("instructions").getElementsByTagName("li");
+            console.log(instructions)
+            for(let i = 0; i < instructions.length; i++){
+                console.log(instructions[i].textContent)
+                recipe.recipe.instructions[0].steps.push(instructions[i].textContent);
+            }
+
+            for (let i = 0; i < list.children.length; i++){
+                recipe.recipe.ingredients.push(parseStringToDictionary(list.children[i].textContent));
+            }
+
+            console.log(recipe);
+
+        }
+        function makeValidFileName(name) {
+            return name.replace(/[^a-z0-9]&/gi, '_').toLowerCase();
+        }
+
+        function parseStringToDictionary(string){
+            let quantity = ""
+            let unit = ""
+            let text = ""
+            let noQuantity = false;
+
+            const units = ["g", "kg", 'ml', 'l', 'tsp', 'tbsp', 'cup', 'pint', 'oz', 'lb','clove',]
+            const splitLine = string.split(" ")
+            if(splitLine.length == 1){
+                text = splitLine[0]
+            } else{
+                for (const char of splitLine[0]){
+                    if(!isNaN(char) || char === "."){
+                        quantity += char
+                        noQuantity = true
+                    } else{
+                        unit += char
+                    }
+                        
+                }
+                if (!noQuantity){
+                    text = line.trim()
+                }else{
+                    if (units.includes(splitLine[1])){
+                        unit = splitLine[1]
+                    }else {
+                        text += splitLine[1] + " "
+                    }
+
+                    for (let i = 2; i < splitLine.length; i++){
+                        text += splitLine[i] + " "
+                    }
+                }
+            }
+            if (quantity === ""){
+                return {
+                    "name":text.trim()
+                }
+            }else if (unit === ""){
+                return {
+                    "name":text.trim(),
+                    "quantity": quantity.trim()
+                }
+            }else{
+                return {
+                    "name":text.trim(),
+                    "quantity": quantity.trim(),
+                    "unit": unit.trim()
+                }
+            }
+        }
     </script>
 </body>
 </html>

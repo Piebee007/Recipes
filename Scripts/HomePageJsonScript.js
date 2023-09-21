@@ -101,6 +101,7 @@ function generate_home_page(homePage){
         recipe_links.className = "recipe-links"
         container.appendChild(recipe_links)
         let recipes = homePage.desserts
+        console.log(recipes)
         //loop through recipes
         for (let j = 0; j < recipes.length; j++) {
             let recipe = recipes[j]
