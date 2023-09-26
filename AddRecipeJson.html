@@ -3,36 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Box to List</title>
+    <title>Text Box to Editable List</title>
 </head>
 <body>
+    <h1>Add Recipe</h1>
+    <h2>Recipe Name:</h2>
+    <input type="text" id="recipeName" placeholder="Recipe Name">
+    <h2>Category</h2>
+    <input type="text" id="recipeCategory" placeholder="Category">
     <h2>Ingredients:</h2>
-    <ul id="ingredients"></ul>
-    <textarea id="ingredientTextBox" rows="4" cols="50" onkeydown="handleKeyPress(event)"></textarea>
-    
+    <ul id="list"></ul>
+    <textarea id="textBox" rows="4" cols="50" onkeydown="handleKeyPress(event)"></textarea>
+    <h2>Instructions</h2>
+    <ol id="instructions"></ol>
+    <textarea id="instructionsBox" rows="4" cols="100" onkeydown="keyPressInstructions(event)"></textarea>
 
+    <br>
+    <button onclick="">Add Header</button>
+    <br>
+    <button>Preview Recipe</button>
+    <br>
+    <button onclick="writeToJSON()">Add Recipe</button>
     <script>
+        let editing = null;
+
         function handleKeyPress(event) {
             if (event.key === 'Enter' && !event.shiftKey) {
                 event.preventDefault();
-                const ingredienttextBox = document.getElementById('ingredientTextBox');
-                const ingredientlist = document.getElementById('ingredients');
+                const textBox = document.getElementById('textBox');
+                const list = document.getElementById('list');
 
                 // Split the entered text into lines
-                const lines = ingredienttextBox.value.split('\n');
+                const lines = textBox.value.split('\n');
 
                 // Add each line as a list item
                 lines.forEach(line => {
                     if (line.trim() !== '') { // Ignore empty lines
                         const listItem = document.createElement('li');
                         listItem.textContent = line;
-                        ingredientlist.appendChild(listItem);
+                        
+                        // Add a click event listener for editing
+                        listItem.addEventListener('click', () => {
+                            if (editing !== listItem) {
+                                makeEditable(listItem);
+                            }
+                        });
+
+                        list.appendChild(listItem);
                     }
                 });
 
                 // Clear the text box
-                ingredienttextBox.value = '';
+                textBox.value = '';
             }
+        }
+
+        function keyPressInstructions(event){
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                const textBox = document.getElementById('instructionsBox');
+                const list = document.getElementById('instructions');
+
+                // Split the entered text into lines
+                const lines = textBox.value.split('\n');
+
+                // Add each line as a list item
+                lines.forEach(line => {
+                    if (line.trim() !== '') { // Ignore empty lines
+                        const listItem = document.createElement('li');
+                        listItem.textContent = line;
+                        
+                        // Add a click event listener for editing
+                        listItem.addEventListener('click', () => {
+                            if (editing !== listItem) {
+                                makeEditable(listItem);
+                            }
+                        });
+
+                        list.appendChild(listItem);
+                    }
+                });
+
+                // Clear the text box
+                textBox.value = '';
+            }
+        }
+
+        function makeEditable(li) {
+            const text = li.textContent;
+            li.innerHTML = '<input type="text" value="' + text + '">';
+
+            const input = li.querySelector('input');
+            input.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    saveChanges(li, input.value);
+                }
+                event.stopPropagation();
+            });
+
+            input.addEventListener('blur', () => {
+                saveChanges(li, input.value);
+            });
+
+            editing = li;
+            input.focus();
+        }
+
+        function saveChanges(li, newText) {
+            li.textContent = newText;
+            editing = null;
+        }
+
+        document.addEventListener('click', (event) => {
+            if (editing && !editing.contains(event.target)) {
+                const input = editing.querySelector('input');
+                saveChanges(editing, input.value);
+            }
+        });
+
+
+        function ingredients_to_json(string){
+            let units = ["g", "kg", 'ml', 'l', 'tsp', 'tbsp', 'cup', 'pint', 'oz', 'lb','clove',]
+            let ingredient = string.split(" ")
+            let quantity = ""
+            let unit = ""
+            let text = ""
+            no_quantity = false
+
+            if (ingredient.length == 1){
+                no_quantity = true
+                text = ingredient[0]
+            }
+            else{
+                //loop through each character in ingredient[0]
+                for (let i = 0; i < ingredient[0].length; i++){
+                    //if character is a number or a decimal point
+                    if (ingredient[0][i].match(/[0-9.]/)){
+                        quantity += ingredient[0][i]
+                    }
+                    else{
+                        unit += ingredient[0][i]
+                    }
+                }
+                if (no_quantity == false){
+                    text = ingredient.slice(1).join(" ")
+                }
+                else{
+                    if (units.includes(ingredient[1])) {
+                        unit = ingredient[1];
+                    }else{
+                        text += ingredient[1] + ""
+                    }
+
+                    for (let i = 2; i < ingredient.length; i++){
+                        text += ingredient[i] + " "
+                    }
+                }
+            }
+
+            if (quantity == ""){
+                return {"name": text}
+            }else if (unit == ""){
+                return {"name": text, "quantity": quantity}
+            }else{
+                return {"name": text, "quantity": quantity, "unit": unit}
+            }
+        }
+
+        function writeToJSON() {
+            // Build a JSON object as before (in previewRecipe function)
+            const recipeName = document.getElementById('recipeName').value;
+            const category = document.getElementById('recipeCategory').value;
+            //const prepTime = document.getElementById('prepTime').value;
+
+            const ingredients = Array.from(document.querySelectorAll('#list li')).map(li => li.textContent);
+            const instructions = Array.from(document.querySelectorAll('#instructions li')).map(li => li.textContent);
+            for (let i = 0; i < ingredients.length; i++){
+                ingredients[i] = ingredients_to_json(ingredients[i])
+            }
+            const recipe = {
+                "recipe":{
+                    "recipe_name": recipeName,
+                    "category": category,
+                    "prep_time": "0:00",
+                    "cook_time":"0:00",
+                    "servings": "4",
+                    "ingredients": ingredients,
+                    "instructions": {"steps":instructions},
+                    "credit": ""
+                }
+                
+            };
+
+            // Convert the JSON object to a string
+            const jsonString = JSON.stringify(recipe, null, 2);
+
+            // Create a Blob object for the JSON data
+            const blob = new Blob([jsonString], { type: 'application/json' });
+
+            // Create a temporary download link
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'recipe.json';
+            a.style.display = 'none';
+
+            // Add the download link to the document and trigger the click event
+            document.body.appendChild(a);
+            a.click();
+
+            // Remove the temporary download link
+            document.body.removeChild(a);
         }
     </script>
 </body>
