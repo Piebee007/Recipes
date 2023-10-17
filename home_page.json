@@ -62,7 +62,7 @@
             "recipe_total_time": "65"
         },
         {
-            "recipe_file": "ChickenChorizoPasta",
+            "recipe_file": "Chicken&ChorizoPasta",
             "recipe_title": "Chicken & Chorizo Pasta",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:15",
@@ -110,7 +110,7 @@
             "recipe_total_time": "65"
         },
         {
-            "recipe_file": "Chips&CurrySauce",
+            "recipe_file": "ChipsCurrySauce",
             "recipe_title": "Chips & Curry Sauce",
             "recipe_category": "Potato",
             "recipe_prep_time": "0:15",
@@ -166,7 +166,7 @@
             "recipe_total_time": "35"
         },
         {
-            "recipe_file": "JuliePasta",
+            "recipe_file": "uliePasta",
             "recipe_title": "Julie Pasta",
             "recipe_category": "Pasta",
             "recipe_prep_time": "0:5",
@@ -190,7 +190,7 @@
             "recipe_total_time": "120"
         },
         {
-            "recipe_file": "MacCheeseWithChorizoBacon",
+            "recipe_file": "MacCheeseWithChorizo&Bacon",
             "recipe_title": "Mac & Cheese With Chorizo & Bacon",
             "recipe_category": "Chorizo",
             "recipe_prep_time": "0:15",
@@ -230,14 +230,6 @@
             "recipe_total_time": "140"
         },
         {
-            "recipe_file": "SausageTomatoPasta",
-            "recipe_title": "Sausage & Tomato Pasta",
-            "recipe_category": "Sausage",
-            "recipe_prep_time": "0:10",
-            "recipe_cook_time": "0:25",
-            "recipe_total_time": "35"
-        },
-        {
             "recipe_file": "SausageCasserole",
             "recipe_title": "Sausage Casserole",
             "recipe_category": "Sausage",
@@ -252,6 +244,14 @@
             "recipe_prep_time": "0:05",
             "recipe_cook_time": "0:40",
             "recipe_total_time": "45"
+        },
+        {
+            "recipe_file": "SausageTomatoPasta",
+            "recipe_title": "Sausage & Tomato Pasta",
+            "recipe_category": "Sausage",
+            "recipe_prep_time": "0:10",
+            "recipe_cook_time": "0:25",
+            "recipe_total_time": "35"
         },
         {
             "recipe_file": "SesameSeedChicken",
@@ -286,6 +286,14 @@
             "recipe_total_time": "30"
         },
         {
+            "recipe_file": "TomatoChorizoPasta",
+            "recipe_title": "Tomato & Chorizo Pasta",
+            "recipe_category": "Chorizo",
+            "recipe_prep_time": "0:00",
+            "recipe_cook_time": "0:00",
+            "recipe_total_time": "0"
+        },
+        {
             "recipe_file": "TomsTrayBake",
             "recipe_title": "Toms Tray Bake",
             "recipe_category": "Chorizo",
@@ -294,7 +302,7 @@
             "recipe_total_time": "80"
         }
     ],
-    "desserts": [
+    "deserts": [
         {
             "recipe_file": "AppleGalette",
             "recipe_title": "Apple Galette",
@@ -368,7 +376,7 @@
             "recipe_total_time": "135"
         },
         {
-            "recipe_file": "RaspberryLayerCheesecake",
+            "recipe_file": "aspberryLayerCheesecake",
             "recipe_title": "Raspberry Layer Cheesecake",
             "recipe_category": "Dessert",
             "recipe_prep_time": "0:15",

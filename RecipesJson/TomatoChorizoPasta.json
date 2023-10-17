@@ -1,0 +1,49 @@
+{
+  "recipe": {
+    "recipe_title": "Tomato & Chorizo Pasta",
+    "category": "Chorizo",
+    "prep_time": "0:00",
+    "cook_time": "0:00",
+    "servings": "4",
+    "ingredients": [
+      {
+        "name": "red onion, finely chopped",
+        "quantity": "1"
+      },
+      {
+        "name": "Chorizo, sliced",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "name": "Cherry Tomatoes",
+        "quantity": "700",
+        "unit": "g"
+      },
+      {
+        "name": "Cream Cheese",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "name": "Penne Pasta",
+        "quantity": "400",
+        "unit": "g"
+      },
+      {
+        "name": "Garlic Clove, diced",
+        "quantity": "1"
+      }
+    ],
+    "instructions": [
+      {"steps":[
+        "Heat the oil in a large pan over medium head. Add the red onion, chorizo and garlic then cook, stirring occasionally, for 6-8 minutes until golden.",
+        "Add the tomatoes and a pinch of salt and pepper to the pan. Mix well. Reduce the head a bit and cover the pan. It should be bubbling gently. Cook, stirring occasionally, for 15-20 minutes or until the tomatoes have popped and started to break down.",
+        "Remove the lid and turn the heat back up and cook for 3-4 minutes. ",
+        "Meanwhile, cook the pasta according to the package instructions. Drain and reserve some of the pasta water",
+        "Stir in the soft cheese and then add the pasta water (50ml) and mix well and serve."
+      ]}
+    ],
+    "credit": "https://vm.tiktok.com/ZGJT4Ahvk/"
+  }
+}
