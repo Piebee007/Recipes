@@ -1,0 +1,67 @@
+{
+  "recipe": {
+    "recipe_title": "Caramelised Onion Sausage Traybake",
+    "category": "Sausage",
+    "prep_time": "0:15",
+    "cook_time": "0:35",
+    "servings": "2",
+    "ingredients": [
+      {
+        "name": "Caramelised Onion Sausages",
+        "quantity": "6"
+      },
+      {
+        "name": "Onion Marmalade",
+        "quantity": "40",
+        "unit": "g"
+      },
+      {
+        "name": "Unsalted Butter",
+        "quantity": "30",
+        "unit": "g"
+      },
+      {
+        "name": "Red onion",
+        "quantity": "1"
+      },
+      {
+        "name": "Sage",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Chicken Stock Cube",
+        "quantity": "1"
+      },
+      {
+        "name": "Apple",
+        "quantity": "2"
+      },
+      {
+        "name": "Carrots",
+        "quantity": "2"
+      },
+      {
+        "name": "Potatoes",
+        "quantity": "450",
+        "unit": "g"
+      },
+      {
+        "name": "Water",
+        "quantity": "50",
+        "unit": "ml"
+      }
+    ],
+    "instructions": [{
+      "steps": [
+        "Preheat the oven to 200°C.",
+        "Peel the onion and cut into 8ths. Half the apple, remove the core and chop each half into three wedges. Trim the carrot and half lengthways then chop into 1cm by 5cm long batons. Chop the potatoes into 2cm chunks.",
+        "Put the potatoes on a large baking tray, drizzle with oil and season with salt and pepper. Toss to coat and roast in the oven until golden and crispy (30-35 mins). Turn halfway through cooking.",
+        "Meanwhile, pop the onion, apple, carrot and sage into another tray and drizzle with oil. Season with salt, pepper and sage. Place the sausages on top of the veg and roast until the sausages are cooked (25-30 minutes)",
+        "About 5 minutes before the sausages and veg are cooked, get a small pan on medium heat and add the onion marmalade, chicken stock cube and water. Stir together, bring to the boil, then remove from the heat and stir in the butter until melted. ",
+        "When everything is cooked, add the potatoes and sauce to the tray with the veg and stir everything together."
+      ]
+    }],
+    "credit": "https://www.hellofresh.co.uk/recipes/caramelised-onion-sausage-traybake-5f88590249bf791e225cf9d9"
+  }
+}
