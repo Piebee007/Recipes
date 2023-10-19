@@ -1,0 +1,97 @@
+{
+  "recipe": {
+    "recipe_title": "Chicken Chow Mein",
+    "category": "Chicken",
+    "prep_time": "0:30",
+    "cook_time": "0:20",
+    "servings": "4",
+    "ingredients": [
+      {
+        "subheading": "Chicken Marinade"
+      },
+      {
+        "name": "Chicken Breast, cut into thin strips",
+        "quantity": "700",
+        "unit": "g"
+      },
+      {
+        "name": "Paprika",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": "1",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garlic Powder",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Soy Sauce",
+        "quantity": "20",
+        "unit": "ml"
+      },
+      {
+        "name": "Sesame Oil",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "subheading": "For the rest of stir fry"
+      },
+      {
+        "name": "Uncooked Egg Noodles",
+        "quantity": "300",
+        "unit": "g"
+      },
+      {
+        "name": "Minced Garlic",
+        "quantity": "2"
+      },
+      {
+        "name": "Medium Red Onion, Sliced",
+        "quantity": "1"
+      },
+      {
+        "name": "Carrot, Thinly sliced",
+        "quantity": "2"
+      },
+      {
+        "name": "Soy Sauce",
+        "quantity": "50",
+        "unit": "ml"
+      },
+      {
+        "name": "Oyster Sauce",
+        "quantity": "50",
+        "unit": "g"
+      },
+      {
+        "name": "Rice Wine Vinegar",
+        "quantity": "10",
+        "unit": "ml"
+      },
+      {
+        "subheading": "Optional:"
+      },
+      {
+        "name": "stir fry veg"
+      }
+    ],
+    "instructions": [
+      {
+        "steps": [
+          "Marinate the chicken for 30 minutes or longer for extra flavour.",
+          "Cook the chicken for 6-8 minutes on medium heat",
+          "Set aside and cook the veg and stir fry for 5 minutes. Then add the garlic, soy sauce, oyster sauce and rice wine vinegar.",
+          "Cook the noodles according to the instructions and then add them to the vegetables.",
+          "Then add the chicken back and mix well. Add extra soy sauce or oyster sauce if needed."
+        ]
+      }
+    ],
+    "credit": ""
+  }
+}

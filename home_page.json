@@ -8,6 +8,7 @@
         "Pasta",
         "Peperoni",
         "Potato",
+        "Sandwich",
         "Sausage",
         "Soup",
         "Steak"
@@ -86,6 +87,14 @@
             "recipe_total_time": "25"
         },
         {
+            "recipe_file": "ChickenChowMein",
+            "recipe_title": "Chicken Chow Mein",
+            "recipe_category": "Chicken",
+            "recipe_prep_time": "0:30",
+            "recipe_cook_time": "0:20",
+            "recipe_total_time": "50"
+        },
+        {
             "recipe_file": "ChickenFajitas",
             "recipe_title": "Chicken Fajitas",
             "recipe_category": "Chicken",
@@ -148,6 +157,14 @@
             "recipe_prep_time": "0:10",
             "recipe_cook_time": "0:50",
             "recipe_total_time": "60"
+        },
+        {
+            "recipe_file": "GarlicButterSteakBites",
+            "recipe_title": "Garlic Butter Steak Bites",
+            "recipe_category": "Beef",
+            "recipe_prep_time": "0:00",
+            "recipe_cook_time": "0:00",
+            "recipe_total_time": "0"
         },
         {
             "recipe_file": "HawaiianBbqChickenPizza",
@@ -236,6 +253,14 @@
             "recipe_prep_time": "0:30",
             "recipe_cook_time": "1:50",
             "recipe_total_time": "140"
+        },
+        {
+            "recipe_file": "SalamiPestoToastie",
+            "recipe_title": "Salami & Pesto Toastie",
+            "recipe_category": "Sandwich",
+            "recipe_prep_time": "0:05",
+            "recipe_cook_time": "0:05",
+            "recipe_total_time": "10"
         },
         {
             "recipe_file": "SausageCasserole",

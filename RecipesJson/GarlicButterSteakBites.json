@@ -1,0 +1,80 @@
+{
+  "recipe": {
+    "recipe_title": "Garlic Butter Steak Bites",
+    "category": "Beef",
+    "prep_time": "0:00",
+    "cook_time": "0:00",
+    "servings": "4",
+    "ingredients": [
+      {
+        "subheading": "Steak:"
+      },
+      {
+        "name": "Lean Beef, cut into cubes",
+        "quantity": "800",
+        "unit": "g"
+      },
+      {
+        "name": "tsp Salt",
+        "quantity": "1.5"
+      },
+      {
+        "name": "Garlic Powder",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Parsley",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "2",
+        "unit": "tsp"
+      },
+      {
+        "name": "butter, half for cooking and half for the end",
+        "quantity": "40",
+        "unit": "g"
+      },
+      {
+        "name": "Garlic Cloves Minced",
+        "quantity": "4"
+      },
+      {
+        "subheading": "Potatoes:"
+      },
+      {
+        "name": "Uncooked potatoes, cut into 1-2cm cubes",
+        "quantity": "900",
+        "unit": "g"
+      },
+      {
+        "name": "Smoked Paprika",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Garlic Powder",
+        "quantity": "0.5",
+        "unit": "tsp"
+      },
+      {
+        "name": "Oil",
+        "quantity": "1",
+        "unit": "tsp"
+      }
+    ],
+    "instructions": [
+      {
+        "steps": [
+          "Preheat the oven to 200°C. Then place the chopped potatoes onto a tray with some salt, pepper, paprika, garlic powder and oil. Mix well then cook for 25 minutes, turning halfway.",
+          "Cook the steak bites in the butter until crispy. Add more butter and the minced garlic. ",
+          "Serve the steak and potatoes together and drizzle the garlic butter over everything"
+        ]
+      }
+    ],
+    "credit": ""
+  }
+}
