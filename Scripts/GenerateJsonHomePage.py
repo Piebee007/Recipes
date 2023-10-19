@@ -13,7 +13,7 @@ def total_time(prep_time, cook_time):
 home_page_json = {
     "categories": [],
     "recipes": [],
-    "deserts": [],
+    "desserts": [],
 }
 
 #Categories
