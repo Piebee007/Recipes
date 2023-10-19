@@ -162,9 +162,9 @@
             "recipe_file": "GarlicButterSteakBites",
             "recipe_title": "Garlic Butter Steak Bites",
             "recipe_category": "Beef",
-            "recipe_prep_time": "0:00",
-            "recipe_cook_time": "0:00",
-            "recipe_total_time": "0"
+            "recipe_prep_time": "0:15",
+            "recipe_cook_time": "0:30",
+            "recipe_total_time": "45"
         },
         {
             "recipe_file": "HawaiianBbqChickenPizza",
