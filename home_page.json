@@ -32,7 +32,7 @@
         },
         {
             "recipe_file": "BeerCanChicken",
-            "recipe_title": "BeerCanChicken",
+            "recipe_title": "Beer Can Chicken",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:20",
             "recipe_cook_time": "1:10",
@@ -183,7 +183,7 @@
             "recipe_total_time": "55"
         },
         {
-            "recipe_file": "FamousCurry",
+            "recipe_file": "JensonsFamousCurry",
             "recipe_title": "Jenson's Famous Curry",
             "recipe_category": "Chicken",
             "recipe_prep_time": "0:10",
@@ -191,7 +191,7 @@
             "recipe_total_time": "35"
         },
         {
-            "recipe_file": "uliePasta",
+            "recipe_file": "JuliePasta",
             "recipe_title": "Julie Pasta",
             "recipe_category": "Pasta",
             "recipe_prep_time": "0:5",
@@ -215,7 +215,7 @@
             "recipe_total_time": "120"
         },
         {
-            "recipe_file": "MacCheeseWithChorizo&Bacon",
+            "recipe_file": "MacCheeseWithChorizoBacon",
             "recipe_title": "Mac & Cheese With Chorizo & Bacon",
             "recipe_category": "Chorizo",
             "recipe_prep_time": "0:15",
@@ -313,7 +313,7 @@
         {
             "recipe_file": "SteakSandwiches",
             "recipe_title": "Steak Sandwiches",
-            "recipe_category": "Steak",
+            "recipe_category": "Sandwich",
             "recipe_prep_time": "0:10",
             "recipe_cook_time": "0:20",
             "recipe_total_time": "30"
@@ -322,9 +322,9 @@
             "recipe_file": "TomatoChorizoPasta",
             "recipe_title": "Tomato & Chorizo Pasta",
             "recipe_category": "Chorizo",
-            "recipe_prep_time": "0:00",
-            "recipe_cook_time": "0:00",
-            "recipe_total_time": "0"
+            "recipe_prep_time": "0:05",
+            "recipe_cook_time": "0:30",
+            "recipe_total_time": "35"
         },
         {
             "recipe_file": "TomsTrayBake",
